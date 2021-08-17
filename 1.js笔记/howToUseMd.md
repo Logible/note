@@ -69,7 +69,8 @@ git需要花费一两天时间去学习巩固，因内容较多，网上的教�
 2. 添加文件夹到工作区<div align=center>
 <image  src="https://raw.githubusercontent.com/Logible/note/main/note_image/20210815221905.png" /></div>
 
-3. 新建xxx.md文件作为笔记即可开始书写笔记![20210815222322](https://raw.githubusercontent.com/Logible/note/main/note_image/20210815222322.png)
+3. 新建xxx.md文件作为笔记即可开始书写笔记<div align=center>
+<image  src="https://raw.githubusercontent.com/Logible/note/main/note_image/20210815222322.png" /></div>
 
 ## 3.2 插件的推荐
 
@@ -82,7 +83,7 @@ Picgo：用于快速上传图片并获取图片URL的工具
 
 2. 点击Picgo,进入参数设置页面![20210815223534](https://raw.githubusercontent.com/Logible/note/main/note_image/20210815223534.png)
 
-3. 找到github相关的配置，并按下图进行配置![20210815224107](https://raw.githubusercontent.com/Logible/note/main/note_image/20210815224107.png)
+3. 找到github相关的配置，并按下图进行配置![20210815235809](https://raw.githubusercontent.com/Logible/note/main/note_image/20210815235809.png)
 
 4. 截取图片（微信QQ电脑自带的都可以），而后在md文件中按住Ctrl+Alt+U便可将图片粘贴到.md文件中
 
@@ -133,3 +134,33 @@ markdownlint：vscode上一款非常好用的 Markdown 格式检查扩展工具�
 ```
 
 使用div便可独占一行，其中align=center表示居中
+
+## 4.3 查找笔记的内容
+
+当我们需要查找笔记中的内容时，可使用Visual Code的查找功能![20210815232749](https://raw.githubusercontent.com/Logible/note/main/note_image/20210815232749.png)
+
+# 5.后语
+
+若笔者本文某处出现错误还烦请读者指出，如果此篇文章对您有帮助，就请给笔者点个赞趴。
+
+# 6.参考文章
+
+<https://www.jianshu.com/p/51523a1c6fe1>
+
+markdownlint规则详细介绍及自定义参数设置
+
+<https://blog.csdn.net/qq_44926567/article/details/109167394>
+
+markdownlint取消部分html标签警告
+
+<https://www.jianshu.com/p/cb8d2194d5ef>
+
+vscode作为Markdown编辑器
+
+<https://blog.csdn.net/qq_44486550/article/details/107575128>
+
+MarkDown设置图片居中显示并调整大小
+
+<https://www.jianshu.com/p/a6463f8e8cf8>
+
+vscode 写markdown文件时图片粘贴问题
