@@ -37,15 +37,15 @@
 
 1. 点击右上角settigns
 
-<div align=center>
-<image width=200px src="https://raw.githubusercontent.com/Logible/note/main/note_image/20210815215119.png" />
-</div>
+    <div align=center>
+    <image width=200px src="https://raw.githubusercontent.com/Logible/note/main/note_image/20210815215119.png" />
+    </div>
 
 2. 点击Developer settings 就可以看到Personal access tokens在这里我们可以 创建一个token
 
-<div align=center>
-<image  src="https://raw.githubusercontent.com/Logible/note/main/note_image/20210815215311.png" />
-</div>
+    <div align=center>
+    <image  src="https://raw.githubusercontent.com/Logible/note/main/note_image/20210815215311.png" />
+    </div>
 
 3. 填写信息。点击 Generate new token 创建一个新 token，选择 repo，同时它会把包含其中的都会勾选上，我们勾选这些就可以了。然后拉到最下方点击绿色按钮，Generate token 即可。之后就会生成一个 token ，记得复制保存到其他地方，**这个 token 只显示一次！！**（下文需要用到）
 
