@@ -92,4 +92,19 @@
 10. trench![20210830165516](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830165516.png)
 11. tri
     1. tribe![20210830165721](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830165721.png)
-12. 1
+
+## Unit 18
+
+1. cable_2![20210830210704](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830210704.png)
+2. tri
+   1. trifle_2![20210830210819](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830210819.png)
+   2. triumph![20210830212037](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830212037.png)
+   3. trivial![20210830212116](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830212116.png)
+   4. triple_2![20210830211527](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830211527.png)
+3. fringe![20210830210929](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830210929.png)
+4. gross_1![20210830211153](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830211153.png)
+5. scrutiny![20210830211602](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830211602.png)
+6. rehearsal_1![20210830211903](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830211903.png)
+7. hinge_1![20210830211926](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830211926.png)
+8. tuck_1![20210830212425](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830212425.png)
+9. brew![20210830212535](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830212535.png)
