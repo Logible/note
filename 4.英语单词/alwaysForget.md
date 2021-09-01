@@ -63,7 +63,7 @@
 ## Unit 12
 
 1. stray![20210830125344](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830125344.png)
-2. grease_2![20210830133755](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830133755.png)
+2. grease_3![20210830133755](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830133755.png)
 3. tenant![20210830134319](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830134319.png)
 4. batch_2![20210830134433](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830134433.png)
 
@@ -72,11 +72,22 @@
 1. terr
 
    1. terrace![20210818023247](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210818023247.png)
-   2. terrain![20210818023454](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210818023454.png)
+   2. terrain_1![20210818023454](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210818023454.png)
    3. territory![20210818023740](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210818023740.png)
 
 2. render![20210821233518](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210821233518.png)
-3. mutual ![20210821233947](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210821233947.png)
+3. mutual_1 ![20210821233947](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210821233947.png)
+4. pretext![20210901104824](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210901104824.png)
+5. decree![20210901105120](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210901105120.png)
+6. ingredient![20210901111622](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210901111622.png)
+
+## Unit 14
+
+1. forge![20210901105934](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210901105934.png)
+2. theft![20210901110119](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210901110119.png)
+3. flaw![20210901110806](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210901110806.png)
+4. thigh![20210901110828](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210901110828.png)
+5. shutter![20210901111239](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210901111239.png)
 
 ## Unit 17
 
@@ -108,3 +119,27 @@
 7. hinge_1![20210830211926](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830211926.png)
 8. tuck_1![20210830212425](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830212425.png)
 9. brew![20210830212535](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830212535.png)
+
+## Unit 19
+
+1. intense![20210901115038](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210901115038.png)
+2. dwarf![20210901115621](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210901115621.png)
+3. naive_1![20210901115958](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210901115958.png)
+4. fitting_1![20210901120209](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210901120209.png)
+5. luggage![20210901120639](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210901120639.png)
+6. porch![20210901120654](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210901120654.png)
+7. undergo_1![20210901120911](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210901120911.png)
+
+## Unit 20
+
+1. rip_2![20210901152910](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210901152910.png)
+2. quota_3![20210901153019](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210901153019.png)
+3. shatter_3![20210901153423](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210901153423.png)
+4. grip_2![20210901153655](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210901153655.png)
+5. presentation_3![20210901154030](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210901154030.png)
+6. canvas![20210901154046](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210901154046.png)
+7. pattern![20210901154313](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210901154313.png)
+8. uphold![20210901154346](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210901154346.png)
+9. upright_2![20210901154419](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210901154419.png)
+10. diversion![20210901154531](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210901154531.png)
+11. formulate![20210901154638](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210901154638.png)
