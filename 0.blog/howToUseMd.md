@@ -139,6 +139,14 @@ markdownlint：vscode上一款非常好用的 Markdown 格式检查扩展工具�
 
 当我们需要查找笔记中的内容时，可使用Visual Code的查找功能![20210815232749](https://raw.githubusercontent.com/Logible/note/main/note_image/20210815232749.png)
 
+## 4.4 预览你当前编写的部分
+
+当我们要预览我们的markdown笔记时,使用Ctrl+Shift+V,将你要预览部分的小标题滑至页面最上方,即可预览此部分
+
+比如我要预览Unit17 我就将Unit17滑到页面最上方,再按下快捷键,即可预览
+
+![20210903100528](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210903100528.png)
+
 # 5.后语
 
 若笔者本文某处出现错误还烦请读者指出，如果此篇文章对您有帮助，就请给笔者点个赞趴。
