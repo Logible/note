@@ -1,17 +1,58 @@
-# 总是忘记的单词
+# 六级单词汇总
 
-## Unit1
+- [六级单词汇总](#六级单词汇总)
+  - [Unit 1](#unit-1)
+  - [Unit 2](#unit-2)
+  - [Unit 3](#unit-3)
+  - [Unit 4](#unit-4)
+  - [Unit 5](#unit-5)
+  - [Unit 7](#unit-7)
+  - [Unit 8](#unit-8)
+  - [Unit 9](#unit-9)
+  - [Unit 10](#unit-10)
+  - [Unit 11](#unit-11)
+  - [Unit 12](#unit-12)
+  - [Unit 13](#unit-13)
+  - [Unit 14](#unit-14)
+  - [Unit 15](#unit-15)
+  - [Unit 16](#unit-16)
+  - [Unit 17](#unit-17)
+  - [Unit 18](#unit-18)
+  - [Unit 19](#unit-19)
+  - [Unit 20](#unit-20)
+  - [Unit 21](#unit-21)
+  - [Unit 22](#unit-22)
+
+## Unit 1
 
 1. spoil![20210816204706](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210816204706.png)
+2. spite![20210905134758](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905134758.png)
+3. instruct![20210905134544](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905134544.png)
+4. compliment![20210905135129](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905135129.png)
+5. poverty![20210905135203](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905135203.png)
+6. pedestrian![20210905135441](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905135441.png)
+7. clutch![20210905135522](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905135522.png)
+8. squad![20210905135616](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905135616.png)
 
-## Unit3
+## Unit 2
+
+1. sentiment![20210905140022](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905140022.png)
+2. rectify![20210905140057](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905140057.png)
+3. huddle![20210905140250](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905140250.png)
+4. breed![20210905140401](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905140401.png)
+5. pamphlet![20210905155543](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905155543.png)
+6. booth![20210905154727](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905154727.png)
+
+## Unit 3
 
 1. stall![20210818144144](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210818144144.png)
 2. stern ![20210818144324](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210818144324.png) 
 3. strand![20210818144954](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210818144954.png)
 4. streak![20210821222639](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210821222639.png)
 
-## Unit4
+## Unit 4
+
+## Unit 5
 
 ## Unit 7
 
@@ -23,7 +64,7 @@
 
 4. designate![20210818011808](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210818011808.png)
 
-## Unit8
+## Unit 8
 
 1. latent![20210816211359](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210816211359.png)
 
@@ -31,7 +72,7 @@
 
 3. peculiar![20210816212113](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210816212113.png)
 
-## Unite 9
+## Unit 9
 
 1. peg![20210818145446](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210818145446.png)
 2. imperative![20210818145531](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210818145531.png)
@@ -124,34 +165,62 @@
 
 ## Unit 17
 
-1. linger![20210830163723](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830163723.png)
-2. mock![20210830163959](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830163959.png)
-3. figure![20210830164120](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830164120.png)
-4. fling![20210830164146](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830164146.png)
-5. redundant![20210830164524](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830164524.png)
-6. portray![20210830164640](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830164640.png)
-7. intensive![20210830164744](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830164744.png)
-8. given![20210830165400](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830165400.png)
-9. indulge![20210830165447](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830165447.png)
+1. linger_3![20210830163723](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830163723.png)
+2. mock_4![20210830163959](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830163959.png)
+3. figure_1![20210830164120](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830164120.png)
+4. fling_1![20210830164146](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830164146.png)
+5. redundant_3![20210830164524](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830164524.png)
+6. portray_1![20210830164640](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830164640.png)
+7. intensive_4![20210830164744](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830164744.png)
+8. given_1![20210830165400](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830165400.png)
+9. indulge_1![20210830165447](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830165447.png)
 10. trench![20210830165516](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830165516.png)
 11. tri
-    1. tribe![20210830165721](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830165721.png)
+    1. tribe![20210905203218](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905203218.png)
+12. tran
+    1. transition_2![20210905205829](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905205829.png)
+    2. transmit![20210905210611](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905210611.png)
+    3. transplant![20210905211205](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905211205.png)
+    4. transport_1![20210905211422](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905211422.png)
+    5. transmission![20210905223909](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905223909.png)
+13. permeate_2![20210905205936](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905205936.png)
+14. pendulum![20210905210021](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905210021.png)
+15. converge_1![20210905210159](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905210159.png)
+16. pursue![20210905210406](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905210406.png)
+17. gleam_2![20210905210852](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905210852.png)
+18. blunder_2![20210905212953](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905212953.png)
 
 ## Unit 18
 
-1. cable_2![20210830210704](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830210704.png)
+1. cable_6![20210830210704](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830210704.png)
 2. tri
-   1. trifle_2![20210830210819](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830210819.png)
-   2. triumph![20210830212037](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830212037.png)
+   1. trifle_5![20210830210819](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830210819.png)
+   2. triumph_1![20210830212037](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830212037.png)
    3. trivial![20210830212116](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830212116.png)
    4. triple_2![20210830211527](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830211527.png)
-3. fringe![20210830210929](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830210929.png)
-4. gross_1![20210830211153](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830211153.png)
+3. fringe_4![20210830210929](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830210929.png)
+4. gross_2![20210830211153](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830211153.png)
 5. scrutiny![20210830211602](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830211602.png)
 6. rehearsal_1![20210830211903](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830211903.png)
-7. hinge_1![20210830211926](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830211926.png)
-8. tuck_1![20210830212425](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830212425.png)
+7. hinge_2![20210830211926](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830211926.png)
+8. tuck_2![20210830212425](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830212425.png)
 9. brew![20210830212535](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830212535.png)
+10. trigger![20210905224434](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905224434.png)
+11. cynical![20210905224702](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905224702.png)
+12. deceive![20210905225010](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905225010.png)
+13. cite![20210905225348](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905225348.png)
+14. kidney![20210905225416](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905225416.png)
+15. formidable![20210905225626](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905225626.png)
+16. oak![20210905230337](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905230337.png)
+
+    1. chiefly![20210905230454](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905230454.png)
+    2. durable![20210905230556](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905230556.png)
+    3. deciduous![20210905230711](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905230711.png)
+17. tug![20210905230811](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905230811.png)
+18. enclosure![20210905230833](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905230833.png)
+19. appeal![20210905231149](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905231149.png)
+20. derive![20210905231259](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905231259.png)
+21. intrinsic![20210905231411](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905231411.png)
 
 ## Unit 19
 
