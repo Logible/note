@@ -25,7 +25,7 @@
 
 ## Unit 1
 
-1. spoil![20210816204706](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210816204706.png)
+1. spoil_1![20210816204706](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210816204706.png)
 2. spite![20210905134758](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905134758.png)
 3. instruct![20210905134544](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905134544.png)
 4. compliment![20210905135129](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905135129.png)
@@ -181,13 +181,13 @@
     1. transition_2![20210905205829](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905205829.png)
     2. transmit![20210905210611](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905210611.png)
     3. transplant![20210905211205](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905211205.png)
-    4. transport_1![20210905211422](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905211422.png)
-    5. transmission![20210905223909](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905223909.png)
+    4. transport_2![20210905211422](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905211422.png)
+    5. transmission_1![20210905223909](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905223909.png)
 13. permeate_2![20210905205936](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905205936.png)
 14. pendulum![20210905210021](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905210021.png)
-15. converge_1![20210905210159](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905210159.png)
+15. converge_2![20210905210159](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905210159.png)
 16. pursue![20210905210406](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905210406.png)
-17. gleam_2![20210905210852](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905210852.png)
+17. gleam_3![20210905210852](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905210852.png)
 18. blunder_2![20210905212953](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905212953.png)
 
 ## Unit 18
@@ -198,7 +198,7 @@
    2. triumph_1![20210830212037](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830212037.png)
    3. trivial![20210830212116](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830212116.png)
    4. triple_2![20210830211527](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830211527.png)
-3. fringe_4![20210830210929](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830210929.png)
+3. fringe_5![20210830210929](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830210929.png)
 4. gross_2![20210830211153](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830211153.png)
 5. scrutiny![20210830211602](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830211602.png)
 6. rehearsal_1![20210830211903](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210830211903.png)
@@ -215,8 +215,8 @@
 
     1. chiefly![20210905230454](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905230454.png)
     2. durable![20210905230556](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905230556.png)
-    3. deciduous![20210905230711](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905230711.png)
-17. tug![20210905230811](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905230811.png)
+    3. deciduous_1![20210905230711](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905230711.png)
+17. tug_1![20210905230811](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905230811.png)
 18. enclosure![20210905230833](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905230833.png)
 19. appeal![20210905231149](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905231149.png)
 20. derive![20210905231259](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210905231259.png)
