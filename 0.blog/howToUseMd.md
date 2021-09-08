@@ -1,5 +1,28 @@
-
 # 0.前言
+
+- [0.前言](#0前言)
+- [1.需要的工具](#1需要的工具)
+- [2.工具准备](#2工具准备)
+  - [2.1 Visual Code](#21-visual-code)
+  - [2.2 Github仓库](#22-github仓库)
+    - [1.自行注册账号](#1自行注册账号)
+    - [2.点击右上方新建仓库](#2点击右上方新建仓库)
+    - [3.填写仓库信息](#3填写仓库信息)
+    - [4.获取仓库token](#4获取仓库token)
+  - [2.3 git的安装与使用](#23-git的安装与使用)
+- [3.笔记的使用及Visual Code插件的推荐](#3笔记的使用及visual-code插件的推荐)
+  - [3.1 新建笔记文件夹](#31-新建笔记文件夹)
+  - [3.2 插件的推荐](#32-插件的推荐)
+    - [3.2.1.PicGo](#321picgo)
+    - [3.2.2 markdownlint](#322-markdownlint)
+    - [3.2.3 Markdown All in one](#323-markdown-all-in-one)
+- [4.一些小技巧](#4一些小技巧)
+  - [4.1 改变图片大小](#41-改变图片大小)
+  - [4.2 将图片独占一行/将图片居中](#42-将图片独占一行将图片居中)
+  - [4.3 查找笔记的内容](#43-查找笔记的内容)
+  - [4.4 预览你当前编写的部分](#44-预览你当前编写的部分)
+- [5.后语](#5后语)
+- [6.参考文章](#6参考文章)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;笔者在刚上大学到前几天,一直都是用的有道云笔记。但前几天有道云服务器突然就崩了，一上午才修好，不免让人怀疑其稳定性和可靠性。因此，笔者经网上查阅，认为github+vscode的markdown格式云笔记是适合我的需求的。故分享搭建云笔记的过程，供新手学习参考。
 
@@ -104,6 +127,24 @@ markdownlint：vscode上一款非常好用的 Markdown 格式检查扩展工具�
 2. 进行笔记的记录时便可用其检查格式，当笔记格式出现错误时便可根据信息改正自己的笔记![20210815224641](https://raw.githubusercontent.com/Logible/note/main/note_image/20210815224641.png)
 
 3. 英语不好的同学可访问<https://www.jianshu.com/p/51523a1c6fe1>查看对应的中文解释
+
+### 3.2.3 Markdown All in one
+
+1. 插件市场安装Markdown All in One并启用
+
+    ![在这里插入图片描述](https://img-blog.csdnimg.cn/f13174a9dc534d01b312f4b2a37a5d4c.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAR1BOVV9Mb2c=,size_10,color_FFFFFF,t_70,g_se,x_16)
+2. 使用插件
+    打开你的Markdown文件, 按下ctrl+shift+p, 输入table进行命令查找, 点击创建目录
+
+    ![在这里插入图片描述](https://img-blog.csdnimg.cn/122c190cb2ef4125a8aa9637cbd11b60.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAR1BOVV9Mb2c=,size_20,color_FFFFFF,t_70,g_se,x_16)
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本步骤的前提是你已经写好了每一级的标题,选择创建目录后就会自动生成目录了
+
+    ![20210905171534](https://img-blog.csdnimg.cn/img_convert/ead88f73130c3e2c0ebffdee708ef590.png)
+    由于插件文档中声明
+
+   - The TOC is automatically updated on file save by default. To disable, please change the toc.updateOnSave option.
+
+   意思是你只要保存了文件插件就会帮你自动保存目录，故只要创建一次目录，以后写好直接保存目录就会自动更新了
 
 # 4.一些小技巧
 

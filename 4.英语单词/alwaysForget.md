@@ -46,11 +46,21 @@
 ## Unit 3
 
 1. stall![20210818144144](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210818144144.png)
-2. stern ![20210818144324](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210818144324.png) 
-3. strand![20210818144954](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210818144954.png)
+2. stern![20210818144324](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210818144324.png) 
+3. strand_2![20210908101831](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210908101831.png)
 4. streak![20210821222639](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210821222639.png)
+5. stalk_2![20210908102718](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210908102718.png)
+6. spice![20210908102910](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210908102910.png)
+7. staple_1![20210908103127](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210908103127.png)
+8. statement![20210908103326](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210908103326.png)
+9. statesman![20210908103455](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210908103455.png)
+10. glitter_2![20210908104135](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210908104135.png)![20210908104159](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210908104159.png)
 
 ## Unit 4
+
+1. dispatch![20210908214656](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210908214656.png)
+2. toll![20210908220424](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210908220424.png)![20210908220438](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210908220438.png)
+3. disposition![20210908221415](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210908221415.png)![20210908221546](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210908221546.png)
 
 ## Unit 5
 
