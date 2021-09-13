@@ -66,10 +66,10 @@
 ## Unit 5
 
 1. strive_2![20210910182158](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210910182158.png)
-2. stroke_2![20210910183052](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210910183052.png)![20210910183123](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210910183123.png)![20210910183202](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210910183202.png)
+2. stroke_3![20210910183052](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210910183052.png)![20210910183123](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210910183123.png)![20210910183202](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210910183202.png)
 3. stroll![20210910183529](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210910183529.png)![20210910183547](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210910183547.png)
 4. likelihood![20210910183358](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210910183358.png)
-5. beam![20210910184303](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210910184303.png)![20210910184447](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210910184447.png)![20210910184524](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210910184524.png)
+5. beam_1![20210910184303](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210910184303.png)![20210910184447](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210910184447.png)![20210910184524](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210910184524.png)
 6. stumble![20210910184640](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210910184640.png)
 7. stun![20210910185006](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210910185006.png)
 8. leather![20210910185041](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210910185041.png)
@@ -85,18 +85,56 @@
 
 ## Unit 7
 
-1. rein![20210818011107](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210818011107.png)
+1. rein_2![20210818011107](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210818011107.png)
 2. decay![20210818011143](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210818011143.png)
 3. behave![20210818011509](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210818011509.png)
-4. designate![20210818011808](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210818011808.png)
+4. designate_1![20210818011808](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210818011808.png)
+5. latitude![20210913124152](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913124152.png)
+6. hawk_1![20210913124241](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913124241.png)
+7. hum![20210913124402](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913124402.png)![20210913124408](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913124408.png)
+8. plunge_1![20210913124544](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913124544.png)![20210913124552](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913124552.png)
+9. slick_1![20210913125048](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913125048.png)![20210913125110](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913125110.png)![20210913125119](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913125119.png)
+10. quench_2![20210913125331](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913125331.png)
+11. howl_2![20210913125448](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913125448.png)
+    1. doleful![20210913163859](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913163859.png)
+    2. utter![20210913164017](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913164017.png)![20210913164032](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913164032.png)
+12. divine![20210913130306](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913130306.png)
+13. climate![20210913130629](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913130629.png)
+    1. prevailing_1![20210913130751](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913130751.png)
+14. gorgeous![20210913131343](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913131343.png)
+15. handicap![20210913131754](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913131754.png)![20210913131802](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913131802.png)
 
 ## Unit 8
 
-1. latent![20210816211359](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210816211359.png)
-
-2. racket![20210816212015](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210816212015.png)
-
-3. peculiar![20210816212113](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210816212113.png)
+1. latent_1![20210816211359](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210816211359.png)
+2. racket_1![20210912110706](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210912110706.png)![20210912110730](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210912110730.png)
+   1. oval![20210913134402](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913134402.png)
+   2. catgut
+   3. nylon![20210913134634](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913134634.png)
+   4. squash![20210913135013](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913135013.png)
+3. peculiar![20210912110102](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210912110102.png)![20210912110117](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210912110117.png)
+4. merit_1![20210913135559](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913135559.png)![20210913135608](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913135608.png)
+5. orthdox![20210913135901](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913135901.png)
+6. misery_1![20210913135936](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913135936.png)
+7. cape![20210913140400](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913140400.png)![20210913140335](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913140335.png)
+8. curb![20210913140626](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913140626.png)
+9. notorious![20210913140726](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913140726.png)
+10. shove![20210913140812](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913140812.png)![20210913140827](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913140827.png)
+11. suppress![20210913153559](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913153559.png)
+12. surpass![20210913161503](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913161503.png)
+13. surge![20210913153814](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913153814.png)
+    1. wave
+    2. tide
+14. journal![20210913154112](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913154112.png)
+15. journey![20210913154135](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913154135.png)
+16. scrap![20210913154727](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913154727.png)![20210913154747](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913154747.png)
+17. fort![20210913155023](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913155023.png)
+18. pitch_1![20210913155218](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913155218.png)
+19. perception![20210913155412](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913155412.png)
+20. surgery![20210913155648](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913155648.png)
+21. surplus![20210913162101](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913162101.png)
+22. gauge![20210913160403](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913160403.png)![20210913160425](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913160425.png)
+23. haul_1![20210913161802](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913161802.png)![20210913161909](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210913161909.png)
 
 ## Unit 9
 
@@ -294,7 +332,7 @@
 
 1. crush_5![20210902174351](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210902174351.png)
 2. snatch_6![20210902174439](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210902174439.png)
-3. urge_7![20210902174541](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210902174541.png)
+3. urge_8![20210902174541](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210902174541.png)
 4. versus_2![20210902180133](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210902180133.png)
 5. ferry_5![20210902180251](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210902180251.png)
 6. contrive_6![20210902180428](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210902180428.png)
