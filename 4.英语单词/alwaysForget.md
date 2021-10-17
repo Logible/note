@@ -940,7 +940,7 @@ As verbs the difference between displace and replace is that displace is to move
 
 ## Unit 28
 
-1. shrink_3![20210925200453](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210925200453.png)
+1. shrink_4![20210925200453](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210925200453.png)
    1. workforce![20211016232343](https://raw.githubusercontent.com/Logible/Image/main/note_image/20211016232343.png)
    2. thousand![20211016232504](https://raw.githubusercontent.com/Logible/Image/main/note_image/20211016232504.png)
    3. disgust![20211016232643](https://raw.githubusercontent.com/Logible/Image/main/note_image/20211016232643.png)
@@ -951,28 +951,29 @@ As verbs the difference between displace and replace is that displace is to move
    4. withstand![20211016232854](https://raw.githubusercontent.com/Logible/Image/main/note_image/20211016232854.png)
    5. antibody![20211016233027](https://raw.githubusercontent.com/Logible/Image/main/note_image/20211016233027.png)
    6. lithography![20211016233334](https://raw.githubusercontent.com/Logible/Image/main/note_image/20211016233334.png)
-3. brace_2![20210925201244](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210925201244.png)
+3. brace_4![20210925201244](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210925201244.png)
 4. reside_1![20210925201420](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210925201420.png)
    1. permanent![20211016233715](https://raw.githubusercontent.com/Logible/Image/main/note_image/20211016233715.png)
 5. eternal![20210925202335](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210925202335.png)
 6. oath_1![20210925221705](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210925221705.png)
-   1. profane_1![20210925221741](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210925221741.png)
-   2. chant![20210925221821](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210925221821.png)
-   3. witness![20211016234158](https://raw.githubusercontent.com/Logible/Image/main/note_image/20211016234158.png)
-   4. regarding![20211016234400](https://raw.githubusercontent.com/Logible/Image/main/note_image/20211016234400.png)
-7. presumably![20210925222016](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210925222016.png)
-8. warrant_1![20211016235111](https://raw.githubusercontent.com/Logible/Image/main/note_image/20211016235111.png)![20211016235126](https://raw.githubusercontent.com/Logible/Image/main/note_image/20211016235126.png)
-9. reel_1![20210925222527](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210925222527.png)
-10. dean_1![20211016235411](https://raw.githubusercontent.com/Logible/Image/main/note_image/20211016235411.png)
-11. glow_1![20210925223011](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210925223011.png)
-12. litter_1![20210925223229](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210925223229.png)
+   1. profane_4![20210925221741](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210925221741.png)
+   2. witness![20211016234158](https://raw.githubusercontent.com/Logible/Image/main/note_image/20211016234158.png)
+   3. regarding![20211016234400](https://raw.githubusercontent.com/Logible/Image/main/note_image/20211016234400.png)
+7. chant![20210925221821](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210925221821.png)
+8. presumably![20210925222016](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210925222016.png)
+9. warrant_2![20211016235111](https://raw.githubusercontent.com/Logible/Image/main/note_image/20211016235111.png)![20211016235126](https://raw.githubusercontent.com/Logible/Image/main/note_image/20211016235126.png)
+   1. martial![20211017120035](https://raw.githubusercontent.com/Logible/Image/main/note_image/20211017120035.png)
+10. reel_1![20210925222527](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210925222527.png)
+11. dean_1![20211016235411](https://raw.githubusercontent.com/Logible/Image/main/note_image/20211016235411.png)
+12. glow_1![20210925223011](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210925223011.png)
+13. litter_1![20210925223229](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210925223229.png)
     1. trash![20211017000044](https://raw.githubusercontent.com/Logible/Image/main/note_image/20211017000044.png)
-13. embark_1![20210925223314](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210925223314.png)
-14. premise![20210925223527](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210925223527.png)
+14. embark_1![20210925223314](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210925223314.png)
 15. wax_2![20210925223823](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210925223823.png)
 16. flatter_2![20211017000639](https://raw.githubusercontent.com/Logible/Image/main/note_image/20211017000639.png)
     1. lavish![20211017000755](https://raw.githubusercontent.com/Logible/Image/main/note_image/20211017000755.png)
-       1. bestow![20211017000819](https://raw.githubusercontent.com/Logible/Image/main/note_image/20211017000819.png)
+       1. sumptuously![20211017120448](https://raw.githubusercontent.com/Logible/Image/main/note_image/20211017120448.png)
+       2. bestow_1![20211017000819](https://raw.githubusercontent.com/Logible/Image/main/note_image/20211017000819.png)
 17. concede_1![20210925224221](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210925224221.png)
     1. yield_1![20210925224244](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210925224244.png)
 18. screw_2![20210925224453](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210925224453.png)
@@ -982,19 +983,22 @@ As verbs the difference between displace and replace is that displace is to move
 22. batter_1![20211017001126](https://raw.githubusercontent.com/Logible/Image/main/note_image/20211017001126.png)
 23. savage_1![20211017001429](https://raw.githubusercontent.com/Logible/Image/main/note_image/20211017001429.png)
     1. fierce![20211017001447](https://raw.githubusercontent.com/Logible/Image/main/note_image/20211017001447.png)
+       1. predator![20211017121249](https://raw.githubusercontent.com/Logible/Image/main/note_image/20211017121249.png)
     2. ferocious![20211017001527](https://raw.githubusercontent.com/Logible/Image/main/note_image/20211017001527.png)
 24. region_1![20210925222702](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210925222702.png)
 25. alliance_1![20210925223613](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210925223613.png)
 26. elicit_1![20210925200343](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210925200343.png)
 27. imitate_1![20210925201328](https://raw.githubusercontent.com/Logible/Image/main/note_image/20210925201328.png)
-28. warehouse![20211017002012](https://raw.githubusercontent.com/Logible/Image/main/note_image/20211017002012.png)
+28. warehouse_1![20211017002012](https://raw.githubusercontent.com/Logible/Image/main/note_image/20211017002012.png)
 29. warfare![20211017002121](https://raw.githubusercontent.com/Logible/Image/main/note_image/20211017002121.png)
 30. plateau![20211017002203](https://raw.githubusercontent.com/Logible/Image/main/note_image/20211017002203.png)
 31. proposal![20211017002311](https://raw.githubusercontent.com/Logible/Image/main/note_image/20211017002311.png)
-32. exempt![20211017002454](https://raw.githubusercontent.com/Logible/Image/main/note_image/20211017002454.png)
-33. brace
+32. exempt_1![20211017002454](https://raw.githubusercontent.com/Logible/Image/main/note_image/20211017002454.png)
 
-what is the different between permanet and eternal
+what is the difference between permanent and eternal
+
+- As adjectives the difference between permanent and eternal is that permanent is without end, eternal while eternal is lasting forever; unending.
+- As a noun permanent is a chemical hair treatment imparting or removing curliness, whose effects typically last for a period of weeks; a perm.
 
 ## Unit 29
 
