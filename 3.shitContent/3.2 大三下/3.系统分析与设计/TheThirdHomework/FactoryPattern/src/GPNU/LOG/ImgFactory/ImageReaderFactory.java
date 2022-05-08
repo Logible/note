@@ -5,6 +5,6 @@ import GPNU.LOG.ImgReader.ImgReader;
 /**
  *
  */
-public interface ImgFactory {
+public interface ImageReaderFactory {
    ImgReader getImg();
 }
