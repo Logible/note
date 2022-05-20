@@ -1,0 +1,9 @@
+{
+    "java.project.sourcePaths": [
+        "strategy",
+        "proxy",
+        "observer1",
+        "composite",
+        "observer2"
+    ]
+}
