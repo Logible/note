@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2300be4-3f68-45df-bceb-b8849af1683e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../../13.小考个研.md/1.学习笔记/1.数学/1.高等数学/2.武/10.无穷级数.MD" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../13.小考个研.md/1.学习笔记/1.数学/1.高等数学/2.武/10.无穷级数.MD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TheThirdHomework/.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../4.英语单词/2.考研单词/1.11-15.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../4.英语单词/2.考研单词/1.11-15.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../4.英语单词/2.考研单词/1.6-10.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../4.英语单词/2.考研单词/1.6-10.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../13.小考个研.md/1.学习笔记/1.数学/1.高等数学/2.武/12.多元积分学及其应用.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../13.小考个研.md/1.学习笔记/1.数学/1.高等数学/2.武/12.多元积分学及其应用.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../13.小考个研.md/1.学习笔记/1.数学/2.线性代数/1.张宇/2.矩阵.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../13.小考个研.md/1.学习笔记/1.数学/2.线性代数/1.张宇/2.矩阵.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4.英语单词/2.考研单词/26-30.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../4.英语单词/2.考研单词/26-30.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1651997284355</updated>
       <workItem from="1651997288610" duration="4798000" />
+      <workItem from="1653119400324" duration="91000" />
     </task>
     <servers />
   </component>
@@ -93,6 +93,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="215" y="86" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1920.-65.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1652001449792" />
+    <state x="739" y="260" key="FileChooserDialogImpl" timestamp="1653119453762">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="739" y="260" key="FileChooserDialogImpl/-1920.-65.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1653119453762" />
     <state width="913" height="281" key="GridCell.Tab.0.bottom" timestamp="1652002132476">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -113,5 +117,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="922" y="165" key="SettingsEditor/-1920.-65.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1651999431190" />
+    <state x="334" y="129" key="new project wizard" timestamp="1653119488813">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="334" y="129" key="new project wizard/-1920.-65.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1653119488813" />
   </component>
 </project>
