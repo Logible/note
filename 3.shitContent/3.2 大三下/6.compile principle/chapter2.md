@@ -96,6 +96,8 @@
 
     若一个文法存在某个句子对应两颗不同的语法树，则说这个文法是二义的
 
+![20220606232532](https://raw.githubusercontent.com/Logible/Image/main/note_image/20220606232532.png)
+
 - 短语：
 
     $\alpha\beta\delta$是文法G的一个句型.如果有$S*=>\alpha A\delta$且$A+=>\beta$,则$\beta$是句型$\alpha\beta\delta$相对于非终结符A的短语
