@@ -1,0 +1,13 @@
+{
+    "customer": "GPNU",
+    "orders": [
+        {
+            "id": "1",
+            "amount": 55
+        },
+        {
+            "id": "2",
+            "amount": 40
+        }
+    ]
+}
