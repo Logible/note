@@ -1,11 +1,17 @@
-bool Delete_Same(SeqList &L)
+LinkList List_HeadInsert(LinkList &L) //逆向建立单链表
 {
-    if (L.length == 0)
-        return false;
-    int i, j; // i存储第一个不相同的元素，j为工作指针
-    for (i = 0, j = 1 : j < L.length : j++)
-        if (L.data[i] != L.data[j])  //查找下一个与上个元素值不同的元素
-            L.data[++i] = L.data[j]; //找到后，将元素前移
-    L.length = i + 1;
-    return true;
+    LNode *s;
+    int x;
+    L = (LinkList)malloc(sizeof(LNode)); //创建头结点
+    L->next = NULL;                      //初始为空链表
+    scanf("%d", &x);                     //输入结点的值
+    while (x != 9999)
+    {                                       //输入 9999 表示结束
+        s = (LNode *)malloc(sizeof(LNode)); //仓U建新结点①
+        s->data = x;
+        s->next = L->next;
+        L->next = s;        //将新结点插入表中，L为头指针
+        scanf("%d", &x);
+    }
+    return L;
 }
