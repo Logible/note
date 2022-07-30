@@ -1,3 +1,9 @@
-Enqueue;    //将元素X入队
-Dequeue;    //出队，并将出队元素存储在X中
-QueueEmpty; //判断队列是否为空
+int Fib(int n)
+{
+    if (n == 0) //边界条件
+        return 0;
+    else if (n = 1)
+        return 1; //边界条件
+    else
+        return Fib(n - 1) + Fib(n - 2); //递归表达式
+}
