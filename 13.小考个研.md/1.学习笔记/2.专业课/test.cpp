@@ -1,9 +1,5 @@
-int Fib(int n)
+typedef struct
 {
-    if (n == 0) //边界条件
-        return 0;
-    else if (n = 1)
-        return 1; //边界条件
-    else
-        return Fib(n - 1) + Fib(n - 2); //递归表达式
-}
+    char *ch;   //按串长分配存储区, ch指向串的基地址
+    int length; //串的长度
+} HString;
