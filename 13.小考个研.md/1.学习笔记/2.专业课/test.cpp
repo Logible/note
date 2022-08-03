@@ -1,5 +1,22 @@
-typedef struct
+// S是主串, T是模式串
+int Index(SString S, SString T, int next[])
 {
-    char *ch;   //按串长分配存储区, ch指向串的基地址
-    int length; //串的长度
-} HString;
+    int i = 1;
+    j = 1;
+    while (i <= S.length && j <= T.length)
+    {
+        if (j == 0 || S.ch[i] == T.ch[j]) //继续比较后继字符
+        {
+            ++i;
+            ++j;
+        }
+        else
+        {
+            j = next[j];
+        }
+    }
+    if (j > T.length) //匹配成功,j=length+1;
+        return i - T.length;
+    else
+        return 0;
+}
