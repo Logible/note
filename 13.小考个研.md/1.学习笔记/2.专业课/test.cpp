@@ -1,22 +1,27 @@
-#define MaxVertexNum 100 //图中顶点数目的最大值
+bool visited[MAX_VERTEX_NUM]; //访问标记数组
 
-//边表结点
-typedef struct ArcNode
+void BFSTraverse(Graph G)
 {
-   int adjvex;           //该弧所指向的顶点的位置
-   struct ArcNode *next; //指向下一条弧的指针
-   //InfoType info;      //网的边权值
-} ArcNode;
+   //初始化以访问标记数据
+   for (int i = 0; i < G.vexnum; i++)
+      visited[i] = false;
 
-//顶点表结点
-typedef struct VNode
-{
-   VertexType data; //顶点信息
-   ArcNode *first;  // 指向第一条依附该顶点的弧的指针
-} VNode, AdjList[MaxVertexNum];
+   for (int i = 0; i < G.vexnum; i++) //对每个连通分量调用一次BFS
+      if (!visited[i])
+         DFS(G, i);
+}
 
-typedef struct
+//从顶点v出发, 深度优先遍历图G
+void DFS(Graph G, int v)
 {
-   AdjList vertices;   //邻接表
-   int vexnum, arcnum; //图的顶点数和弧数
-} ALGraph;             // ALGraph 是以邻接表存储的图类型
+   visit(v);                                                        //访问初始顶点v
+   visited[v] = true;                                               //对v做已访问标记
+   for (w = FirstNeighbor(G, v); w >= 0; w = NextNeighbor(G, v, w)) //检测v所有邻点
+   {
+      // w为v的尚未访问的邻接顶点
+      if (!visited[w])
+      {
+         DFS(G, v);
+      }
+   }
+}
