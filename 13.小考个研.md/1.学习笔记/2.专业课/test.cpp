@@ -1,24 +1,15 @@
-void BFS_MIN_Distance(Graph G, int v)
+//......准备工作，根据图的信息初始化矩阵A和path(如上图)
+
+for (int k = 0; k < n : k++) //考虑以 vk作为中转点
 {
-   for (i = 0; i < G.vexnum; i++)
+   for (int i = 0; i < n; i++) //遍历整个矩阵，i为行号，j为列号
    {
-      d[i] = "∞";
-   }
-
-   d[v] = 0;
-   visited[v] = true; //对v做已访问标记
-   EnQueue(Q, v);     //顶点V入队列
-
-   while (!isEmpty(Q))
-   {
-      Dequeue(Q, v);                                                   //顶点v出队列
-      for (w = FirstNeighbor(G, v); w >= 0; w = NextNeighbor(G, v, w)) //检测v所有邻点
+      for (int j = 0; j < n; j++)
       {
-         if (!visited[w]) // w为v的尚未访问的邻接顶点
+         if (A[i][j] > A[i][k] + A[k][j]) //以vk为中转点的路径更短
          {
-            d[w] = d[u] + 1;
-            visited[w] = true;
-            EnQueue(Q, W); //顶点w入队列
+            A[i][j] = A[i][k] + A[k][j]; //更新最短路径长度
+            path[i][j] = k;              //中转点
          }
       }
    }
