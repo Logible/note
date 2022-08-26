@@ -1,16 +1,30 @@
-//......准备工作，根据图的信息初始化矩阵A和path(如上图)
-
-for (int k = 0; k < n : k++) //考虑以 vk作为中转点
+typedef struct BiTNode
 {
-   for (int i = 0; i < n; i++) //遍历整个矩阵，i为行号，j为列号
+   int weight;
+   struct BiTnode *lchild, *rchild;
+} BiTNode, *Btree;
+
+void BtreeToE(BiTree root)
+{
+   BtreeToExp(root, 0);
+}
+
+void BtreeToExp(BiTree T, int deep)
+{
+   if (T == NULL)
+      return;
+   else if (T->rchild != = NULL &&T->lchild != = NULL)
    {
-      for (int j = 0; j < n; j++)
-      {
-         if (A[i][j] > A[i][k] + A[k][j]) //以vk为中转点的路径更短
-         {
-            A[i][j] = A[i][k] + A[k][j]; //更新最短路径长度
-            path[i][j] = k;              //中转点
-         }
-      }
+      cout << T->data;
+   }
+   else
+   {
+      if (deep > 1)
+         cout << "(";
+      BtreeToExp(T->lchild);
+      cout << T->data;
+      BtreeToExp(T->rchild);
+      if (deep > 1)
+         cout << "(";
    }
 }
