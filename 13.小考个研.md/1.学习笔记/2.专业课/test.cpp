@@ -1,30 +1,28 @@
+typedef int ElemType;
 typedef struct BiTNode
 {
    int weight;
+   int data;
    struct BiTnode *lchild, *rchild;
-} BiTNode, *Btree;
+} BiTNode, *BTree;
 
-void BtreeToE(BiTree root)
+//删除值为x的结点(Log法)
+deleteXchild(BTree T, ElemType x)
 {
-   BtreeToExp(root, 0);
-}
-
-void BtreeToExp(BiTree T, int deep)
-{
-   if (T == NULL)
-      return;
-   else if (T->rchild != = NULL &&T->lchild != = NULL)
+   if (T->data == x)
    {
-      cout << T->data;
-   }
-   else
-   {
-      if (deep > 1)
-         cout << "(";
-      BtreeToExp(T->lchild);
-      cout << T->data;
-      BtreeToExp(T->rchild);
-      if (deep > 1)
-         cout << "(";
+      if (T->lchild)
+      {
+         free(T->lchild);
+         T->lchild = NULL;
+      }
+      if (T->rchild)
+      {
+         free(T->rchild);
+         T->rchild = NULL;
+      }
+   }else{
+      deleteXchild(T->lchild,x);
+      deleteXchild(T->rchild,x);
    }
 }
