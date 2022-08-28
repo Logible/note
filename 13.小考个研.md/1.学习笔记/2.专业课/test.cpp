@@ -3,26 +3,28 @@ typedef struct BiTNode
 {
    int weight;
    int data;
+   int height;
    struct BiTnode *lchild, *rchild;
 } BiTNode, *BTree;
 
-//删除值为x的结点(Log法)
-deleteXchild(BTree T, ElemType x)
+int maxWinth(BTree T)
 {
-   if (T->data == x)
+   p = preorder(T, 0);
+   width = max_element(p);
+}
+
+int *preOrder(BTree T, int deep)
+{
+   static widNum[T.height];
+   if (T == NULL)
+      return;
+   else
    {
+      widNum[deep]++;
       if (T->lchild)
-      {
-         free(T->lchild);
-         T->lchild = NULL;
-      }
+         preOrder(T->lchild, deep + 1);
       if (T->rchild)
-      {
-         free(T->rchild);
-         T->rchild = NULL;
-      }
-   }else{
-      deleteXchild(T->lchild,x);
-      deleteXchild(T->rchild,x);
+         preOrder(T->rchild, deep + 1);
    }
+   return widNum;
 }
