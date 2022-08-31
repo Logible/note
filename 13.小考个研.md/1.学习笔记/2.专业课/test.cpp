@@ -1,3 +1,4 @@
+typedef int KeyType;
 typedef int ElemType;
 typedef struct BiTNode
 {
@@ -5,7 +6,7 @@ typedef struct BiTNode
    int data;
    int height;
    struct BiTnode *lchild, *rchild;
-} BiTNode, *BTree;
+} BSTNode, *BiTree;
 
 typedef struct
 {
@@ -13,28 +14,43 @@ typedef struct
    int TableLen;   //表的长度
 } SStable, SeqList;
 
-int Search_Seq(SStable ST, ElemType key)
+BSTNode *BST_Search(BiTree T, ElemType key)
 {
-   ST.elem[0] = key; //光明哨兵
-   for (int i = ST.TableLen; ST.elem[i] != key; --i)
-      ;      //从后往前找
-   return i; //若表中不存在关键字为key的元素,将查找到i为0时退出for循环
+   while (T != NULL && key != T->data)
+   {
+      if (key < T->data)
+         T = T->lchild; //小于,则在左子树上寻找
+      else
+         T = T->rchild; //大于,则在右子树上寻找
+   }
+   return T;
 }
 
-int Binary_Search(SeqList L, ElemType key)
+int BST_Insert(BiTree &T, KeyType k)
 {
-   int low = 0, high = L.TableLen - 1;
-   mid;
-   while (low <= high)
+   if (T == NULL)
    {
-      /* code */
-      mid = (low + high) / 2; //取中间位置
-      if (L.elem[mid] == key)
-         return mid;
-      else if (L.elem[i] > key)
-         high = mid - 1; //从前半部分查找
-      else
-         low = mid + 1; //从后半部分查找
+      T = (BiTree)malloc(sizeof(BSTNode));
+      T->data = k;
+      T->lchild = T->rchild = NULL;
+      return 1;
    }
-   return -1; //查找失败
+   else if (K == T->data) //树中存在相同关键字的结点,插入失败
+      return 0;
+   else if (T < T->data)
+      return BST_Insert(T->lchild, k); //插入到T的左子树
+   else
+      return BST_Insert(r->lchild, k); //插入到T的右子树
+}
+
+void Create_BST(BiTree &T, KeyType str[], int n)
+{
+   T = NULL; //初始时T为空树
+
+   int i = 0;
+   while (i < n)
+   { //依次将每个关键字插入到二叉排序树中
+      BST_Insert(T, str[i]);
+      i++;
+   }
 }
