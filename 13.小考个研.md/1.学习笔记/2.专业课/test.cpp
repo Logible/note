@@ -54,3 +54,18 @@ void Create_BST(BiTree &T, KeyType str[], int n)
       i++;
    }
 }
+
+void InsertSort(int A[], int n)
+{
+   int i, j;
+   for (i = 0; i <= n; i++)
+   {
+      if (A[i] < A[i - 1])
+      {
+         A[0] = A[i];
+         for (j = i - 1; A[j] > A[0]; --j) //检查所有前面已排好序的元素
+            A[j + 1] = A[j];               //往后挪位
+         A[j + 1] = temp;                  //复制到插入位置, 退出循环时j=0;
+      }
+   }
+}
