@@ -109,3 +109,45 @@ void ShellSort(ElemType A[], int n)
          }
       }
 }
+
+void BubbleSort(ElemType A[], int n)
+{
+   for (i = 0; i < n - 1; i++)
+   {
+      flag = false;               //表示本躺冒泡是否发生交换的标志
+      for (j = n - 1; j > i; j--) //一趟冒泡
+         if (A[j - 1] > A[j])
+         {                        //若为逆序
+            swap(A[j - 1], A[j]); //交换
+            flag = true;
+         }
+
+      if (flag == false) //本趟遍历后没有发生交换,说明表已经有序
+         return;
+   }
+}
+
+//一趟划分
+int Partition(ElemType A[], int low, int high)
+{
+   ElemType pivot = A[low]; //将当前表中第一个元素设为枢纽对表进行划分
+   while (low < high)
+   {
+      while (low < high && A[high] >= pivot) --high;
+      A[low] = A[high]; //将比枢纽小的元素移动到左端
+      while (low < high && A[high] <= pivot) ++low;
+      A[high] = A[low]; //将比枢纽大的元素移动到右端
+   }
+   A[low] = pivot; //枢纽元素存放在最终位置
+   return low;
+}
+
+void QuickSort(ElemType A[], int low, int high)
+{
+   if (low < high)
+   {                                           //递归跳出的条件
+      int privotpos = Partition(A, low, high); //划分
+      QuickSort(A, low, privotpos - 1);
+      QuickSort(A, privotpos + 1, high);
+   }
+}
