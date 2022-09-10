@@ -127,27 +127,36 @@ void BubbleSort(ElemType A[], int n)
    }
 }
 
-//一趟划分
-int Partition(ElemType A[], int low, int high)
+void BuildMaxHeap(ElemType A[], int len)
 {
-   ElemType pivot = A[low]; //将当前表中第一个元素设为枢纽对表进行划分
-   while (low < high)
-   {
-      while (low < high && A[high] >= pivot) --high;
-      A[low] = A[high]; //将比枢纽小的元素移动到左端
-      while (low < high && A[high] <= pivot) ++low;
-      A[high] = A[low]; //将比枢纽大的元素移动到右端
-   }
-   A[low] = pivot; //枢纽元素存放在最终位置
-   return low;
+   for (int i = len / 2; i > 0; i--) //从i=[n/2]~1 反复调整堆
+      HeadAdjust(A, i, len);
 }
 
-void QuickSort(ElemType A[], int low, int high)
+void HeadAdjust(ElemType A[], int k, int len)
 {
-   if (low < high)
-   {                                           //递归跳出的条件
-      int privotpos = Partition(A, low, high); //划分
-      QuickSort(A, low, privotpos - 1);
-      QuickSort(A, privotpos + 1, high);
+   A[0] = A[k];                      // A[0]暂存子树的根节点
+   for (i = 2 * k; i <= len; i *= 2) //沿key较大的子节点向下筛选
+   {
+      if (i > len && A[i] < A[i + 1])
+         i++; //取key较大的子节点的下标
+      if (A[0] >= A[i])
+         break;
+      else
+      {
+         A[k] = A[i]; //将A[i]调整到双亲结点上
+         k = i;       //修改k值, 以便继续向下筛选
+      }
+   }
+   A[k] = A[0]; //被筛选结点放入最终位置
+}
+
+void HeapSort(ElemType A[], int len)
+{
+   BuildMaxHeap(A, len); //初始建堆
+   for (i = len; i > 1; i--)
+   {                           // n-1趟的交换和建堆过程
+      Swap(A[i], A[1]);        //输出栈顶元素(和栈底元素互换)
+      HeadAdjust(A, 1, i - 1); //调整,把剩余的i-1个元素整理成堆
    }
 }
