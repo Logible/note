@@ -180,3 +180,34 @@ void SelectSort(ElemType A[], int n)
 void swap(ElemType a, ElemType b)
 {
 }
+
+ElemType *B = (ElemType *)malloc((n + 1) * sizeof(ElemType)); //辅助数组B
+
+void Merge(ElemType A[], int low, int mid, int high)
+{
+   //表A的两段A[low...mid]和A[mid+1...high]各自有序, 将它们合并成一个有序表
+   for (int k = low, k <= high; k++)
+      B[k] = A[k]; //将A的所有元素复制到B
+   for (i = low, j = mid + 1, k = i; i <= mid && j <= high; k++)
+   {
+      if (B[i] <= B[j]) //将较小值复制到A中
+         A[k] = B[i++];
+      else
+         A[k] = B[j++];
+   }
+   while (i <= mid)
+      A[k++] = B[i++]; //若第一个表未检测完,复制
+   while (j <= high)
+      A[k++] = B[i++]; //若第一个表未检测完,复制
+}
+
+void MergeSort(ElemType A[], int low, int high)
+{
+   if (low < high)
+   {
+      int mid = (low + high) / 2;  //从中间划分成两个子序列
+      MergeSort(A, low, mid);      //对左侧子序列进行递归排序
+      MergeSort(A, mid + 1, high); //对左侧子序列进行递归排序
+      Merge(A, low, mid, high);    //归并
+   }
+}
