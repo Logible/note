@@ -105,3 +105,85 @@ int findMissMin(int A[], int n)
          break;
    return i + 1;
 }
+
+#define INT_MAX 0x7fffffff
+
+int abs_(int a)
+{
+   if (a < 0)
+      return -a;
+   else
+      return a;
+}
+
+bool xls_min(int a, int b, int c)
+{
+   if (a <= b && a <= c)
+      return true;
+   else
+      return false;
+}
+
+int findMinofTrip(int A[], int n, int B[], int m, int C[], int p)
+{
+   int i = 0, j = 0, k = 0, D_min = INT_MAX, D;
+   while (i < n && j < m && k < p && D_min > 0)
+   {
+      D = abs_(A[i] - B[i]) + abs_(B[j] - C[k]) + abs_(C[k] - A[i]); //计算D
+      if (D < D_min)
+         D_min = D;
+
+      if (xls_min(A[i], B[j], C[k]))
+         i++;
+      else if (xls_min(B[j], A[i], C[k]))
+         j++;
+      else
+         k++;
+   }
+   return D_min;
+}
+
+typedef int ElemType;
+
+typedef struct LNode
+{
+   Elemtype data;
+   struct LNode *link;
+
+} LNode, *Linklist;
+
+int Search_k(Linklist list, int k)
+{
+   LNode *p = list->link, *q = list->link; //指针pq指示第一个结点
+   int count = 0;
+   while (p != NULL)
+   {
+      if (count < k)
+         count++ else q = q->link;
+      p = p->link;
+   }
+   if (count < k)
+      return 0;
+   else
+   {
+      cout << q->data;
+      return 1;
+   }
+}
+
+LNode *find_first_commom(Linklist str1, Linklist str2)
+{
+   int len1 = Length(str1);
+   int len2 = Length(str2);
+   LinkNode *p = str1.next, *q = str2.next;
+   for (p = str; len1 > len2; len1--) // 使q指向的链表与p指向的链表等长
+      p = p.next;
+   for (p = str; len2 > len1; len2--)
+      q = q.next;
+   while (p->next != null && p->next != q->next)
+   {
+      p = p.next;
+      q = q.next;
+   }
+   return p->next; //返回共同后缀起始点
+}
