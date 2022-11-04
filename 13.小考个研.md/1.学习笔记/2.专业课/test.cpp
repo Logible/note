@@ -159,7 +159,9 @@ int Search_k(Linklist list, int k)
    while (p != NULL)
    {
       if (count < k)
-         count++ else q = q->link;
+         count++;
+      else
+         q = q->link;
       p = p->link;
    }
    if (count < k)
@@ -186,4 +188,27 @@ LNode *find_first_commom(Linklist str1, Linklist str2)
       q = q.next;
    }
    return p->next; //返回共同后缀起始点
+}
+
+void func(Linklist L, int n)
+{
+   LNode p = L, r;
+   int a[n] = {0}, m;
+
+   while (p->link != NULL)
+   {
+      m = p.link.data > 0 ? p.link.data : -p.link.data;
+      if (a[m] == 0)
+      {            //判断该结点data是否已出现过
+         a[m] = 1; //首次出现
+         p = p.link;
+      }
+      else
+      {
+         r = p->next;
+         p = r->next;
+         free(r);
+      }
+   }
+   free(q);
 }
