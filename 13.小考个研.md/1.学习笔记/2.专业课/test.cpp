@@ -212,3 +212,18 @@ void func(Linklist L, int n)
    }
    free(q);
 }
+
+void SelectSort(ElemType A[], int n)
+{
+   for (i = 0; i < n - 1; i++)
+   {                              //一共进行n-1趟
+      min = i;                    //记录最小元素
+      for (j = i + 1; j < n; j++) //在A[i...n-1]中选择最小的元素
+      {
+         if (A[j] < A[min])
+            min = j; //更新最小元素
+      }
+      if (min != i) //封装的swap()函数共移动元素三次
+         swap(A[i], A[min]);
+   }
+}
