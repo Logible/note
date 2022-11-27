@@ -227,3 +227,57 @@ void SelectSort(ElemType A[], int n)
          swap(A[i], A[min]);
    }
 }
+
+bool TopologicalSort(Graph G)
+{
+   InitStack(S); //初始化栈, 存储入度为0的顶点
+   for (int i = 0; i < G.vexnum; i++)
+      if (indegree[i] == 0)
+         Push(S, i); //将所有入度为0的顶点进栈
+   int count = 0;    //计数, 记录当前已经输出的顶点数
+   while (!IsEmpty(S))
+   {
+      Pop(S, i);
+      print[count++] = i;
+      for (p = G.vertices[i].firstarc; p; p = p->nextarc)
+      {
+         //将所有i指向的顶点的入度减1, 并将入度减为0的顶点压入栈S
+         v = p->adjvex;
+         if (!(--indegree[v]))
+            Push(S, v); //入度为0,则入栈
+      }
+   }
+   if (count < G.vexnum)
+      return false; //拓扑失败,有回路
+   else
+      return true; //拓扑排序成功
+}
+
+void BFS_MIN_Distance(Graph G, int v)
+{
+   // d[i]表示从v到i结点的最短路径
+   for (i = 0; i < G.vexnum; i++)
+   {
+      d[i] = "∞";
+      path[i] = -1;
+   }
+
+   d[v] = 0;
+   visited[v] = true; //对v做已访问标记
+   EnQueue(Q, v);     //顶点V入队列
+
+   while (!isEmpty(Q))
+   {
+      Dequeue(Q, v);                                                   //顶点v出队列
+      for (w = FirstNeighbor(G, v); w >= 0; w = NextNeighbor(G, v, w)) //检测v所有邻点
+      {
+         if (!visited[w]) // w为v的尚未访问的邻接顶点
+         {
+            d[w] = d[v] + 1;
+            path[w] = [u]; //最短路径应从u到w
+            visited[w] = true;
+            EnQueue(Q, W); //顶点w入队列
+         }
+      }
+   }
+}
