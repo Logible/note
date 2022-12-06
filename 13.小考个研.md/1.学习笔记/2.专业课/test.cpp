@@ -281,3 +281,23 @@ void BFS_MIN_Distance(Graph G, int v)
       }
    }
 }
+
+   ElemType findk(Bitree T, int k)
+   {
+      static ElemType data;
+      static i = 0;
+      i++;
+      if (i == k)
+      {
+         data = T->data;
+         return data;
+      }
+      else
+      {
+         if (T->lchild)
+            findk(T->lchild, k);
+         if (T->rchild)
+            findk(T->rchild, k);
+      }
+      return data;
+   }
