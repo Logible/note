@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>翻译结果</title>
+    <style>
+        body {
+            background: #CDDEC2;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            overflow-x: auto;
+            /* 这会在内容溢出时显示横向滚动条 */
+        }
+
+        .column {
+            flex: 900px;
+            padding: 10px;
+        }
+
+        .table-header {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+        }
+
+        .table-row {
+            border-bottom: 1px solid lightgray;
+        }
+
+        .table-cell {
+            padding: 5px;
+        }
+    </style>
+</head>
+<div class="row table-row">
+    <div class="column table-cell">
+        <div class="markdown-body">
+            <p>论文概况</p>
+        </div>
+    </div>
+    <div class="column table-cell">
+        <div class="markdown-body">
+            <p>Title: Trajectory Data Collection with Local Differential Privacy</p>
+            <p>Conference/Journal: Unknown</p>
+            <p>Authors:
+                - Yuemin Zhang∗ (Harbin Engineering University) - zhangyuemin@hrbeu.edu.cn
+                - Qingqing Ye (Hong Kong Polytechnic University) - qqing.ye@polyu.edu.hk
+                - Rui Chen† (Harbin Engineering University) - ruichen@hrbeu.edu.cn
+                - Haibo Hu (Hong Kong Polytechnic University) - haibo.hu@polyu.edu.hk
+                - Qilong Han† (Harbin Engineering University) - hanqilong@hrbeu.edu.cn</p>
+            <p>Abstract:
+                Trajectory data collection is a common task with many applications in our daily lives. Analyzing
+                trajectory data enables service providers to enhance their services, which ultimately benefits users.
+                However, directly collecting trajectory data may give rise to privacy-related issues that cannot be
+                ignored. Local differential privacy (LDP), as the de facto privacy protection standard in a
+                decentralized setting, enables users to perturb their trajectories locally and provides a provable
+                privacy guarantee.</p>
+            <p>编号：
+                Not mentioned</p>
+        </div>
+    </div>
+</div>
+
+<div class="row table-row">
+    <div class="column table-cell">
+        <div class="markdown-body">
+            <p>二、论文翻译</p>
+        </div>
+    </div>
+    <div class="column table-cell">
+        <div class="markdown-body"></div>
+    </div>
+</div>
+
+<div class="row table-row">
+    <div class="column table-cell">
+        <div class="markdown-body">
+            <p>ABSTRACT </p>
+            <p>Trajectory data collection is a common task with many applica tions in our daily lives. Analyzing
+                trajectory data enables service providers to enhance their services, which ultimately benefits users.
+                However, directly collecting trajectory data may give rise to privacy related issues that cannot be
+                ignored. Local differential privacy (LDP), as the de facto privacy protection standard in a
+                decentralized setting, enables users to perturb their trajectories locally and pro vides a provable
+                privacy guarantee. Existing approaches to private trajectory data collection in a local setting
+                typically use relaxed versions of LDP, which cannot provide a strict privacy guarantee, or require some
+                external knowledge that is impractical to obtain and update in a timely manner. To tackle these
+                problems, we pro pose a novel trajectory perturbation mechanism that relies solely on an underlying
+                location set and satisfies pure 𝜋-LDP to provide a stringent privacy guarantee. In the proposed
+                mechanism, each point’s adjacent direction information in the trajectory is used in its perturbation
+                process. Such information serves as an effective clue to connect neighboring points and can be used to
+                restrict the possible region of a perturbed point in order to enhance utility. To the best of our
+                knowledge, our study is the first to use direction information for trajectory perturbation under LDP.
+                Furthermore, based on this mechanism, we present an anchor-based method that adaptively restricts the
+                region of each perturbed trajectory, thereby significantly boosting performance without violating the
+                privacy constraint. Extensive experiments on both real-world and synthetic datasets demonstrate the
+                effectiveness of the proposed mechanisms.</p>
+            <p>1 INTRODUCTION </p>
+            <p>Nowadays mobile applications generate a considerable amount of personal private data, such as locations
+                and browsing histories. The collection and analysis of such data help data collectors improve their
+                services, which benefits both data collectors and users. As a common and important type of personal
+                data, trajectory data have a wide range of applications in data mining tasks. For example, taxi
+                companies could help drivers decide where to wait for passengers by analyzing passengers’ trajectory
+                data [49]. However, in the ab sence of proper privacy protection, direct collection of sensitive
+                trajectory data would give rise to serious privacy concerns. Differen tial privacy (DP) [17] is regarded
+                as a golden standard that provides a rigorous privacy protection. However, it requires a trusted server
+                to which users must upload their raw data. This requirement may not always be possible in practical
+                settings. In contrast, local dif ferential privacy (LDP) [26] enables distributed users to perturb their
+                data locally and send the sanitized data to an untrusted server, which is more suitable for private
+                trajectory data collection. However, due to the known low utility of LDP perturbation on trajectory
+                release, most of the existing approaches for private tra jectory data collection either use some relaxed
+                versions of LDP or require external knowledge that is difficult to obtain and update in practice. The
+                relaxations of LDP, such as geo-indistinguishability [1], cannot provide the strict privacy guarantee of
+                𝜋-LDP. The only ap proach that satisfies 𝜋-LDP is the NGRAM mechanism [14], which uses additional
+                external knowledge, such as business hours and category information, to boost utility. Such information
+                may not be readily available in practice and is often not updated in a timely manner. Therefore, our
+                goal is to introduce a more practical tra jectory perturbation mechanism that satisfies 𝜋-LDP while
+                relying solely on the essential location set of trajectories. It is a non-trivial technical challenge to
+                design such a mechanism with high utility. The location points of a trajectory are usually the elements
+                of a finite point set, e.g., grid centers or points of interest (POIs). Each point has its corresponding
+                tuple of latitude and longitude. To perturb a trajectory under 𝜋-LDP, we must ensure that each point in
+                the set has a probability of being included in the output. However, the point domain is normally so
+                large that the perturbed point may be far from the real one, which leads to poor utility. On the other
+                hand, a real-world trajectory places a natural restriction that the distance between any two neighboring
+                points cannot be too large. To resolve these problems, a straightforward solution is to restrict the
+                possible perturbed points for each original point in the trajectory, as used in [14]. However, such a
+                solution</p>
+            <p>arXiv:2307.09339v2 [cs.DB] 22 Jul 2023 </p>
+            <p>requires not only the trajectory and the distribution of all possible locations, but also public external
+                information, from which wewould like to free ourselves.</p>
+            <p>The key observation of this paper is that a user’s trajectory is a time-ordered sequence of locations
+                backed by the user’s intentions, i.e., she needs to go to a few target places step by step. When she
+                needs to go to a target place, she typically first determines an ap proximate direction from the current
+                location to the target location。</p>
+        </div>
+    </div>
+    <div class="column table-cell">
+        <div class="markdown-body">
+            <p>摘要</p>
+            <p>轨迹数据收集是我们日常生活中一个常见的任务，在许多应用中都有应用。分析轨迹数据可以使服务提供商提升他们的服务，从而最终使用户受益。然而，直接收集轨迹数据可能会引起与隐私相关的问题，这是不容忽视的。在分散式环境中，本地差分隐私（LDP）作为事实上的隐私保护标准，使用户能够在本地扰动其轨迹并提供可证明的隐私保证。现有的本地环境下私有轨迹数据收集方法通常使用了放宽版的LDP，无法提供严格的隐私保证，或者需要一些不容易及时获得和更新的外部知识。为了解决这些问题，我们提出了一种新颖的轨迹扰动机制，它仅依赖于基础位置集，并满足纯粹的𝜋-LDP以提供严格的隐私保证。在所提出的机制中，轨迹中每个点的相邻方向信息在扰动过程中被使用。这样的信息作为连接相邻点的有效线索，可以用来限制扰动点的可能区域，以增强实用性。据我们所知，我们的研究是首次在LDP下使用方向信息进行轨迹扰动的。此外，基于这个机制，我们提出了一种基于锚点的方法，自适应地限制每个扰动轨迹的区域，从而显著提升性能而不违反隐私约束。对真实世界和合成数据集进行的大量实验证明了所提出机制的有效性。
+            </p>
+            <p>1 引言</p>
+            <p>现如今，移动应用程序产生大量的个人私密数据，例如位置和浏览历史记录。收集和分析此类数据有助于数据收集者改进他们的服务，使数据收集者和用户受益。作为一种常见且重要的个人数据类型，轨迹数据在数据挖掘任务中具有广泛的应用。例如，出租车公司可以通过分析乘客的轨迹数据帮助司机决定在哪里等待乘客[49]。然而，在缺乏适当的隐私保护的情况下，直接收集敏感的轨迹数据会引起严重的隐私问题。差分隐私（DP）[17]被视为提供严格隐私保护的黄金标准。然而，它要求一个可信的服务器，用户必须将原始数据上传到该服务器。在实际环境中，这个要求可能并不总是可能的。相比之下，本地差分隐私（LDP）[26]使得分布式用户能够在本地扰动他们的数据并将经过处理的数据发送给一个不可信的服务器，更适合于私有轨迹数据收集。然而，由于已知LDP扰动对轨迹发布的实用性较低，大多数现有的私有轨迹数据收集方法要么使用某些放宽版本的LDP，要么需要难以在实践中获取和更新的外部知识。LDP的放宽，如地理难以区分性[1]，无法提供𝜋-LDP的严格隐私保证。唯一满足𝜋-LDP的方法是NGRAM机制[14]，它使用额外的外部知识，如营业时间和类别信息，来提升实用性。这样的信息在实践中可能不容易获得，并且通常不能及时更新。因此，我们的目标是引入一种更实际的轨迹扰动机制，它在仅依赖于轨迹的基本位置集的情况下满足𝜋-LDP。设计具有高实用性的这样的机制是一个非平凡的技术挑战。轨迹的位置点通常是一个有限点集的元素，例如网格中心或兴趣点（POIs）。为了在𝜋-LDP下扰动轨迹，我们必须确保集合中的每个点在输出中被包括的概率。然而，点域通常非常大，扰动点可能远离实际点，导致实用性差。另一方面，现实世界的轨迹有一个自然限制，即任意两个相邻点之间的距离不能太大。为了解决这些问题，一个直观的解决方案是限制轨迹中每个原始点的可能扰动点，如[14]所使用的。然而，这样一个解决方案需要不仅需要轨迹和所有可能位置的分布，还需要公共的外部信息，我们希望从中解放出来。
+            </p>
+            <p>本文的关键观察是用户的轨迹是用户意图支撑的时间排序的位置序列，即她需要逐步到达几个目标位置。当她需要去一个目标地点时，她通常会先确定从当前位置到目标位置的大致方向。</p>
+        </div>
+    </div>
+</div>
+
+<div class="row table-row">
+    <div class="column table-cell">
+        <div class="markdown-body">
+            <p>This direction information is the “clue” that connects every pair of adjacent points in a trajectory,
+                which has not been explored in the existing approaches under LDP. Motivated by this observation, in this
+                paper, we propose a pivot sampling perturbation mechanism that enhances privacy-aware trajectory
+                modeling by sanitizing a given target point in a trajectory through a two-stage process. We first
+                identify the adjacent points preceding and following a target point in the trajectory as its pivots. A
+                pivot of the target point is treated as an origin so that the direction between itself and the target
+                point can be obtained. In the second stage, we perturb the target point within the region defined by
+                bi-directional information from the two pivots. It is worth noting that our proposed mecha nism is
+                applicable to not only trajectories satisfying the above key observation, but also many other types, as
+                long as the points in a trajectory belong to a finite location point set. In contrast to pivot sampling
+                leveraging bi-directional informa tion to confine a single point’s perturbed result, it is also possible
+                to confine the spatial region of an entire trajectory. According to the first law of geography [37],
+                neighboring points in a trajectory are usually close to each other, and therefore the spatial region of
+                a trajectory is highly likely to be relatively small in comparison with the entire area of the map.
+                Thus, we further introduce an anchor-based method to limit the spatial region of the entire trajec tory,
+                and then apply pivot sampling to trajectory perturbation. A simple strategy is to restrict trajectories
+                to different spatial regions with the same fixed size. We theoretically analyze the utility of this
+                strategy under different sizes. Then, to avoid the use of additional hyperparameters (i.e., the region
+                size), we put forward an adaptive strategy to achieve better performance than the mechanism usingthe
+                best fixed size.</p>
+            <p>The key contributions of our study are summarized as follows: • We introduce an original privacy-aware
+                trajectory model ing solution to private trajectory data collection. We model the perturbation of the
+                points in a trajectory as a two stage process and propose a novel mechanism called pivot sampling, which
+                captures bi-directional information of the points to restrict their regions. We also propose a guide
+                line on choosing the direction granularity. To the best of our knowledge, our study is the first to
+                combine direction information with trajectory perturbation in LDP. • We also propose an anchor-based
+                pivot sampling mecha nism that restricts the spatial regions of trajectories while satisfying 𝜋-LDP. We
+                perform a theoretical utility analysis of using a fixed region size, and then propose a strategy to
+                adaptively restrict the spatial region of a trajectory. • We perform extensive experiments on real-world
+                and syn thetic datasets to demonstrate the effectiveness of our mech anism in comparison with existing
+                solutions. The remainder of this paper is organized as follows. We discuss the related work in Section
+                2. In Section 3, we provide necessary background information and the problem definition. In Sections 4
+                and 5, we describe the proposed mechanisms in detail. In Section 6, we present the experimental results.
+                Finally, we conclude our paperin Section 7.</p>
+            <p>2 RELATED WORK </p>
+            <p>To prevent privacy leakages, several classic privacy models have been proposed, such as 𝐴-anonymity [32,
+                35], 𝐴-diversity [29], and 𝐴-closeness [27]. These models make different assumptions about the
+                background knowledge possessed by attackers. In recent years, DP [17] has been considered the golden
+                standard for privacy pro tection. In contrast with other privacy models, DP does not need to assume
+                background knowledge owned by attackers, and pro vides a rigorous privacy guarantee for individual user
+                data. It has been widely used in many tasks such as frequent subgraph min ing [10, 41], high-dimensional
+                data publishing [9, 11, 33, 50], and sequential data sanitization [7]. In the typical setting of DP,
+                data owners upload their data to a trusted data collector, which then perturbs and shares the querying
+                results. However, it comes with deficiencies in some practical settings—on the one hand, the DP model
+                requires a trusted server to collect the raw data from users; on the other hand, users are unlikely to
+                agree to directly upload their sensitive data to the collector in real life. To avoid these prob lems,
+                LDP [26] was proposed. Many studies [46, 47] have focused on applying LDP to protect users’ local data,
+                and several compa nies [13] have already developed LDP in ther products, such as Google [19], Apple [2],
+                and Microsoft [15]. In the LDP model, data owners must perturb their sensitive data locally and then
+                send the perturbed version to an untrusted data collector. DP/LDP generally considers a trade-off
+                between utility and pri vacy. Several relaxations of DP/LDP have been proposed to obtain better data
+                utility for various data analysis tasks at the cost of weakened privacy protection. For example,
+                𝐴X-privacy [6] assumes that the indistinguishability of two inputs is inversely proportional to the
+                distance between them, whereas in pure LDP the indistin guishability remains the same and does not
+                depend on the distance. Geo-indistinguishability [1] is a variant of𝐴X-privacy in the context of
+                location privacy. Personalized LDP [8] is a variant of LDP that enables different users to use different
+                privacy levels determinedby themselves.</p>
+            <p>Although many studies have investigated location privacy, few studies have examined private trajectory
+                data collection in the local setting. Most studies have focused on trajectory privacy in the cen
+                tralized setting [7, 21–23, 34, 45]. Chen et al. [7] utilize the prefix tree structure to group
+                sequences with identical prefixes into the same branch。</p>
+        </div>
+    </div>
+    <div class="column table-cell">
+        <div class="markdown-body">
+            <p>这个方向信息是连接轨迹中每对相邻点的“线索”，这在现有的局部差分隐私方法中尚未被探索。受到这一观察的启发，本文提出了一种通过两阶段过程对给定目标点进行清理从而增强隐私感知轨迹建模的基准采样扰动机制。我们首先确定轨迹中目标点之前和之后的相邻点作为其支点。目标点的支点被视为一个起点，以便获得其与目标点之间的方向。在第二阶段中，我们对目标点在由两个支点的双向信息定义的区域内进行扰动。值得注意的是，我们提出的机制不仅适用于满足上述关键观察的轨迹，而且适用于许多其他类型的轨迹，只要轨迹中的点属于有限的位置点集。与利用双向信息限制单个点的扰动结果的支点采样相比，我们也可以限制整个轨迹的空间范围。根据地理学的第一定律[37]，轨迹上的相邻点通常彼此接近，因此轨迹的空间范围很可能相对于地图的整个区域来说是相对较小的。因此，我们进一步介绍了一种基于锚点的方法来限制整个轨迹的空间范围，然后将支点采样应用于轨迹扰动。一个简单的策略是将轨迹限制在不同的固定大小的空间区域内。我们在不同大小下理论上分析了这种策略的效用。然后，为了避免使用额外的超参数（即区域大小），我们提出了一种自适应策略，以实现比使用最佳固定大小的机制更好的性能。
+            </p>
+            <p>我们的研究的主要贡献如下：
+                -
+                我们引入了一种原始的隐私感知轨迹建模解决方案来进行私密轨迹数据收集。我们将轨迹中的点的扰动建模为一个两阶段的过程，并提出了一种称为支点采样的新机制，该机制捕捉点的双向信息以限制它们的区域。我们还提出了一个关于选择方向粒度的指南。据我们所知，我们的研究是第一个将方向信息与轨迹扰动相结合的LDP研究。
+                - 我们还提出了一种基于锚点的支点采样机制，该机制在满足𝜋-LDP的同时限制轨迹的空间区域。我们对使用固定区域大小的实用程序进行了理论分析，然后提出了一种自适应策略来限制轨迹的空间区域。
+                - 我们在真实世界和合成数据集上进行了大量实验，以证明我们的机制与现有解决方案相比的有效性。</p>
+            <p>本文的其余部分组织如下。我们在第2节讨论相关工作。在第3节中，我们提供必要的背景信息和问题定义。在第4节和第5节中，我们详细描述了提出的机制。在第6节中，我们给出实验结果。最后，在第7节中总结我们的论文。
+            </p>
+            <h1>2 相关工作</h1>
+            <p>为了防止隐私泄露，已经提出了一些经典的隐私模型，如𝐴-匿名性[32,
+                35]，𝐴-多样性[29]和𝐴-相似性[27]。这些模型对攻击者拥有的背景知识做出了不同的假设。近年来，差分隐私[17]被认为是隐私保护的黄金标准。与其他隐私模型相比，差分隐私不需要假设攻击者拥有的背景知识，并为个体用户数据提供了严格的隐私保证。它在许多任务中得到了广泛应用，如频繁子图挖掘[10,
+                41]，高维数据发布[9, 11, 33, 50]和序列数据清理[7]。在差分隐私的典型设置中，数据所有者将其数据上传到受信任的数据收集器，后者对查询结果进行扰动和共享。然而，在一些实际设置中存在一些问题 -
+                一方面，差分隐私模型需要一个可信的服务器来收集用户的原始数据；另一方面，在现实生活中，用户不太可能同意直接将敏感数据上传给收集器。为了避免这些问题，局部差分隐私[26]被提出。许多研究[46,
+                47]专注于将局部差分隐私应用于保护用户的本地数据，一些公司[13]已经在其产品中开发了局部差分隐私，如谷歌[19]、苹果[2]和微软[15]。差分隐私/局部差分隐私通常考虑效用和隐私之间的权衡。为了在牺牲一定程度的隐私保护的前提下获得更好的数据效用，提出了几种差分隐私/局部差分隐私的放松方法。例如，𝐴X-隐私[6]
+                假设两个输入不可区分性与它们之间的距离成反比，而在纯局部差分隐私中，不可区分性保持不变，不取决于距离。地理不可辨性[1]是位置隐私背景下𝐴X-隐私的一个变体。个性化局部差分隐私[8]是局部差分隐私的一个变体，它允许不同的用户根据自身确定的不同的隐私级别使用。
+            </p>
+            <p>虽然许多研究已经调查了位置隐私，但很少有研究在本地设置中研究了私密轨迹数据收集。大多数研究集中于集中式设置中的轨迹隐私[7, 21–23, 34,
+                45]。陈等人[7]利用前缀树结构将具有相同前缀的序列分组到同一分支中。</p>
+        </div>
+    </div>
+</div>
+
+<div class="row table-row">
+    <div class="column table-cell">
+        <div class="markdown-body">
+            <p>He et al. [23] develop a mechanism for trajectory data synthesis, which discretizes raw trajectories
+                using hierarchical reference systems to capture individual movements at different speeds. They also
+                propose a post-processing strategy to restore directionality while sampling synthetic trajectories from
+                the noisy model based on the Markovianity of the trajectory. We would like to emphasize that, unlike our
+                idea, their solution does not utilize the adjacent direction information to restrict the perturbation do
+                main of a point. Furthermore, their solution is designed for DP and cannot be applied to LDP directly.
+                Jiang et al. [24] also consider uti lizing direction information to publish trajectories under DP. They
+                assume that the start and end points of a trajectory are known and that the distance between each pair
+                of neighboring locations in a trajectory is bounded by a constant value. In contrast, we focus on LDP
+                and aim to remove strong assumptions to make our solutionmore practical.</p>
+            <p>Most of the related studies in the local setting have been designed to satisfy the relaxations of LDP. To
+                the best of our knowledge, the n-gram-based method NGRAM [14] is the only solution to private trajectory
+                data collection that satisfies pure LDP. NGRAM makes use of public external knowledge, such as business
+                hours and POI categories, for POI trajectory perturbation. However, it suffers from some limitations in
+                real-world applications where the required public external information is often not readily available or
+                cannot be updated in a timely manner. Therefore, in this paper we are motivated to remove the dependency
+                on such public knowledgefor better applicability.</p>
+            <p>3 PRELIMINARIES AND PROBLEM FORMULATION 3.1 Local Differential Privacy </p>
+            <p>As a variant of differential privacy (DP) [17], LDP [26] does not rely on a trusted data collector, and
+                thus becomes a practical privacy notion for many applications in the distributed setting, such as
+                frequency and mean estimation [16, 38, 39, 42], heavy hitter iden tification [4, 31], and preference
+                ranking analysis [44]. A formaldefinition of LDP is given as follows.</p>
+            <p>Definition 3.1 (𝜋-LDP). Given a privacy budget 𝜋 &gt; 0, a random ized mechanism M : X → Y provides
+                𝜋-LDP if and only if, for any two inputs 𝐴,𝐴′ ∈ X and any possible output 𝑦 ∈ Y, the following
+                inequality holds Pr[M(𝐴) = 𝑦] ≤ 𝐴𝜋 × Pr[M(𝐴′) = 𝑦]. (1) LDP enables users to locally perturb their
+                data in order to guar antee plausible deniability, which is controlled by privacy budget 𝜋. As with DP,
+                LDP enjoys the desired properties of sequentialcomposition and post-processing [18].</p>
+            <p>Theorem 3.2. (Sequential Composition) Let each M𝐴 (1 ≤ 𝐴 ≤ 𝐴) denote a mechanism satisfying 𝜋𝐴-LDP.
+                Then the sequential combina tion of these mechanisms satisfies 𝜋-LDP, where 𝜋 = ∑︁𝐴 Theorem 3.3.
+                (Post-Processing) Let M : X → Y be a mechanism that satisfies 𝜋-LDP, and 𝐴 : Y → Y′ be an arbitrary
+                randomized mapping. Then 𝐴 ◦ M : X → Y′ satisfies 𝜋-LDP, where ◦ denotesthe composition of 𝐴 and M.
+            </p>
+            <p>From the sequential composition property, the amount of the privacy budget consumed will increase
+                linearly when we apply the mechanisms sequentially; from the post-processing property, there is no
+                additional privacy cost when perturbed data are usedfor further processing.</p>
+            <p>3.2 Perturbation Mechanisms </p>
+            <p>Some perturbation mechanisms that satisfy 𝜋-LDP have been pro posed in the literature. In this
+                subsection, we briefly introduce three classic mechanisms adopted in our study: 𝐴-ary randomized
+                response (𝐴-RR) [25, 40], exponential mechanism (EM) [30] andsquare-wave mechanism (SW) [28].</p>
+            <p>Definition 3.4 (𝐴-RR). Given a privacy budget 𝜋, 𝐴-RR mechanism M : X → X satisfies 𝜋-LDP, if, for
+                any input 𝐴 ∈ X, the output 𝑦 ∈ X is sampled from the following distribution: Pr[M(𝐴) = 𝑦] = {︄ if
+                𝑦 = 𝐴, otherwise。</p>
+        </div>
+    </div>
+    <div class="column table-cell">
+        <div class="markdown-body">
+            <p>何氏等人[23]提出了一种轨迹数据合成机制，该机制使用层次参考系统将原始轨迹离散化，以捕捉不同速度下的个体运动。他们还提出了一种后处理策略，根据轨迹的马尔可夫性，在从噪声模型中抽样合成轨迹时恢复方向性。我们需要强调的是，与我们的想法不同的是，他们的解决方案没有利用相邻方向信息来限制点的扰动域。此外，他们的解决方案是针对差分隐私(DP)设计的，不能直接应用于局部差分隐私(LDP)。江氏等人[24]也考虑利用方向信息在DP下发布轨迹。他们假设轨迹的起点和终点已知，并且轨迹中每对相邻位置的距离受到常数值的限制。相反，我们关注LDP，并旨在消除强假设，使我们的解决方案更具实用性。
+            </p>
+            <p>大多数相关研究在局部环境中的设计都是为满足LDP的放宽条件而设计的。据我们所知，基于n-gram的方法NGRAM
+                [14]是唯一满足纯LDP的私有轨迹数据收集解决方案。NGRAM利用公共外部知识，如营业时间和POI类别，对POI轨迹进行扰动。然而，在实际应用中，NGRAM存在一些限制，因为所需的公共外部信息通常不易获得或无法及时更新。因此，本文旨在消除对此类公共知识的依赖，以提高适用性。
+            </p>
+            <h1>3.初步和问题表述 3.1.局部差分隐私</h1>
+            <p>作为差分隐私(DP) [17]的一种变体，局部差分隐私(LDP) [26]不依赖于可信数据收集方，因此成为分布式环境中许多应用程序的实际隐私概念，例如频率和均值估计[16, 38, 39,
+                42]，重要标识[4, 31]和偏好排名分析[44]。局部差分隐私的正式定义如下。</p>
+            <p>定义3.1 (𝜋-LDP)：给定隐私预算𝜋 &gt;
+                0，一个随机化机制M：X→Y提供𝜋-LDP，当且仅当，对于任意两个输入𝐴,&#120596;𝐴'∈X和任意可能的输出𝑦∈Y，以下不等式成立：Pr[M(𝐴)=𝑦]≤𝐴𝜋×Pr[M(𝐴')=𝑥]。(1)
+                LDP允许用户对其数据进行本地扰动，以保证可能的抵赖性，其由隐私预算𝜋控制。与DP一样，LDP具有串行组合和后处理的期望特性[18]。</p>
+            <p>定理3.2 (串行组合)：设每个M𝐴(1≤𝐴≤𝐴)表示满足𝜋𝐴-LDP的机制。则这些机制的串行组合满足𝜋-LDP，其中𝜋=∑︁𝐴 定理3.3
+                (后处理)：设M：X→Y是满足𝜋-LDP的机制，𝐴：Y→Y‘是任意的随机化映射。那么𝐴 ◦ M：X→Y‘满足𝜋-LDP，其中◦表示𝐴和M的组合。</p>
+            <p>从串行组合特性可以看出，当我们连续应用机制时，隐私预算的消耗量将呈线性增加；从后处理特性可以看出，在使用扰动数据进行进一步处理时，没有额外的隐私成本消耗。</p>
+            <h1>3.2 扰动机制</h1>
+            <p>文献中提出了一些满足𝜋-LDP的扰动机制。在这一小节中，我们简要介绍了我们研究中采用的三种经典机制：𝐴-ary随机响应(𝐴-RR) [25, 40]，指数机制 (EM) [30]和方波机制(SW)
+                [28]。</p>
+            <p>定义3.4 (𝐴-RR)：给定隐私预算𝜋，𝐴-RR机制M：X→X满足𝜋-LDP，如果对于任意输入𝐴∈ X，输出𝑦 ∈X是从以下分布中采样的：Pr[M(𝐴)=𝑦] = {︄ if 𝑦 = 𝐴,
+                otherwise。</p>
+        </div>
+    </div>
+</div>
+
+<div class="row table-row">
+    <div class="column table-cell">
+        <div class="markdown-body">
+            <p>(2) By Equation 2, 𝐴-RR always reports the original value (i.e.,𝑦 = 𝐴) with a larger probability;
+                otherwise, the mechanism returns one of the other values uniformly. It has been proven that 𝐴-RR
+                achieves good performance when the domain size 𝐴 (i.e., |X|) is not overlylarge (i.e., when 𝐴 &lt;
+                3𝐴𝜋 + 2) [39].</p>
+            <p>Definition 3.5 (Exponential Mechanism). The exponential mecha nism (EM) M preserves 𝜋-LDP, if, for any
+                input 𝐴 ∈ X, the proba bility of any output 𝐴 ∈ R is Pr[M(𝐴) = 𝐴] = ) ∑︁ ) , (3) where 𝐴(𝐴,𝐴)
+                denotes the utility function of 𝐴 and 𝐴, and Δ𝐴 = max𝐴,𝐴′∈X, 𝐴 ∈R |𝐴(𝐴,𝐴) − 𝐴(𝐴′,𝐴)| is the
+                sensitivity of the utilityscore.</p>
+            <p>The EM is a natural building block of answering queries with arbitrary utility scores, which makes it
+                possible for a perturbed answer to be as close to the truth as possible (controlled by theutility score
+                and privacy budget).</p>
+            <p>While both𝐴-RR and the EM are used for categorical value pertur bation, the Laplace mechanism [17] and
+                Square-Wave Mechanism (SW) are typically designed for numerical values. Due to unbounded noise and high
+                variance in the case of the Laplace mechanism, we alternatively adopt the SW mechanism [28] for
+                numerical valueperturbation.</p>
+            <p>Definition 3.6 (Square-Wave Mechanism). The square-wave mech anism M satisfies 𝜋-LDP, if, for any input
+                𝐴 ∈ [0, 1] and output 𝑦 ∈ [−𝐴,𝐴 + 1], the output probability of 𝑦 is: Pr[M(𝐴) = 𝑦] = {︄ if |𝐴 −
+                𝑦| ≤ 𝐴, otherwise, (4) where 𝐴 = The SW mechanism takes a value in [0, 1] as input and returns a
+                bounded output. The output range will have a higher concentration around the input value as the privacy
+                budget increases, which isbeneficial for utility enhancement.</p>
+            <p>3.3 Problem Statement </p>
+            <p>We consider a trajectory as a time-ordered sequence of points. Each user 𝐴 in the population possesses a
+                sensitive trajectory 𝜋 = {𝐴1, 𝐴2, · · · , 𝐴|𝜋 |}, where 𝐴𝐴 ∈ P denotes a location in the form of
+                a two-dimensional (2D) point with latitude and longitude, and P is a finite point set. We assume that
+                the location point set P is public and accessible to the data collector and all users. This is a common
+                requirement for location/trajectory privacy preservation [1, 5], and P is readily available in practice.
+                Given two points, we use the Haversine distance as the distance measure, which calculates their
+                great-circle distance, namely, the shortest distance over the surfaceof earth.</p>
+            <p>For the sake of privacy, each user locally perturbs her trajectory 𝜋 into 𝜋ˆ = {𝐴ˆ1, 𝐴ˆ2, · · · , 𝐴ˆ
+                |𝜋 |} while satisfying 𝜋-LDP. Following Definition 3.1, we aim to provide user-level 𝜋-LDP for each
+                user by perturbing every point in her trajectory. Hence, the perturbed trajectory ensures that an
+                adversary cannot infer any point (i.e., location) she visited in the original trajectory with high
+                confidence. Upon receiving the perturbed trajectories from all users, some trajectory data analysis
+                tasks (e.g., preservation range queries) can be performed. The goal of our study is to preserve as much
+                tra jectory information as possible, while achieving a rigorous 𝜋-LDPprivacy guarantee.</p>
+            <p>4 METHODOLOGY </p>
+            <p>In this section, we first introduce our design rationale for private trajectory data collection with LDP
+                and provide an overview of the workflow in Section 4。</p>
+        </div>
+    </div>
+    <div class="column table-cell">
+        <div class="markdown-body">
+            <p>(2) 根据公式2，𝐴-RR总是以更大的概率报告原始值（即，𝑦 = 𝐴），否则机制会均匀返回其他值之一。已经证明当域大小𝐴（即，|X|）不是过大时（即，当𝐴 &lt; 3𝐴𝜋 +
+                2）[39]，𝐴-RR可以取得良好的性能。</p>
+            <p>定义3.5（指数机制）。指数机制（EM）M保持𝜋-LDP的定义是，对于任意输入𝐴 ∈ X，任意输出𝐴 ∈ R的概率为Pr[M(𝐴) = 𝐴] = ) ∑︁
+                )，其中𝐴(𝐴,𝐴)表示𝐴和𝐴的效用函数，而Δ𝐴 = max𝐴,𝐴′∈X, 𝐴 ∈R |𝐴(𝐴,𝐴) − 𝐴(𝐴′,𝐴)|表示效用分数的敏感性。</p>
+            <p>指数机制是回答具有任意效用分数查询的自然构造模块，它使扰动答案尽可能接近真相（受效用分数和隐私预算的控制）成为可能。</p>
+            <p>虽然𝐴-RR和EM都用于类别值扰动，但拉普拉斯机制[17]和方波机制（SW）通常用于数值。由于拉普拉斯机制在噪声无界且方差高的情况下，我们转而采用方波机制[28]进行数值扰动。</p>
+            <p>定义3.6（方波机制）。方波机制M满足𝜋-LDP的定义是，对于任意输入𝐴 ∈ [0, 1]和输出𝑦 ∈ [−𝐴,𝐴 + 1]，𝑦的输出概率为：Pr[M(𝐴) = 𝑦] = {︄ ，如果 |𝐴
+                − 𝑦| ≤ 𝐴，否则 (4)，其中𝐴 = 。方波机制接收[0, 1]范围内的值作为输入并返回一个有界的输出。随着隐私预算的增加，输出范围将在输入值附近具有更高的集中度，从而有利于提高效用。</p>
+            <h1>3.3 问题陈述</h1>
+            <p>我们将轨迹视为一个时间有序的点序列。群体中的每个用户𝐴都拥有敏感轨迹𝜋 = {𝐴1, 𝐴2, · · · , 𝐴|𝜋 |}，其中𝐴𝐴 ∈
+                P表示以纬度和经度形式的二维点，P是有限的点集。我们假设位置点集P是公开且可以被数据收集者和所有用户访问。这是位置/轨迹隐私保护的常见要求[1,
+                5]，在实践中P是容易获取的。给定两个点，我们使用Haversine距离作为距离的度量，该度量计算它们在地球表面上的最短距离，即大圆距离。</p>
+            <p>为了保护隐私，每个用户将其轨迹𝜋本地扰动为𝜋ˆ = {𝐴ˆ1, 𝐴ˆ2, · · · , 𝐴ˆ |𝜋
+                |}，同时满足𝜋-LDP。根据定义3.1，我们的目标是通过扰动其轨迹中的每个点，为每个用户提供用户级𝜋-LDP。因此，扰动的轨迹确保了对于原始轨迹中的任何点（即位置），对手无法以较高的置信度推断出。在收到所有用户的扰动轨迹之后，可以执行一些轨迹数据分析任务（例如保护范围查询）。我们的研究目标是尽可能保留更多的轨迹信息，同时实现严格的𝜋-LDP隐私保证。
+            </p>
+            <h1>4 方法论</h1>
+            <p>在本节中，我们首先介绍基于LDP的私有轨迹数据收集的设计原理，并在第4节提供工作流程的概述。</p>
+        </div>
+    </div>
+</div>
+
+<div class="row table-row">
+    <div class="column table-cell">
+        <div class="markdown-body">
+            <ol>
+                <li>Then, we present the implementation details in Sections 4.2 and 4.3. Finally, we establish the
+                    privacy guarantee for the proposed mechanism in Section 4.4.</li>
+            </ol>
+            <p>4.1 Design Rationale and Overview </p>
+            <p>In the task of private trajectory data collection, the distance between any two points (i.e., locations)
+                is the most intuitive information that can be used for perturbation, e.g., applying EM [30] to perturb
+                each point [36, 48]. However, as the domain of each point in a trajectory is a large region, the
+                perturbed point is likely to be far from the original point. To address this challenge, a natural idea
+                is to restrict the domain of a perturbed point. A good source of restriction is the direction between
+                two neighboring points—for a given point, once the direction of the next point is determined, the size
+                of the perturbation domain will be reduced significantly. Therefore, we leverage both distance and
+                direction information fortrajectory perturbation.</p>
+            <p>An overview of the proposed mechanism is shown in Figure 1. Each point in the trajectory is perturbed in
+                a two-stage process. First, the direction between the target point (i.e., the point to be perturbed) and
+                its neighbor is perturbed, and then this point is perturbed under the restriction of the perturbed
+                direction. To this end, the original trajectory is duplicated to create two copies, from which pivot
+                points (i.e., the pink ones) are selected alternately to ensure that each point in the trajectory has
+                private access to its adjacent direction information. Then, the direction between each pair of
+                neighboring points in the two trajectories is perturbed. Under the perturbed direction constraints, each
+                non-pivot point is perturbed using a considerably smaller point domain. Finally, the optimal perturbed
+                result is determined based on the two independentlyperturbed trajectories.</p>
+            <p>4.2 Implementation of Proposed Mechanism </p>
+            <p>In this subsection, we propose the pivot sampling (TP) mecha nism as the implementation of the above
+                perturbation process. It exploits a novel strategy called pivot perturbation to capture addi tional
+                direction information. An illustration of the TP mechanism Figure 1: An overview of the proposed method
+                (best viewedin color).</p>
+            <p>is shown in Figure 2a. The process consists of three steps: indepen dent perturbation, pivot
+                perturbation, and the optimal perturbed trajectory determination. To utilize direction information to
+                restrict each point’s spatial region while avoiding privacy leakage, we need to identify the pivots of
+                each point. A pivot of a target point is treated as an origin so that the direction between the target
+                point and itself can be calculated. The neighboring points of each point in the original trajectory are
+                suitable candidates for pivots. However, such points are sensitive and, therefore, cannot be directly
+                used. Furthermore, directly perturbing points in the original trajectory in a sequential manner would
+                accumulate excessive noise. We dupli cate the original trajectory to create two copies, and
+                approximately half of the points in each trajectory can be selected as pivots in an alternate manner
+                (i.e。</p>
+        </div>
+    </div>
+    <div class="column table-cell">
+        <div class="markdown-body">
+            <p>然后，我们在第4.2节和第4.3节中介绍了实现细节。最后，在第4.4节中，我们为所提出的机制建立了隐私保证。</p>
+            <h1>4.1 设计原理和概述</h1>
+            <p>在私有轨迹数据收集任务中，任意两点（即位置）之间的距离是可用于扰动的最直观信息，例如可以将EM [30]应用于扰动每个点[36,
+                48]。然而，由于轨迹中每个点的域是一个大区域，扰动后的点很可能与原始点相距甚远。为了解决这一挑战，一个自然的想法是限制扰动点的域。一个很好的限制来源是两个相邻点之间的方向-对于给定的点，一旦确定了下一个点的方向，扰动域的大小就会显著减小。因此，我们利用距离和方向信息对轨迹进行扰动。
+            </p>
+            <p>所提出的机制的概述如图1所示。轨迹中的每个点都经过两个阶段的扰动过程。首先，目标点（即要扰动的点）与其邻居之间的方向进行扰动，然后在扰动方向的限制下对该点进行扰动。为此，将原始轨迹复制为两个副本，其中选定替代地选择枢轴点（即粉色点），以确保轨迹中的每个点都可以私有访问其相邻方向信息。然后，扰动两个轨迹中相邻点之间的方向。在扰动方向约束下，使用较小的点域扰动每个非枢轴点。最后，基于两个独立扰动的轨迹确定最优的扰动结果。
+            </p>
+            <h1>4.2 提案机制的实现</h1>
+            <p>在本小节中，我们提出了作为上述扰动过程实现的枢轴采样（TP）机制。它利用了一种称为枢轴扰动的新策略来获取额外的方向信息。TP机制的示意图如图2a所示。该过程包括三个步骤：独立扰动、枢轴扰动和最优扰动轨迹的确定。为了利用方向信息限制每个点的空间域，同时避免隐私泄露，我们需要确定每个点的枢轴。目标点的一个枢轴被视为一个起点，以便可以计算目标点与自身之间的方向。原始轨迹中每个点的邻近点是合适的枢轴候选点。然而，这些点是敏感的，因此不能直接使用。此外，在原始轨迹中按顺序直接扰动点会累积过多的噪声。我们复制原始轨迹创建两个副本，并以交替的方式选择每个轨迹中约一半的点作为枢轴（即
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="row table-row">
+    <div class="column table-cell">
+        <div class="markdown-body">
+            <p>, by alternating between the two copies). Thus, the other non-pivot points that are not selected can
+                access perturbed direction(s) between the neighboring pivot(s) and them selves to reduce their
+                perturbation domains. Then, we alternately select points as the pivots in the two copies to obtain two
+                perturbed trajectories and generate the optimal result based on them. In this way, each point in the
+                final perturbed trajectory can enjoy bothdirection and distance information privately.</p>
+            <p>Let us take trajectory 𝜋 = {𝐴𝐴 ∈ P|1 ≤ 𝐴 ≤ |𝜋|, |𝜋| = 5} in Figure 2a as an example. The
+                perturbation process is similar if |𝜋| is even. First, the trajectory 𝜋 is duplicated as 𝜋′=𝜋∗=𝜋.
+                Then, the points in𝜋′ (resp.𝜋∗) are divided into two sets — a set of pivot points to be perturbed, and
+                a set of non-pivot points getting access to the direction information. The pivot points are selected
+                alternately from 𝜋′ (resp. 𝜋∗), each of which will be perturbed independently. Then the perturbation
+                result is used to perturb non-pivot points in 𝜋′ (resp. 𝜋∗), by utilizing the directional information
+                between the target points and perturbed neighboring pivots, enabling each target point to enjoy a
+                smaller perturbation domain. Specifically, for 𝜋′, we first select a set of pivot points (e.g., 𝐴2 and
+                𝐴4 in Figure 2a) denoted as P𝜋′ 𝐴𝐴𝐴 = {𝐴2, 𝐴4}. These points are perturbed using EM: 𝐴𝐴 [𝐴ˆ =
+                𝐴] = ) ∑︁ ) , (5) where 𝐴 ∈ P𝜋′ 𝐴𝐴𝐴, 𝐴 ∈ P, 𝐴(𝐴,𝐴) = −𝐴𝐴𝐴𝐴(𝐴,𝐴), 𝐴𝐴𝐴𝐴(·) is the
+                Haver sine distance, and the sensitivity Δ𝐴 = max𝐴,𝐴,𝐴 ′∈P |𝐴(𝐴,𝐴)−𝐴(𝐴,𝐴′)|. For instance, the
+                pink perturbed points 𝐴ˆ′ 2 and 𝐴ˆ′ 4 in Figure 2a are Figure 2: Illustrations of the (A)TP mechanism.
+                the pivots in 𝜋′, denoted as Pˆ 𝜋′ 2, 𝐴ˆ′ 4}. Then, we can deter mine the perturbed directions
+                between each point in P𝜋′ − Pˆ 𝜋′ {𝐴1, 𝐴3, 𝐴5} and its neighboring pivots, i.e., the previous and
+                thenext perturbed neighboring points in 𝜋′.</p>
+            <p>To obtain a radian interval that covers the original direction with a high probability, randomized
+                response [25, 40] is adopted to perturb the directions. We must discretize the directions first, whose
+                optimal granularity will be determined in Section 4.3. We take a neighboring pivot as the origin and the
+                direction of the target point (i.e., the non-pivot point to be perturbed under the direction constraint)
+                as the reference for the original discrete direction. Then the radian interval of a discrete direction
+                with index 𝐴 ∈ D is [(2𝐴−1) 𝜋 |D| , (2𝐴+1) 𝜋 | D| ], where D = {0, 1, 2, · · · , |D|−1} denotes the
+                discrete direction universe under a given granularity. As shown in Figure 2b, when |D| = 6 and 𝐴3 is
+                the target point, 𝐴ˆ2 and 𝐴ˆ4 are designated as the origins for discretizing the directions, and the
+                direction between 𝐴ˆ2 or 𝐴ˆ4 and 𝐴3 serves as the median value of the central angle of the
+                corresponding original discrete direction. Let D𝜋′ denote the discrete directions to be perturbed in
+                𝜋′. Then, in Figure 2a, we need to perturb the directions between each point in Pˆ 𝜋′ 𝐴𝐴𝐴 and its
+                perturbed neighboring pivots in 𝜋′, namely, D𝜋′ = {𝐴2,1,𝐴2,3,𝐴4,3,𝐴4,5}, where 𝐴𝐴,𝐴 represents
+                the index of the discrete direction from the𝐴-th perturbed point to the 𝐴-th point in trajectory 𝜋′.
+                For instance, 𝐴2,3 denotes the index of the discrete direction, the median value of whose central angle
+                is towards the target point 𝐴3 Algorithm 1: GetPointDomain from the origin 𝐴ˆ′ 2. The discrete
+                direction is perturbed by 𝐴-RR: 𝐴𝐴 [K(𝐴) = 𝐴′] = {︄ if 𝐴 = 𝐴′, if 𝐴 ≠ 𝐴′. (6) Let Dˆ 𝜋′ be the
+                perturbed directions in 𝜋′。</p>
+        </div>
+    </div>
+    <div class="column table-cell">
+        <div class="markdown-body">
+            <p>因此，未被选中的其他非枢纽点可以访问处于邻近枢纽和自身之间的扰动方向，以减小其扰动范围。然后，我们交替在两个副本中选择点作为枢纽点，获得两条扰动轨迹，并根据它们生成最优结果。通过这种方式，最终扰动轨迹中的每个点都可以私密地享受到方向和距离信息。
+            </p>
+            <p>以图2a中的轨迹𝜋 = {𝐴𝐴 ∈ P|1 ≤ 𝐴 ≤ |𝜋|, |𝜋| =
+                5}为例，如果|𝜋|是偶数，扰动过程是类似的。首先，将轨迹𝜋复制为𝜋′=𝜋∗=𝜋。然后，将𝜋′（或𝜋∗）中的点分为两组——一组是要进行扰动的枢纽点，一组是可以访问方向信息的非枢纽点。从𝜋′（或𝜋∗）中交替选择枢纽点，每个点将被独立扰动。然后，使用扰动结果来扰动𝜋′（或𝜋∗）中的非枢纽点，利用目标点与扰动邻近枢纽点之间的方向信息，使得每个目标点都能享受较小的扰动范围。具体来说，对于𝜋′，我们首先选择一组枢纽点（如图2a中的𝐴2和𝐴4），记为P𝜋′
+                𝐴𝐴𝐴 = {𝐴2, 𝐴4}。使用EM对这些点进行扰动：𝐴𝐴 [𝐴ˆ = 𝐴] = ) ∑︁ ) ，(5)其中𝐴 ∈ P𝜋′ 𝐴𝐴𝐴，𝐴 ∈ P，𝐴(𝐴,𝐴) =
+                −𝐴𝐴𝐴𝐴(𝐴,𝐴)，𝐴𝐴𝐴𝐴(·)是Haver正弦距离，敏感性Δ𝐴 = max𝐴,𝐴,𝐴 ′∈P |𝐴(𝐴,𝐴)−𝐴(𝐴,𝐴′)|。例如，图2a中的粉色扰动点𝐴ˆ′
+                2和𝐴ˆ′ 4是𝜋′中的枢纽点。然后，我们可以确定𝜋′中每个点与其邻近枢纽点之间的扰动方向，即𝜋′中先前和下一个扰动邻近点之间的方向。</p>
+            <p>为了获得覆盖原始方向的弧度区间，我们采用随机响应机制[25,40]来扰动方向。首先，我们必须将方向离散化，其最优粒度将在第4.3节中确定。我们以邻近枢纽点为原点，以目标点（即受到方向约束的非枢纽点）的方向作为原始离散方向的参考。然后，带有索引𝐴
+                ∈ D的离散方向的弧度区间为[(2𝐴−1) 𝜋 |D| , (2𝐴+1) 𝜋 | D| ]，其中D = {0, 1, 2, · · · ,
+                |D|−1}表示给定粒度下的离散方向范围。如图2b所示，当|D| =
+                6且𝐴3是目标点时，𝐴ˆ2和𝐴ˆ4被指定为离散方向的原点，𝐴ˆ2或𝐴ˆ4与𝐴3之间的方向作为对应原始离散方向的中心角度的中位数值。设D𝜋′表示𝜋′中需要扰动的离散方向。然后，在图2a中，我们需要扰动Pˆ
+                𝜋′ 𝐴𝐴𝐴中的每个点与其在𝜋′中扰动的邻近枢纽点之间的方向，即D𝜋′ =
+                {𝐴2,1,𝐴2,3,𝐴4,3,𝐴4,5}，其中𝐴𝐴,𝐴表示离散方向的索引，其中位数值的中心角度指向目标点𝐴3。算法1：从原点𝐴ˆ′ 2获取点的域。离散方向通过𝐴-RR扰动：𝐴𝐴
+                [K(𝐴) = 𝐴′] = {︄如果𝐴 = 𝐴′，如果𝐴 ≠ 𝐴′。 (6)设Dˆ 𝜋′为𝜋′中的扰动方向。</p>
+        </div>
+    </div>
+</div>
+
+<div class="row table-row">
+    <div class="column table-cell">
+        <div class="markdown-body">
+            <p>Based on these per turbed directions and independently perturbed pivots, the pertur bation domain of each
+                remaining point in 𝜋′ can be determined by Algorithm 1. Note that the function
+                𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴(𝐴ˆ 𝐴,𝐴ˆ 𝐴,𝐴) in Line 3 returns the points located in the input radian
+                interval 𝐴ˆ 𝐴,𝐴 ∈ Dˆ 𝜋 of the point 𝐴ˆ 𝐴 ∈ Pˆ 𝜋 𝐴𝐴𝐴. For instance, in Figure 2b, 𝐴2 and 𝐴4
+                are perturbed independently to 𝐴ˆ′ 2 and 𝐴ˆ′ 4 (i.e., two pink points) as two neighboring pivots of
+                the target point 𝐴3. The green arrows represent the perturbed discrete directions from the two pivots
+                as origins (i.e., 𝐴ˆ′ 2 and 𝐴ˆ′ 4) to the target point 𝐴3 (assuming that two correct discrete
+                directions are reported). Then the set of points located in the corresponding central angle are selected
+                as the out puts, i.e., 𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴(𝐴ˆ′ 2,𝐴ˆ2,3) and 𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴(𝐴ˆ′ 4,𝐴ˆ4,3).
+                Finally, the intersection of the two point sets is obtained as the output of Algorithm 1, i.e., the
+                perturbation domain of 𝐴3, which consists of the points located in the green area shown in Figure 2b.
+                By apply ing Algorithm 1, the perturbation domains of 𝐴1, 𝐴3 and 𝐴5 can be obtained as P1, P3 and P5,
+                respectively. These smaller pertur bation domains will be increasingly accurate as 𝜋 increases, thus
+                facilitating the selection of better perturbed points. Next, the other points in 𝜋′ can be perturbed
+                with the corresponding perturbation domains using EM, that is, for each 𝐴𝐴 ∈ P − P𝜋′ 𝐴𝐴𝐴, P is
+                substituted with P 𝐴 in Equation 5 to obtain the perturbed 𝐴ˆ′ The other copy 𝜋∗ can be processed in
+                a similar way. This time, 𝐴𝐴𝐴 are swapped, i.e., for 𝜋∗, we set P𝜋∗ 𝐴𝐴𝐴. For example, in Figure
+                2a, P𝜋∗ {𝐴1, 𝐴3, 𝐴5} is perturbed into Pˆ 𝜋∗ 1, 𝐴ˆ∗ 3, 𝐴ˆ∗ 5} by Equation 5. Then, D𝜋∗ =
+                {𝐴1,2,𝐴3,2,𝐴3,4,𝐴5,4} is perturbed to obtain Dˆ 𝜋∗ = {𝐴ˆ1,2,𝐴ˆ3,2,𝐴ˆ3,4,𝐴ˆ5,4}. Based on these
+                perturbed discrete directions, the other non-pivot points in 𝜋∗ are perturbed by EM to obtain 𝜋ˆ∗. By
+                applying independent perturbation and pivot perturbation independently on both 𝜋′ and 𝜋∗ (as shown in
+                Algorithm 3, which Algorithm 2: Independent and Pivot Perturbation (Pivot) invokes Algorithm 2 twice
+                with flag F = 1 and 0, respectively), two perturbed points are obtained for each point in 𝜋: one based
+                on only the distance factor of the original point, and the other perturbed under the direction
+                restriction of neighboring pivot(s). Then, these two trajectories are combined to obtain the optimal
+                perturbed trajectory by solving the following equation: arg min 𝐴=1 𝐴𝐴𝐴𝐴(𝐴ˆ𝐴, 𝐴ˆ′ 𝐴) +
+                𝐴𝐴𝐴𝐴(𝐴ˆ𝐴, 𝐴ˆ∗ 𝐴 ), (7) where 𝐴ˆ𝐴 ∈ P is the 𝐴-th point in 𝜋ˆ, 𝐴ˆ′ 𝐴 ∈ 𝜋ˆ′, 𝐴ˆ∗ 𝐴 ∈
+                𝜋ˆ∗, and 𝐴𝐴𝐴𝐴(·) denotes the Haversine distance. Then, the final perturbed trajectory benefits from
+                bi-directional information. However, the challenge remains on how to determine the optimal direction
+                granularity.</p>
+            <p>4.3 Choosing the Direction Granularity </p>
+            <p>From the perspective of the utility of the proposed mechanism, a coarse-grained direction would cover a
+                greater number of points, leading to a higher recall rate for the chosen points. Furthermore, a smaller
+                |D| increases the accuracy of the 𝐴-RR mechanism. Un fortunately, the coverage of a greater number of
+                noisy points may result in a considerably large perturbation domain when EM is used to perturb points
+                under the perturbed direction constraint。</p>
+        </div>
+    </div>
+    <div class="column table-cell">
+        <div class="markdown-body">
+            <p>根据这些扰动方向和独立扰动的枢纽点，可以通过算法1确定𝜋′中每个剩余点的扰动域。注意，第3行中的函数𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴(𝐴ˆ 𝐴,𝐴ˆ 𝐴,𝐴)返回位于点𝐴ˆ 𝐴,𝐴
+                ∈ Dˆ 𝜋的输入弧度间隔的点。例如，在图2b中，𝐴2和𝐴4分别独立扰动为𝐴ˆ′ 2和𝐴ˆ′ 4（即两个粉色点），作为目标点𝐴3的两个相邻枢纽点。绿色箭头表示从两个枢纽点（即𝐴ˆ′ 2和𝐴ˆ′
+                4）到目标点𝐴3的扰动离散方向（假设报告了两个正确的离散方向）。然后，选择位于相应中心角的点集作为输出，即𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴(𝐴ˆ′
+                2,𝐴ˆ2,3)和𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴(𝐴ˆ′
+                4,𝐴ˆ4,3)。最后，通过算法1的交集获得输出，即𝐴3的扰动域，它由图2b中显示的绿色区域中的点组成。通过应用算法1，可以分别得到𝐴1，𝐴3和𝐴5的扰动域P1，P3和P5。随着𝜋的增加，这些较小的扰动域将越来越精确，从而有助于选择更好的扰动点。接下来，可以使用EM将𝜋′中的其他点根据相应的扰动域进行扰动，即对于每个𝐴𝐴
+                ∈ P - P𝜋′ 𝐴𝐴𝐴，将P替换为P 𝐴以获得扰动后的𝐴ˆ′。另一个副本𝜋∗可以以类似的方式处理。这次，𝐴𝐴𝐴被交换，即对于𝜋∗，我们设置P𝜋∗
+                𝐴𝐴𝐴。例如，在图2a中，P𝜋∗ {𝐴1, 𝐴3, 𝐴5}通过方程5被扰动为Pˆ 𝜋∗ 1, 𝐴ˆ∗ 3, 𝐴ˆ∗ 5}。然后，D𝜋∗ =
+                {𝐴1,2,𝐴3,2,𝐴3,4,𝐴5,4}被扰动，得到Dˆ 𝜋∗ =
+                {𝐴ˆ1,2,𝐴ˆ3,2,𝐴ˆ3,4,𝐴ˆ5,4}。根据这些扰动离散方向，可以通过EM将𝜋∗中的其他非枢纽点扰动，以获得𝜋ˆ∗。通过在𝜋′和𝜋∗上独立应用独立扰动和枢纽扰动（如算法3所示，算法2：独立和枢纽扰动（枢纽）两次调用算法2，标志F分别为1和0），对𝜋中的每个点获得两个扰动点：一个基于原始点的距离因素，另一个在相邻枢纽的方向约束下扰动。然后，将这两个轨迹组合起来，通过解决以下方程获得最佳扰动轨迹：arg
+                min 𝐴=1 𝐴𝐴𝐴𝐴(𝐴ˆ𝐴, 𝐴ˆ′ 𝐴) + 𝐴𝐴𝐴𝐴(𝐴ˆ𝐴, 𝐴ˆ∗ 𝐴 ), (7)其中𝐴ˆ𝐴 ∈ P是𝜋ˆ中的第𝐴个点，𝐴ˆ′ 𝐴 ∈
+                𝜋ˆ′，𝐴ˆ∗ 𝐴 ∈ 𝜋ˆ∗，𝐴𝐴𝐴𝐴(·)表示Haversine距离。然后，最终的扰动轨迹从双向信息中受益。然而，如何确定最佳的方向粒度仍然是一个挑战。</p>
+            <h1>4.3 选择方向粒度</h1>
+            <p>从所提出机制的实用角度来看，粗粒度的方向可以覆盖更多的点，导致所选点的召回率更高。此外，较小的|D|可以提高𝐴-RR机制的准确性。但是，覆盖更多噪声点可能会导致在扰动方向约束下使用EM来扰动点时产生相当大的扰动域。
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="row table-row">
+    <div class="column table-cell">
+        <div class="markdown-body">
+            <p>In contrast, a fine-grained direction can lead to a smaller perturbation domain, but faces more
+                challenges to select the exact direction due to the large |D|. In this case, even though it is difficult
+                to identify the original discrete direction, there is chances to obtain discrete directions close to the
+                original one. As 𝜋 increases, the probability of obtaining such a close discrete direction increases.
+                In a nutshell, a proper choice of the direction granularity rep resents a critical trade-off between the
+                preservation of direction Algorithm 3: TP Mechanism (TP) Figure 3: Calculation of the average
+                direction-preserving success probability. The pink area denotes the query range 𝜀 , with sector 0
+                serving as the input for 𝐴-RR, representing the original discrete direction, the median value of whose
+                central angle is towards a target point from the green origin. and the perturbation domain size of EM.
+                The influence of the per turbation domain size depends not only on the chosen direction granularity but
+                also on the distribution of points on the map. The analysis of the preservation probability of the
+                target point to be perturbed is difficult because the distribution varies for each point. Therefore, we
+                opt to design a general strategy to guide the choice of the direction granularity independent of a
+                specific dataset. We focus on only the direction-preserving performance under different granularities
+                based on the 𝐴-RR mechanism and different 𝜋 values. Since the 𝐴-RR mechanism always returns the
+                original discrete direction with the highest probability, evaluating the direction preserving
+                performance within just one constant range may not be the fairest approach. The granularity with the
+                highest probability is always the one that is closest to the constant range. Therefore, we choose to
+                compare the average direction-preserving success probability across different radian intervals of
+                different granularities under a given 𝜋 value. To this end, we choose the granularity |D| as follows:
+                arg max ∑︂ ∑︂ 𝐴𝐴 ∈R(𝐴) 𝜋(𝐴𝐴;𝜀 𝐴) · 𝜀(𝐴𝐴;𝜋;𝐴)/|Θ|, (8) 𝜋(𝐴𝐴;𝜀 𝐴) = |[(2𝐴𝐴 − 1) 𝜋 𝐴
+                , (2𝐴𝐴 + 1) 𝜋 𝐴 ] ∩ [−𝜀 𝐴,𝜀 𝐴]| 2𝜋/𝐴 , 𝜀(𝐴𝐴;𝜋;𝐴) = {︄ if 𝐴𝐴 = 𝐴, otherwise, where D𝐴
+                denotes the candidate direction granularities, R(𝐴) = {0, 1, 2, · · · ,𝐴 − 1} denotes the discrete
+                directions based on a can didate granularity 𝐴, Θ = {𝜀 𝐴 |𝜀 𝐴 = 𝜋/𝐴,𝐴 ∈ D𝐴} denotes the set of
+                direction-preserving query ranges, and 𝐴 represents the correct Algorithm 4: ATP Mechanism discrete
+                direction. The calculation of the average success proba bility can be treated as a weighted average of
+                those results from direction-preserving range queries, i.e., the probabilities of preserv ing the
+                correct radian intervals under different 𝐴 ∈ D𝐴 values whenperturbed by 𝐴-RR with a given 𝜋 value.
+            </p>
+            <p>For example, in Figure 3, assume that the current granularity 𝐴 = 6 ∈ D𝐴 = {2, 4, 6, 12}, 0 is the
+                original discrete direction, Θ = {𝜋/2, 𝜋/4, 𝜋/6, 𝜋/12}, and 𝐴 = 𝐴−1+𝐴𝜋 . The query values in Θ
+                correspond to candidate granularities. When the query is 𝜀 = 𝜋/12, as shown in Figure 3a, 𝜀(𝐴𝐴 =
+                0;𝜋;𝐴 = 6) returns 𝐴, and the weight 𝜋(𝐴𝐴 = 0;𝜀 = 𝜋/12) is the proportion of the pink radian
+                interval to the entire radian interval of the sector that is denoted as 0, i.e., 2. The success
+                probability is calculated in a similar way when the query is changed, as shown in Figure 3b-3d. The
+                selection of 𝐴 is independent of a specific point, but relies on the privacy budget and candidate
+                direction granularities. In particular, 𝐴 should be between 2 and 12; otherwise, the region under the
+                perturbed direction constraint would be too small to cover the correct points. When 𝜋 increases, the
+                perturbed direction is more accurate, and the benefits of the fine-grained direction becomes more
+                significant. Through extensive experiments under different 𝜋 values, we observe that the granularity
+                chosen by comparing the average direction-preserving success probability is close to the granularity
+                with the best performance.</p>
+            <p>4.4 Privacy Analysis </p>
+            <p>In this subsection, we show that the proposed TP mechanism pre-serves differential privacy.</p>
+            <p>Theorem 4.1. The TP mechanism satisfies 𝜋-LDP. Proof. For trajectory 𝜋 (we assume that the number of
+                points |𝜋| in 𝜋 is odd. The proof is similar when it is even), raw sensitive data are accessed in
+                three ways after copying 𝜋 into 𝜋′ and 𝜋∗: independent point perturbations, direction perturbations,
+                and otherpoint perturbations based on the directions.</p>
+        </div>
+    </div>
+    <div class="column table-cell">
+        <div class="markdown-body">
+            <p>相比之下，细粒度的方向可以导致更小的扰动域，但由于大的|D|，选择准确方向面临更多挑战。在这种情况下，即使很难确定原始离散方向，仍然有机会获得接近原始方向的离散方向。随着𝜋的增加，获得这样一个接近原始方向的离散方向的概率增加。简而言之，方向粒度的适当选择代表了在保持方向与EM的扰动域大小之间的重要权衡。算法3:
+                TP机制（TP）。图3:
+                计算平均方向保持成功概率。粉色区域表示查询范围𝜀，扇区0作为𝐴-RR的输入，表示原始离散方向，其中央角的中值指向从绿色原点出发的目标点。以及EM的扰动域大小。扰动域大小的影响不仅取决于选择的方向粒度，也取决于地图上点的分布。由于每个点的分布都不同，分析将被扰动的目标点的保留概率是困难的。因此，我们选择设计一个通用策略，以指导在不考虑具体数据集的情况下选择方向粒度。我们只关注基于𝐴-RR机制和不同𝜋值的不同粒度下的方向保持性能。由于𝐴-RR机制始终返回最高概率的原始离散方向，仅在一个恒定范围内评估方向保持性能可能不是公平的方法。最高概率的粒度始终是最接近恒定范围的粒度。因此，我们选择在给定𝜋值下比较不同粒度的不同弧度间隔的平均方向保持成功概率。为此，我们选择方向粒度|D|定义如下：𝐴𝐴
+                { 𝜋𝐴𝐴 ; 𝜀𝐴 } ∑︂ ∑︂ 𝜀𝐴𝐴 − 𝜀𝐴 2𝜋 /𝐴 , 𝜋𝐴𝐴 = |[(2𝐴𝐴 − 1) 𝜋 𝐴 , (2𝐴𝐴 + 1) 𝜋 𝐴 ] ∩
+                [−𝜀 𝐴 ,𝜀 𝐴 ]| 2𝜋 /𝐴 , 𝜀𝐴𝐴 = { 𝜋/𝐴 if 𝐴𝐴 = 𝐴,否则, D𝐴表示候选方向粒度，R(𝐴) = {0, 1, 2, · · · ,𝐴 −
+                1}表示基于候选粒度𝐴的离散方向，Θ = {𝜀 𝐴 |𝜀 𝐴 = 𝜋/𝐴,𝐴 ∈ D𝐴}表示保持方向的查询范围集合，𝐴表示正确的离散方向。算法4:
+                ATP机制离散方向。计算平均成功概率可以被视为对保持方向范围查询结果的加权平均，即在被𝐴-RR以给定𝜋值扰动时，不同𝐴 ∈ D𝐴值下保持正确弧度间隔的概率。</p>
+            <p>例如，在图3中，假设当前粒度𝐴 = 6 ∈ D𝐴 = {2, 4, 6, 12}，0是原始离散方向，Θ = {𝜋/2, 𝜋/4, 𝜋/6, 𝜋/12}，𝐴 =
+                𝐴−1+𝐴𝜋。查询值在Θ中对应候选粒度。当查询为𝜀 = 𝜋/12时，如图3a所示，𝜀(𝐴𝐴 = 0;𝜋;𝐴 = 6)返回𝐴，并且权重𝜋(𝐴𝐴 = 0;𝜀 =
+                𝜋/12)是粉色弧度间隔相对于表示为0的扇区的整个弧度间隔的比例，即2。当查询改变时，计算成功概率的方式类似，如图3b-3d所示。选择𝐴与具体点无关，但依赖于隐私预算和候选方向粒度。特别地，𝐴应该在2和12之间；否则，被扰动方向约束下的区域将会太小而无法覆盖正确的点。当𝜋增大时，扰动方向更准确，细粒度方向的好处更加明显。通过在不同𝜋值下进行广泛实验，我们观察到通过比较平均方向保持成功概率来选择的粒度接近具有最佳性能的粒度。
+            </p>
+            <h1>4.4 隐私分析</h1>
+            <p>在本小节中，我们证明了所提出的TP机制满足𝜋-差分隐私。</p>
+            <p>定理4.1
+                TP机制满足𝜋-差分隐私。证明：对于轨迹𝜋（假设𝜋中点的数量|𝜋|为奇数，若为偶数，证明类似），在将𝜋复制到𝜋'和𝜋∗之后，敏感原始数据通过独立点扰动、方向扰动和基于方向的其他点扰动的方式进行访问。
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="row table-row">
+    <div class="column table-cell">
+        <div class="markdown-body">
+            <p>For the independent point perturbations, we use EM with pri vacy budget 𝜋𝐴𝐴𝐴/|𝜋| for each point. The
+                points with an even index in 𝜋 are selected as pivots when perturbing 𝜋′ and independently perturbed.
+                Each independent perturbation of these points satisfies Algorithm 5: Restrict Trajectory Region (RTR)
+                𝜋𝐴𝐴𝐴/|𝜋| − 𝐴𝐴𝐴. The other points are selected as pivots when per turbing 𝜋∗ and independently
+                perturbed. Each independent pertur bation also satisfies 𝜋𝐴𝐴𝐴/|𝜋|-LDP. The total number of
+                independentperturbations is |𝜋|.</p>
+            <p>In the case of direction perturbations in pivot perturbations, re call that the direction is perturbed by
+                considering the perturbed ad jacent point(s) of a target point as the origin. By the post-processing
+                property of LDP, making use of such an origin does not consume any additional privacy budget. Each
+                perturbation for direction 𝐴𝐴,𝐴 by 𝐴-RR satisfies 𝜋𝐴/2(|𝜋| − 1)-LDP. The total number of
+                directionperturbations is 2(|𝜋| − 1).</p>
+            <p>Finally, based on the perturbed directions and the independently perturbed pivot points, each of the
+                other non-pivot points in 𝜋′ and 𝜋∗ is perturbed by EM with budget 𝜋𝐴𝐴𝐴𝐴/|𝜋| (i.e., point per
+                turbations under the direction restrictions in pivot perturbations). Then, 𝜋ˆ′ and 𝜋ˆ∗ are obtained,
+                and the optimal perturbed trajectory is determined. By the post-processing property, this step does not
+                require any additional privacy budget. Thus, according to the se quential composition theorem, the
+                entire TP mechanism satisfies𝜋-LDP, where 𝜋 = 𝜋𝐴𝐴𝐴 + 𝜋𝐴𝐴𝐴𝐴 + 𝜋𝐴.</p>
+            <p>□</p>
+            <p>5 ANCHOR-BASED PIVOT SAMPLING MECHANISM </p>
+            <p>The TP mechanism uses pivot perturbation to capture bi-directional information and combines the direction
+                information with indepen dent perturbation of each point in a trajectory. Pivot perturbations can
+                restrict the spatial region of the points in the trajectory to reduce the negative impact of the large
+                point domain to a certain extent. However, a large number of independent perturbations still depend on a
+                large |P|. These independent perturbations introduce considerable amount of noise and almost uniformly
+                select points in the large P when the privacy budget 𝜋 is small, which makes the perturbed points far
+                from the actual region of the trajectory. To mitigate this problem, we propose an anchor-based pivot
+                sampling(ATP) mechanism in this section.</p>
+            <p>5.1 Restricting Trajectory Region </p>
+            <p>According to the first law of geography [37], the spatial region of a trajectory is likely to be
+                relatively small when compared with the entire area of the map. The spatial region can be used to limit
+                the domain of the points in a trajectory, which is used by our ATP mechanism to restrict the point
+                domain of a trajectory. In contrast to the TP mechanism, the ATP mechanism (as shown in Algorithm 4)
+                first restricts the trajectory region, i.e., the perturbation domain of a trajectory. Specifically,
+                before perturbing each copy of the trajectory, the trajectory anchor is calculated and perturbed, and
+                then the region size is determined based on the perturbed longest distance between the perturbed anchor
+                and the trajectory (Lines 3 and 4). After that, the trajectory can be perturbed in a sequential manner,
+                similar to that in the TP mechanism (Lines 5 and 6). With regard to the trajectory region, ATP
+                identifies the points that are more centralized and as close to the original region as pos sible while
+                consuming an acceptable amount of the privacy budget. In what follows, we present a simple and
+                lightweight method to determine this region. We first need to determine a way of repre senting a
+                trajectory and its region. This representation must encode the information about the points in the
+                trajectory, especially the geographic information, and the shape of the region needs to be carefully
+                chosen to avoid privacy leakage and enhance data utility. As such, we propose an anchor-based method
+                (see Algorithm 5) that restricts each trajectory to a constant shape, i.e., a circular region. For each
+                trajectory, the anchor 𝛹 is first calculated and mapped to the nearest point as the anchor point 𝐴𝛹
+                (Line 1) as follows: 𝐴𝐴𝐴(𝛹) = 𝐴=1 𝐴𝐴𝐴(𝐴𝐴)/|𝜋|, 𝐴𝐴𝐴(𝛹) = 𝐴=1 𝐴𝐴𝐴(𝐴𝐴)/|𝜋|, 𝐴𝛹 =
+                arg min 𝐴𝐴𝐴𝐴(𝛹, 𝐴), (9) where 𝐴 ∈ P, 𝜋 is the trajectory, 𝐴𝐴𝐴(𝐴𝐴) and 𝐴𝐴𝐴(𝐴𝐴) denote
+                the lat itude and longitude of 𝐴𝐴, respectively, and 𝐴𝐴𝐴𝐴(·) is the Haversine distance。</p>
+        </div>
+    </div>
+    <div class="column table-cell">
+        <div class="markdown-body">
+            <p>对于独立点扰动，我们使用每个点的隐私预算 𝜋𝐴𝐴𝐴/|𝜋| 来进行 EM 扰动。在扰动 𝜋' 时，选择𝜋 中索引为偶数的点作为锚点，并对其进行独立扰动。这些点的独立扰动满足算法 5：限制轨迹区域
+                (RTR) 𝜋𝐴𝐴𝐴/|𝜋| - 𝐴𝐴𝐴。在扰动 𝜋∗ 时，选择其他点作为锚点，并对其进行独立扰动。每个独立扰动也满足 𝜋𝐴𝐴𝐴/|𝜋| - LDP。独立扰动的总数为 |𝜋|。
+            </p>
+            <p>在基于锚点的扰动中的方向扰动情况下，回想一下，方向是通过将目标点的扰动邻近点作为原点进行扰动来实现的。使用 LDP 的后处理属性，利用这样的原点不会消耗任何额外的隐私预算。由 𝐴 - RR 引起的每个方向
+                𝐴𝐴,𝐴 都满足 𝜋𝐴/2(|𝜋| - 1)-LDP。方向扰动的总数为 2(|𝜋| - 1)。</p>
+            <p>最后，基于扰动的方向和独立扰动的锚点，对 𝜋' 和 𝜋∗ 中的其他非锚点进行 EM 扰动，扰动预算为 𝜋𝐴𝐴𝐴𝐴/|𝜋|（即在锚点扰动中的方向限制下的点扰动）。然后，得到 𝜋ˆ' 和
+                𝜋ˆ∗，确定最佳的扰动轨迹。根据后处理属性，该步骤不需要额外的隐私预算。因此，根据顺序组合定理，整个 TP 机制满足 𝜋-LDP，其中 𝜋 = 𝜋𝐴𝐴𝐴 + 𝜋𝐴𝐴𝐴𝐴 + 𝜋𝐴。
+            </p>
+            <p>□</p>
+            <h1>5 基于锚点抽样的锚点机制</h1>
+            <p>TP 机制使用锚点扰动来捕获双向信息，并将方向信息与轨迹中每个点的独立扰动相结合。锚点扰动可以限制轨迹中点的空间区域，从而在一定程度上减少大点域的负面影响。然而，大量的独立扰动仍然取决于大的 |P|。当隐私预算
+                𝜋 较小时，这些独立扰动引入了大量的噪声，并几乎均匀选择了大 P 中的点，使得扰动点远离轨迹的实际区域。为了缓解这个问题，在本节中我们提出了一种基于锚点抽样 (ATP) 机制。</p>
+            <h1>5.1 限制轨迹区域</h1>
+            <p>根据地理学的第一法则 [37]，与地图的整个区域相比，轨迹的空间区域可能相对较小。空间区域可以用来限制轨迹中点的域，这在我们的 ATP 机制中用于限制轨迹的点域。与 TP 机制相比，ATP
+                机制（如算法4所示）首先限制轨迹区域，即轨迹的扰动域。具体来说，在扰动轨迹的每个副本之前，计算并扰动轨迹锚点，然后根据扰动锚点与轨迹之间的最长距离确定区域大小（第3行和第4行）。之后，轨迹可以按顺序进行扰动，与
+                TP 机制中的扰动方式类似（第5行和第6行）。关于轨迹区域，ATP
+                确定的点更加集中，并尽可能接近原始区域，同时消耗可接受的隐私预算。接下来，我们介绍一种简单而轻量的方法来确定这个区域。首先，我们需要确定一种表示轨迹及其区域的方式。该表示必须编码轨迹中点的信息，特别是地理信息，并且需要谨慎选择区域的形状，以避免隐私泄露并提高数据效用。因此，我们提出了一种基于锚点的方法（参见算法5），将每个轨迹限制为一个固定形状，即圆形区域。对于每个轨迹，首先计算锚点
+                𝛹 并映射到最近的点，作为锚点 𝐴𝛹（第1行），计算方式如下：𝐴𝐴𝐴(𝛹) = 𝐴=1 𝐴𝐴𝐴(𝐴𝐴)/|𝜋|，𝐴𝐴𝐴(𝛹) = 𝐴=1
+                𝐴𝐴𝐴(𝐴𝐴)/|𝜋|，𝐴𝛹 = arg min 𝐴𝐴𝐴𝐴(𝛹, 𝐴)（第9行），其中𝐴 ∈ P，𝜋 是轨迹，𝐴𝐴𝐴(𝐴𝐴) 和 𝐴𝐴𝐴(𝐴𝐴) 表示
+                𝐴𝐴 的纬度和经度，𝐴𝐴𝐴𝐴(·) 是 Haversine 距离。</p>
+        </div>
+    </div>
+</div>
+
+<div class="row table-row">
+    <div class="column table-cell">
+        <div class="markdown-body">
+            <p>Then, the anchor point is perturbed using EM to obtain the perturbed point 𝐴ˆ𝛹 (Line 2): 𝐴𝐴 [𝐴ˆ𝛹 =
+                𝐴] = ) ∑︁ ) , where 𝐴 ∈ P, and 𝐴(𝐴𝛹, 𝐴) = −𝐴𝐴𝐴𝐴(𝐴𝛹, 𝐴). The anchor 𝛹 is mapped to 𝐴𝛹 ∈ P
+                so that each possible 𝐴(𝐴𝛹, 𝐴) can be pre-calculated to increase the efficiency of the perturbation
+                mechanism. For example, in Figure 2c, the anchor 𝛹 is calculated and mapped to 𝐴𝛹, and then𝐴𝛹 is
+                perturbed to 𝐴ˆ𝛹 by EM.</p>
+            <p>After the perturbed anchor point is obtained, the region of the trajectory can be determined. A simple
+                way is to set a pre-defined and fixed value for the radius 𝐴. Then, the perturbation domain is obtained
+                as follows: Pˆ 𝛹 = {𝐴 ∈ P|𝐴𝐴𝐴𝐴(𝐴ˆ𝛹, 𝐴) ≤ 𝐴}. Since the spatial region depends on the radius
+                𝐴, it should be care-fully chosen.</p>
+            <p>Intuitively, different users are likely to produce trajectories with varying area sizes. If a fixed
+                radius 𝐴 is set, each trajectory will be restricted to the same granularity, resulting in loss of a
+                consider able amount of information or introducing many noisy points in the candidate point set. To
+                address this challenge, we propose an adaptive strategy to set different 𝐴 values for different
+                trajectories. We aim to determine 𝐴 values that are not too large and ensure that the region covers the
+                points of a trajectory to the best extent possible while preserving privacy. The longest distance
+                𝐴𝜋𝐴𝐴𝐴 (i.e., the purple arrow in Figure 2c) between a point in the trajectory 𝜋 and the perturbed
+                anchor point 𝐴ˆ𝛹 can be obtained as follows: 𝐴𝜋 𝐴∈P𝜋 𝐴𝐴𝐴𝐴(𝐴ˆ𝛹, 𝐴), where P𝜋 denotes the
+                set of the points in trajectory 𝜋. To ensure privacy, 𝐴𝜋𝐴𝐴𝐴 must be perturbed (Line 3 of Algorithm
+                5). Since 𝐴𝜋𝐴𝐴𝐴 is the distance between the perturbed point 𝐴ˆ𝛹 ∈ P and a point in the
+                trajectory, i.e., 𝐴 ∈ P𝜋 ⊆ P, it is bounded by the maximum distance between 𝐴ˆ𝛹 and a point in P.
+                Therefore, we use SW mechanism, which is designed to perturb bounded continuous data. In comparison with
+                the piecewise mechanism [28], the SW mechanism is more concentrated, which is suitable for our task. As
+                the input and output ranges of the SW mechanism are [0, 1] and [−𝐴,𝐴 + 1], respectively, the distance
+                is first normalized via 𝐴 = 𝐴𝜋 Δ𝐴 , where Δ𝐴 = max 𝐴∈P 𝐴𝐴𝐴𝐴(𝐴ˆ𝛹, 𝐴). Then, 𝐴 is perturbed
+                to 𝐴ˆ by Equation 4. Finally, the output is mapped to the real distance range via 𝐴ˆ𝜋 . After the
+                perturbed radius 𝐴ˆ𝜋 𝐴𝐴𝐴 (i.e., the red arrow in Figure 2c) is obtained, the regions of different
+                trajectories will vary adaptively. Due to the property of the SW mechanism, the perturbed 𝐴ˆ𝜋 likely
+                to be too small or large when given a small 𝜋. Here we make a few observations. First, the distribution
+                of the region size of human mobility trajectory can be approximated by a power-law distribu tion [20],
+                implying that there should be only a few large sizes. On the other hand, the perturbed radius may become
+                smaller due to the large randomness from a small 𝜋. In the case of a trajectory region, although a
+                larger perturbed radius is likely to cover more points and leads to a larger perturbation domain, it can
+                increase the coverage rate of the points in the original trajectory while being still relatively small
+                in comparison with the entire area size. That is, the benefit of a larger radius outweighs the
+                disadvantage of the noise it introduces when the original radius is small. To this end, we guide the
+                perturbation by a calibration that “pulls” the perturbedradius close to a “center” when 𝜋 is small.</p>
+            <p>5.2 Calibrating the Radius </p>
+            <p>The radius calibration includes two steps: the center of calibration is first determined, and then the
+                moving step size is calculated andthe radius is calibrated based on 𝜋.</p>
+            <p>Recall that 𝐴𝜋𝐴𝐴𝐴 is bounded and is determined by the farthest point from 𝐴ˆ𝛹 in the trajectory.
+                To identify a proper value 𝜀 for the calibration center based on 𝜋 and 𝐴ˆ𝜋 𝐴𝐴𝐴, we aim to amplify
+                the impact of the points satisfying a possible range of the farthest point from 𝐴ˆ𝛹。</p>
+        </div>
+    </div>
+    <div class="column table-cell">
+        <div class="markdown-body">
+            <p>然后，使用EM算法扰动锚点，得到扰动点𝐴ˆ𝛹（第2行）：𝐴𝐴[𝐴ˆ𝛹=𝐴] = ) ∑︁ )，其中𝐴 ∈ P，且𝐴(𝐴ˆ𝛹, 𝐴) = −𝐴𝐴𝐴𝐴(𝐴ˆ𝛹,
+                𝐴)。锚点𝛹映射为𝐴𝛹 ∈ P，以便可以预先计算每个可能的𝐴(𝐴ˆ𝛹,
+                𝐴)以提高扰动机制的效率。例如，在图2c中，计算得到锚点𝛹并映射为𝐴𝛹，然后使用EM算法将𝐴𝛹扰动为𝐴ˆ𝛹。</p>
+            <p>在获取扰动的锚点之后，可以确定轨迹的区域。一种简单的方法是为半径𝐴设置预定义和固定的值。然后，扰动域可以如下获得：Pˆ 𝛹 = {𝐴 ∈ P|𝐴𝐴𝐴𝐴(𝐴ˆ𝛹, 𝐴) ≤
+                𝐴}。由于空间区域取决于半径𝐴，应该谨慎选择。</p>
+            <p>直观上，不同的用户可能会产生不同大小的轨迹区域。如果设置了固定的半径𝐴，则每个轨迹将受到相同的粒度限制，导致丢失相当多的信息或在候选点集中引入许多噪点。为了解决这个挑战，我们提出了一种自适应策略，为不同的轨迹设置不同的𝐴值。我们的目标是确定不太大且能最佳地覆盖轨迹点的区域的𝐴值，同时保持隐私。轨迹𝜋中的点与扰动的锚点𝐴ˆ𝛹之间的最长距离𝐴𝜋𝐴𝐴𝐴（即图2c中的紫色箭头）可以通过以下方式获得：𝐴𝜋
+                𝐴∈P𝜋 𝐴𝐴𝐴𝐴(𝐴ˆ𝛹, 𝐴)，其中P𝜋表示轨迹𝜋中的点的集合。为了确保隐私，𝐴𝜋𝐴𝐴𝐴必须被扰动（算法5的第3行）。由于𝐴𝜋𝐴𝐴𝐴是扰动点𝐴ˆ𝛹 ∈
+                P与轨迹中的一点，即𝐴 ∈ P𝜋 ⊆
+                P之间的距离，它受到𝐴ˆ𝛹和P中一点之间的最大距离的限制。因此，我们使用了SW机制，该机制旨在扰动有界的连续数据。与分段机制[28]相比，SW机制更集中，适合我们的任务。由于SW机制的输入和输出范围分别是[0,
+                1]和[−𝐴,𝐴 + 1]，首先通过𝐴 = 𝐴𝜋 Δ𝐴将距离归一化，其中 Δ𝐴 = max 𝐴∈P 𝐴𝐴𝐴𝐴(𝐴ˆ𝛹,
+                𝐴)。然后，使用方程式4将𝐴扰动为𝐴ˆ。最后，将输出通过𝐴ˆ𝜋映射到实际的距离范围。获得扰动的半径𝐴ˆ𝜋
+                𝐴𝐴𝐴（即图2c中的红色箭头）之后，不同轨迹的区域将自适应地发生变化。由于SW机制的特性，当给定一个较小的𝜋时，扰动的𝐴ˆ𝜋可能会过小或过大。在这里我们做了一些观察。首先，人类移动轨迹的区域大小分布可以被幂律分布[20]近似，这意味着只有少数几个大尺寸。另一方面，由于较小𝜋的大随机性，扰动的半径可能会变小。在轨迹区域的情况下，尽管较大的扰动半径可能会覆盖更多的点并导致较大的扰动域，但在与整个区域大小相比仍然相对较小的情况下，它可以增加原始轨迹中点的覆盖率。也就是说，较大的半径的利益超过了它引入的噪声的劣势，当原始半径很小时。为此，我们通过一种校准方法引导扰动，当𝜋较小时将扰动半径“拉”到“中心”附近。
+            </p>
+            <p>第5.2节是关于半径的校准。校准半径包括两个步骤：首先确定校准的中心，然后根据𝜋计算移动步长和校准半径。</p>
+            <p>回顾一下，𝐴𝜋𝐴𝐴𝐴是有界的，并由从轨迹中的𝐴ˆ𝛹最远的点确定。为了根据𝜋和𝐴ˆ𝜋 𝐴𝐴𝐴来确定校准中心的适当值𝜀，我们的目标是放大满足𝐴ˆ𝛹最远的点可能范围的点的影响。</p>
+        </div>
+    </div>
+</div>
+
+<div class="row table-row">
+    <div class="column table-cell">
+        <div class="markdown-body">
+            <p>Since the input domain of SW is [0, 1], we sample some test values uniformly to avoid privacy leakage and
+                calculate the possible ranges. Let V = {𝐴𝐴 |𝐴𝐴 = 0.1 × 𝐴,𝐴 = 0, 1, ..., 10} denote the test value
+                set, 𝐴𝐴 = 𝐴𝐴 − 𝐴, and 𝐴𝐴 = 𝐴𝐴 + 𝐴, we have 𝐴 = min 𝐴𝐴 ∈V𝐴 𝐴𝐴,𝐴 = max P𝐴 = {𝐴 ∈ P|𝐴 ≤
+                (2𝐴 + 1)𝐴𝐴𝐴𝐴(𝐴ˆ𝛹, 𝐴) Δ𝐴 − 𝐴 ≤ 𝐴}. The values in V are used for testing, and for each value
+                𝐴𝐴, the output range with high probability 𝐴 = 2𝐴𝐴𝜋+1 is used to determine whether it covers 𝐴ˆ𝜋
+                𝐴𝐴𝐴. The candidate points, i.e., the points whose distance to 𝐴ˆ𝛹 are within the desired range, are
+                obtained. Then, the weighted average distance is calculated as the calibration center that assigns
+                larger weights to the candidate points as follows: 𝜀 = ∑︁ 𝐴∈P𝐴 𝐴 · 𝐴𝐴𝐴𝐴(𝐴ˆ𝛹, 𝐴) + ∑︁
+                𝐴′∈P−P𝐴 (1 − 𝐴)𝐴𝐴𝐴𝐴(𝐴ˆ𝛹, 𝐴′) 𝐴|P𝐴| + (1 − 𝐴)|P − P𝐴|.</p>
+            <p>After obtaining the calibration center 𝜀, we must determine how to “pull” the perturbed radius 𝐴ˆ𝜋
+                𝐴𝐴𝐴 close to it. As per the property of the SW mechanism, the perturbed value becomes more concen
+                trated as the privacy budget 𝜋 increases. Therefore, the calibration effect should be reduced with
+                increasing 𝜋. The perturbed radius 𝐴ˆ𝜋 𝐴𝐴𝐴 is calibrated as follows (Line 4 of Algorithm 5): 𝐴ˆ =
+                𝐴ˆ𝜋 (10) 𝜀 = (𝜀 − 𝐴ˆ𝜋 1 1 − 𝐴−𝛽/2 , (11) 𝛽 = ⎧⎪⎪⎨ ⎪⎪⎩ if 𝐴ˆ𝜋 otherwise. (12) In Equation 10,
+                the calibration term (i.e., the last term) is com posed of two factors: the decay factor 𝐴−𝜋 and the
+                moving factor 𝜀. The decay factor controls the effect of the calibration term by decreasing its
+                influence as 𝜋 grows. The moving factor 𝜀 depends on the gap between the perturbed radius and the
+                calibration center. As shown in Equation 11, the moving factor will be negative when the perturbed
+                radius 𝐴ˆ𝜋 𝐴𝐴𝐴 is larger than 𝜀, and positive otherwise. The gap between 𝐴ˆ𝜋 𝐴𝐴𝐴 and 𝜀 is
+                multiplied by a factor in the range of [0, 1] to avoid obtaining an extreme value or a constant value.
+                Therefore, 𝛽 is calculated using Equation 12, which normalizes the gap between 𝐴ˆ𝜋 𝐴𝐴𝐴 and 𝜀 to
+                [0, 1]. Then 𝛽/2 is fed into an activa tion function 𝐴𝐴𝐴𝐴𝐴𝐴𝐴(·), which provides the non-linear
+                property and prevents the moving step size from having an exact value of |𝜀 − 𝐴ˆ𝜋 𝐴𝐴𝐴 |. After the
+                calibration, we can determine the perturbed point set of the input trajectory (Line 5 of Algorithm 5).
+            </p>
+            <p>5.3 Analysis of Privacy and Utility </p>
+            <p>In this subsection, we prove that the proposed ATP mechanismsatisfies 𝜋-LDP.</p>
+            <p>Theorem 5.1. The ATP mechanism satisfies 𝜋-LDP. Proof. The ATP mechanism restricts the spatial regions
+                of the two trajectory copies in a sequential manner. The perturbed an chors 𝐴ˆ′ 𝛹 and 𝐴ˆ∗ 𝛹 are
+                obtained using EM, each satisfying 𝜋1/2-LDP. Then 𝐴ˆ′ and 𝐴ˆ∗ are calculated to restrict the
+                perturbation domains Pˆ ′ 𝛹 of the points in 𝜋ˆ′ and 𝜋ˆ∗, respectively. The anchors are perturbed,
+                and then the largest distance between the perturbed 𝐴ˆ′ 𝛹 (or 𝐴ˆ∗ 𝛹) and the points in 𝜋′ and 𝜋∗
+                is calculated as 𝐴ˆ′ (or 𝐴ˆ∗) by the SW mechanism, which satisfies 𝜋2/2-LDP。</p>
+        </div>
+    </div>
+    <div class="column table-cell">
+        <div class="markdown-body">
+            <p>由于SW的输入域是[0, 1]，我们均匀采样一些测试值，以避免隐私泄漏，并计算可能的范围。设V = {𝐴𝐴 |𝐴𝐴 = 0.1 × 𝐴,𝐴 = 0, 1, ..., 10}表示测试值集合，𝐴𝐴
+                = 𝐴𝐴 − 𝐴，𝐴𝐴 = 𝐴𝐴 + 𝐴，我们有𝐴 = min 𝐴𝐴 ∈V𝐴 𝐴𝐴,𝐴 = max P𝐴 = {𝐴 ∈ P|𝐴 ≤ (2𝐴 +
+                1)𝐴𝐴𝐴𝐴(𝐴ˆ𝛹, 𝐴) Δ𝐴 − 𝐴 ≤ 𝐴}。V中的值用于测试，对于每个值𝐴𝐴，使用高概率的输出范围 𝐴 = 2𝐴𝐴𝜋+1 来确定其是否覆盖𝐴ˆ𝜋
+                𝐴𝐴𝐴。获取到候选点，即到𝐴ˆ𝛹的距离在期望范围内的点。然后，计算加权平均距离作为校准中心，该中心将较大的权重分配给候选点，方法如下：𝜀 = ∑︁ 𝐴∈P𝐴 𝐴 ·
+                𝐴𝐴𝐴𝐴(𝐴ˆ𝛹, 𝐴) + ∑︁ 𝐴′∈P−P𝐴 (1 − 𝐴)𝐴𝐴𝐴𝐴(𝐴ˆ𝛹, 𝐴′) 𝐴|P𝐴| + (1 − 𝐴)|P − P𝐴|。</p>
+            <p>在获得校准中心𝜀之后，我们必须确定如何使扰动半径𝐴ˆ𝜋 𝐴𝐴𝐴靠近它。根据SW机制的性质，随着隐私预算𝜋的增加，扰动值会变得更加集中。因此，校准效果应随着𝜋的增加而减少。扰动半径𝐴ˆ𝜋
+                𝐴𝐴𝐴的校准如下（算法5的第4行）：𝐴ˆ = 𝐴ˆ𝜋 (10) 𝜀 = (𝜀 − 𝐴ˆ𝜋 1 1 − 𝐴−𝛽/2 , (11) 𝛽 = ⎧⎪⎪⎨ ⎪⎪⎩ if 𝐴ˆ𝜋
+                otherwise. (12)
+                在方程10中，校准项（即最后一项）由两个因子组成：衰减因子𝐴−𝜋和移动因子𝜀。衰减因子通过随着𝜋增长而降低其影响来控制校准项的效果。移动因子𝜀取决于扰动半径与校准中心之间的差距。如方程11所示，当扰动半径𝐴ˆ𝜋
+                𝐴𝐴𝐴大于𝜀时，移动因子为负数，否则为正数。扰动半径和𝜀之间的差距乘以[0, 1]范围内的因子，以避免获得极端值或常数值。因此，使用方程12计算𝛽，将扰动半径与𝜀之间的差距归一化为[0,
+                1]。然后，𝛽/2被输入到激活函数𝐴𝐴𝐴𝐴𝐴𝐴𝐴(·)，该函数提供非线性特性，并防止移动步长具有确切值|𝜀 − 𝐴ˆ𝜋
+                𝐴𝐴𝐴|。校准后，我们可以确定输入轨迹的扰动点集合（算法5的第5行）。</p>
+            <h1>5.3 隐私和效用分析</h1>
+            <p>在本小节中，我们证明了所提出的ATP机制满足𝜋-LDP。</p>
+            <p>定理5.1. ATP机制满足𝜋-LDP。证明。ATP机制以顺序方式限制两个轨迹副本的空间区域。使用EM获得扰动的锚点𝐴ˆ′ 𝛹 和𝐴ˆ∗ 𝛹，分别满足𝜋1/2-LDP。然后计算𝐴ˆ′
+                和𝐴ˆ∗，限制𝜋′ 和𝜋∗中点的扰动域Pˆ ′ 𝛹。扰动锚点，然后通过SW机制计算扰动的𝐴ˆ′ 𝛹（或𝐴ˆ∗ 𝛹）与𝜋′ 和𝜋∗ 中点之间的最大距离，满足𝜋2/2-LDP。</p>
+        </div>
+    </div>
+</div>
+
+<div class="row table-row">
+    <div class="column table-cell">
+        <div class="markdown-body">
+            <p>The calibration operation does not access any raw data because the test values are independent of the
+                trajectory and the distances used to identify P𝐴 are based on the perturbed 𝐴ˆ′ 𝛹 (or 𝐴ˆ∗ 𝛹). By
+                the post-processing property, the calibration operation does not require additional pri vacy budget.
+                Next, P is replaced once with Pˆ ′ 𝛹 and then with Pˆ ∗ 𝛹. The TP mechanism that satisfies 𝜋3/2-LDP
+                is then invoked. Again, by the post-processing theorem, the replacements do not consume additional
+                privacy budget. Finally, the sequential compo sition theorem ensures that the ATP mechanism satisfies
+                𝜋-LDP,where 𝜋 = 𝜋1 + 𝜋2 + 𝜋3.</p>
+            <p>□ To understand the impact of different 𝐴 values, we perform a utility analysis by estimating the upper
+                bound of the probability that the anchor points 𝐴𝛹 in the trajectory are not covered by the circle
+                whose radius is 𝐴 and origin is the perturbed 𝐴ˆ𝛹. Theorem 5.2. Let C𝜋 (𝐴, 𝐴) = {𝐴′ ∈
+                P|𝐴𝐴𝐴𝐴(𝐴, 𝐴′) ≤ 𝐴} and 𝐴𝐴 be the minimum score that satisfies 𝐴(𝐴𝛹, 𝐴) = −𝐴𝐴𝐴𝐴(𝐴𝛹,
+                𝐴) &gt; −𝐴. If 𝐴 = 2𝐴Δ𝐴/𝜋 − 𝐴𝐴, we have 𝐴𝐴 [𝐴𝛹 ∉ C𝜋 (𝐴ˆ𝛹, 𝐴)] ≤ |P − C𝜋 (𝐴𝛹, 𝐴)|
+                |C𝜋 (𝐴𝛹, 𝐴)| 𝐴𝐴𝐴(−𝐴). Proof. We have the probability 𝐴𝐴 [𝐴𝛹 ∉ C𝜋 (𝐴ˆ𝛹, 𝐴)] = 𝐴𝐴 [𝐴ˆ𝛹
+                ∉ C𝜋 (𝐴𝛹, 𝐴)] = 𝐴𝐴 [𝐴(𝐴𝛹, 𝐴ˆ𝛹) ≤ −𝐴] = ∑︁ ) ∑︁ ) ≤ |P − C𝜋 (𝐴𝛹, 𝐴)|𝐴𝐴𝐴( 𝜋 (−𝐴) |C𝜋
+                (𝐴𝛹, 𝐴)|𝐴𝐴𝐴( 𝜋𝐴𝐴 = |P − C𝜋 (𝐴𝛹, 𝐴)| |C𝜋 (𝐴𝛹, 𝐴)| 𝐴𝐴𝐴(−𝜋(𝐴 + 𝐴𝐴) 2Δ𝐴).</p>
+            <p>Let 𝐴 = 2𝐴Δ𝐴 − 𝐴𝐴, then we have 𝐴𝐴 [𝐴𝛹 ∉ C𝜋 (𝐴ˆ𝛹, 𝐴)] ≤ |P − C𝜋 (𝐴𝛹, 𝐴)| |C𝜋 (𝐴𝛹,
+                𝐴)| 𝐴𝐴𝐴(−𝐴), which completes the proof. □ According to Theorem 5.2, for a certain 𝐴, the
+                probability of an anchor point 𝐴𝛹 being not covered by the circle with the origin at 𝐴ˆ𝛹 and radius
+                𝐴 decreases exponentially as the radius 𝐴 increases. For the sake of data utility, a small probability
+                can reduce the error of anchor point selection. Furthermore, a small 𝐴 can avoid resulting in an overly
+                large perturbation domain and introducing excessive noise. Hence the selection of 𝐴 becomes a trade-off
+                with respect to the privacy budget 𝜋. Besides, this selection of 𝐴 is also related to the point
+                distribution of a dataset, i.e., the minimum score 𝐴𝐴 that satisfies 𝐴(𝐴𝛹, 𝐴) = −𝐴𝐴𝐴𝐴(𝐴𝛹,
+                𝐴) &gt; −𝐴. A smaller 𝐴𝐴 results in a tighter bound in the theorem. For this reason, we propose an
+                adaptive approach, as described in Sections 5.1 and 5.2, to find areasonable 𝐴 to improve data utility.
+            </p>
+            <p>6 EXPERIMENTS 6.1 Experimental Setting </p>
+            <p>6.1.1 Datasets. In the experiments, we use three real-world and one synthetic datasets, namely, NYC, CHI,
+                CLE, and CPS. NYC consists of check-in trajectories in New York City extracted from the Foursquare
+                dataset [43], while CHI and CLE, extracted from the Gowalla dataset [12], consist of check-in
+                trajectories in Chicago and Cleveland, respectively.1 We consider the 1,000 most popular points as P to
+                generate CHI and CLE, and the 2,000 most popular POIs in NYC. For a fair comparison, we adopt the same
+                preprocessing steps used in the previous study [14]。</p>
+        </div>
+    </div>
+    <div class="column table-cell">
+        <div class="markdown-body">
+            <p>校准操作不访问任何原始数据，因为测试值独立于轨迹，并且用于识别P𝐴的距离基于扰动的𝐴ˆ′ 𝛹（或𝐴ˆ∗ 𝛹）。通过后处理属性，校准操作不需要额外的隐私预算。接下来，将P替换为Pˆ ′
+                𝛹，然后替换为Pˆ ∗ 𝛹。然后调用满足𝜋3/2-LDP的TP机制。同样，根据后处理定理，替换不消耗额外的隐私预算。最后，顺序组合定理确保ATP机制满足𝜋-LDP，其中𝜋 = 𝜋1 + 𝜋2 +
+                𝜋3。</p>
+            <p>为了理解不同𝐴值的影响，我们通过估计锚点𝐴𝛹在轨迹上未被半径为𝐴、原点为扰动的𝐴ˆ𝛹的圆覆盖的概率上界进行实用性分析。定理5.2. 设C𝜋（𝐴，𝐴）= {𝐴′ ∈ P |
+                𝐴𝐴𝐴𝐴（𝐴，𝐴′）≤ 𝐴}，且𝐴𝐴是满足𝐴（𝐴𝛹，𝐴）= −𝐴𝐴𝐴𝐴（𝐴𝛹，𝐴）&gt; −𝐴的最小分数。如果𝐴 = 2𝐴Δ𝐴/𝜋 −
+                𝐴𝐴，则有𝐴𝐴[𝐴𝛹 ∉ C𝜋（𝐴ˆ𝛹，𝐴）] ≤ |P − C𝜋（𝐴𝛹，𝐴）| |C𝜋（𝐴𝛹，𝐴）| 𝐴𝐴𝐴（−𝐴）。证明：我们有概率𝐴𝐴[𝐴𝛹 ∉
+                C𝜋（𝐴ˆ𝛹，𝐴）] = 𝐴𝐴[𝐴ˆ𝛹 ∉ C𝜋（𝐴𝛹，𝐴）] = 𝐴𝐴[𝐴（𝐴𝛹，𝐴ˆ𝛹）≤ −𝐴] = ∑︁）∑︁）≤ |P −
+                C𝜋（𝐴𝛹，𝐴）|𝐴𝐴𝐴( 𝜋（−𝐴） |C𝜋（𝐴𝛹，𝐴）|𝐴𝐴𝐴( 𝜋𝐴𝐴 = |P − C𝜋（𝐴𝛹，𝐴）| |C𝜋（𝐴𝛹，𝐴）|
+                𝐴𝐴𝐴（−𝜋（𝐴 + 𝐴𝐴）2Δ𝐴。</p>
+            <p>令𝐴 = 2𝐴Δ𝐴 − 𝐴𝐴，则有𝐴𝐴[𝐴𝛹 ∉ C𝜋（𝐴ˆ𝛹，𝐴）] ≤ |P − C𝜋（𝐴𝛹，𝐴）| |C𝜋（𝐴𝛹，𝐴）|
+                𝐴𝐴𝐴（−𝐴），从而完成证明。根据定理5.2，对于某个𝐴，当半径𝐴增加时，锚点𝐴𝛹未被以𝐴ˆ𝛹为原点、半径为𝐴的圆覆盖的概率呈指数下降。为了考虑数据的实用性，较小的概率可以减小锚点选择的误差。此外，较小的𝐴可以避免导致过大的扰动区域和引入过多的噪声。因此，𝐴的选择成为与隐私预算𝜋相关的权衡。此外，𝐴的选择还与数据集的点分布有关，即满足𝐴（𝐴𝛹，𝐴）=
+                −𝐴𝐴𝐴𝐴（𝐴𝛹，𝐴）&gt; −𝐴的最小分数。较小的𝐴𝐴导致定理中的界限更紧。因此，我们提出一种自适应方法，在第5.1节和5.2节中描述，以找到合理的𝐴以改善数据实用性。</p>
+            <p>6 实验 6.1 实验设置</p>
+            <p>6.1.1
+                数据集。在实验中，我们使用三个真实世界和一个合成数据集，分别为NYC、CHI、CLE和CPS。NYC包含从Foursquare数据集[43]中提取的纽约市签到轨迹，而CHI和CLE，从Gowalla数据集[12]中提取，分别包含芝加哥和克利夫兰的签到轨迹。我们将1,000个最热门的点作为P来生成CHI和CLE，以及纽约市的2,000个最热门POI。为了公平比较，我们采用了前一研究[14]中使用的相同预处理步骤。
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="row table-row">
+    <div class="column table-cell">
+        <div class="markdown-body">
+            <p>We randomly delete the points that appear within a 10-minute duration in each trajectory until only one
+                point remains. If the time interval between any two adjacent points in a trajectory exceeds three hours,
+                we split it into two trajectories. After these preprocessing steps, we obtain 7,951, 3,162, and 2,794
+                trajectories in NYC, CHI, and CLE, respectively. For CPS, we follow the previous study [14] to generate
+                trajectories on the campus of the University of British Columbia2. We take 262 campus buildingsas P and
+                generate 4,000 trajectories.</p>
+            <p>6.1.2 Baselines and Parameter Setting. The only study that satis fies pure 𝜋-LDP is NGRAM mechanism
+                [14], which perturbs POI trajectories by incorporating external knowledge. As aforemen tioned, it is
+                often difficult to acquire such external knowledge in practice, which is the key motivation of our
+                paper. Hence, we con sider NGRAM mechanism without any additional knowledge as a baseline and set the
+                grid granularity to 3 or 4 for different datasets. Another baseline is a direct application of the
+                exponential mecha nism (referred to as EXP). It perturbs each point in a trajectory by using the same
+                utility function used in the mechanisms proposed in this study, i.e., −𝐴𝐴𝐴𝐴(·). The last baseline is
+                CGM [3], a state-of the-art mechanism for streaming data collection under (𝜋,𝛿)-LDP. We normalize the
+                latitude and longitude of each point in the same way as in the previous study [3], by setting 𝛿 = 10−2
+                or 10−1, and 𝐴 = 0.1. For all the mechanisms, we use the Haversine distance asthe distance metric.</p>
+            <p>As for the privacy budget allocation scheme in the ATP mecha nism, 𝜋′ = 𝜋∗ = 𝜋 2 are used to perturb
+                𝜋′ and 𝜋∗ respectively. For 𝜋′, 4 is used to determine the region. As the region size plays a more
+                significant role in determining the trajectory region, a quarter of 4 is used to perturb the trajectory
+                anchor while the other three quarters are used to perturb the radius. The remaining budget (i.e., 4 ) is
+                used to perturb the directions and points in 𝜋′. As the di rections have a larger impact on the
+                perturbations of trajectories, three quarters of 3𝜋′ 4 are uniformly divided to perturb the directions
+                while another quarter is uniformly divided to perturb the points. The allocation of 𝜋∗ for perturbing
+                𝜋∗ is the same as 𝜋′. As for the TP mechanism, we use the same budget allocation strategy for the
+                perturbations of directions and points in the ATP mechanism. All the mechanisms are executed 5 times and
+                the average is plotted.</p>
+            <p>6.2 Results </p>
+            <p>6.2.1 Measures. We evaluate the utility of the mechanisms using two measures adopted in the previous
+                study [14]. The first measure is the mean normalized error (NE), which is the normalized distance
+                between each point of a perturbed trajectory and the corresponding point of the original trajectory:
+                𝐴𝐴 = 1 |T | 1 |𝜋𝐴 | 𝐴=1 𝐴𝐴𝐴𝐴(𝐴ˆ 𝐴, 𝐴𝐴), where |T | is the number of trajectories, and
+                𝐴𝐴𝐴𝐴(·) denotes the Haversine distance. We normalize the results by the maximum dis tance in a
+                dataset to make the results easier to understand. The other measure is the preservation range query
+                (PRQ), which evalu ates whether each point of the perturbed trajectory is within the 𝛿 (km) range of
+                the corresponding true point: 𝐴𝐴𝐴 = 1 |T | 1 |𝜋𝐴 | 𝐴=1 𝜋(𝐴𝐴, 𝐴ˆ 𝐴,𝛿) × 100%, 𝜋(𝐴𝐴, 𝐴ˆ
+                𝐴,𝛿) = {︄ 1 if 𝐴𝐴𝐴𝐴(𝐴ˆ 𝐴, 𝐴𝐴) ≤ 𝛿, 0 otherwise, Figure 4: Mean normalized errors (NEs) for
+                different methodswhen varying privacy budget 𝜋.</p>
+            <p>where 𝐴𝐴𝐴𝐴(·) is also measured by the Haversine distance. A largerPRQ value indicates better
+                performance.</p>
+            <p>6.2.2 Evaluation of Utility. We first compare our proposed mecha nisms with the baseline mechanisms in
+                terms of NE. The results are presented in Figure 4. The proposed mechanisms outperform the baselines in
+                most situations. From Figure 4, we observe that the TP mechanism (i.e., the orange line) outperforms the
+                baselines on all real-world datasets. Although the EM used to sample points in the TP mechanism has
+                difficulty in choosing points near the original point when 𝜋 is small, the use of the direction
+                constraint can effec tively enhance the utility. In NGRAM, since external knowledge is not used, the
+                hierarchical decomposition in this mechanism cannot achieve significant performance improvement, and the
+                large bi gram universe adversely affects the utility. In CGM, the unbounded noise largely impacts the
+                resulting utility. Although the TP mecha nism performs worse than the baselines on the synthetic
+                dataset, the ATP mechanism (represented by the red line) performs signifi cantly better than other
+                mechanisms, showing that the trajectory region constraint is more helpful when the points in a dataset
+                are distributed more uniformly, such as the CPS dataset。</p>
+        </div>
+    </div>
+    <div class="column table-cell">
+        <div class="markdown-body">
+            <p>我们随机删除每条轨迹中在10分钟内出现的点，直到只剩下一个点。如果轨迹中任意两个相邻点之间的时间间隔超过三小时，我们将其分为两条轨迹。在这些预处理步骤之后，纽约市（NYC）、芝加哥（CHI）和克利夫兰（CLE）分别得到了7,951条、3,162条和2,794条轨迹。对于CPS，我们遵循之前的研究[14]在不列颠哥伦比亚大学校园上生成轨迹。我们选取了262个校园建筑作为P，并生成了4,000条轨迹。
+            </p>
+            <p>6.1.2
+                基线和参数设置。唯一满足纯𝜋-LDP的研究是NGRAM机制[14]，该机制通过引入外部知识来扰动POI轨迹。如前所述，在实际应用中往往难以获取此类外部知识，这也是我们论文的主要动机。因此，我们将不使用任何额外知识的NGRAM机制作为基线，并为不同数据集设置3或4的网格粒度。另一个基线是指数机制（简称EXP）的直接应用。它使用与本研究中提出的机制相同的效用函数对轨迹中的每个点进行扰动，即−𝐴𝐴𝐴𝐴(·)。最后一个基线是CGM[3]，它是一种用于(𝜋,𝛿)-LDP下的数据流收集的最先进机制。我们按照之前的研究[3]，对每个点的纬度和经度进行归一化处理，设置𝛿
+                = 10−2或10−1，以及𝐴 = 0.1作为参数。对于所有机制，我们使用Haversine距离作为距离度量。</p>
+            <p>对于ATP机制中的隐私预算分配方案，我们使用𝜋′ = 𝜋∗ = 𝜋
+                2来扰动𝜋′和𝜋∗。对于𝜋′，我们使用4来确定区域。由于区域大小在确定轨迹区域方面起着更重要的作用，我们将4的四分之一用来扰动轨迹锚点，另外的三分之三用来扰动半径。剩余的预算（即4）用于扰动𝜋′中的方向和点。由于方向对轨迹的扰动影响较大，我们将3𝜋′
+                4的四分之三均匀地分配给方向扰动，另外的四分之一均匀地分配给点扰动。扰动𝜋∗的分配与扰动𝜋′的分配相同。对于TP机制，我们在ATP机制中使用相同的预算分配策略对方向和点进行扰动。所有机制均重复执行5次，并取平均值进行绘制。
+            </p>
+            <p>6.2 结果
+                6.2.1 评估指标。我们使用之前研究[14]中采用的两个指标来评估机制的效用。第一个指标是均值归一化误差（NE），它衡量扰动后轨迹的每个点与原始轨迹对应点之间的归一化距离：𝐴𝐴 = 1 |T | 1
+                |𝜋𝐴 | 𝐴=1 𝐴𝐴𝐴𝐴(𝐴ˆ 𝐴, 𝐴𝐴)，其中|T
+                |是轨迹的数量，𝐴𝐴𝐴𝐴(·)表示Haversine距离。我们通过将结果归一化为数据集中的最大距离，以便更容易理解结果。另一个指标是保护范围查询（PRQ），它评估扰动轨迹的每个点是否在与之对应的真实点的𝛿（km）范围内：𝐴𝐴𝐴
+                = 1 |T | 1 |𝜋𝐴 | 𝐴=1 𝜋(𝐴𝐴, 𝐴ˆ 𝐴,𝛿) × 100%，𝜋(𝐴𝐴, 𝐴ˆ 𝐴,𝛿) = {︄ 1 if 𝐴𝐴𝐴𝐴(𝐴ˆ 𝐴, 𝐴𝐴)
+                ≤ 𝛿, 0 otherwise。其中，𝐴𝐴𝐴𝐴(·)也是用Haversine距离测量的。较大的PRQ值表示性能更好。</p>
+            <p>6.2.2
+                效用评估。我们首先通过NE指标将我们提出的机制与基线机制进行比较。结果如图4所示。在大多数情况下，我们提出的机制优于基线。从图4可以观察到，TP机制（即橙色线条）在所有真实数据集上的表现都优于基线。尽管当𝜋较小时，TP机制中用于采样点的EM难以选择接近原始点的点，但方向约束的使用可以有效提高效用。在NGRAM中，由于未使用外部知识，此机制中的分层分解无法显著提高性能，而庞大的二元组空间反而对效用产生不利影响。在CGM中，无界噪声在很大程度上影响了最终的效用。虽然在合成数据集上，TP机制的表现不如基线，但ATP机制（由红色线条表示）的表现显著优于其他机制，表明轨迹区域约束对于数据集中的点分布更均匀的情况更有帮助，例如CPS数据集。
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="row table-row">
+    <div class="column table-cell">
+        <div class="markdown-body">
+            <p>The better performance is partially due to the fact that the SW mechanism used to perturb the region size
+                𝐴 is more accurate when 𝜋 is large. The proposed adaptive calibration method is also advantageous to
+                eliminate extreme values of region sizes due to the perturbation of the SW mechanism. As a result, even
+                when 𝜋 is small, ATP can restrict trajectory regions better and achieve better performance. With regard
+                to the PRQ, the ATP mechanism outperforms the baseline mechanisms on all three real-world datasets as
+                shown in Figure 5. We set 𝛿 to 1, 2, or 4, and observe the changes in 𝐴𝐴𝐴 when 𝜋 varies from 1 to
+                10 on different datasets (we set 𝛿 to 0.25, Figure 5: Preservation range queries (PRQs) vs. privacy
+                bud-get 𝜋 under different ranges 𝛿.</p>
+            <p>0.5, or 1 for the CPS dataset due to the small entire area). The value of 𝐴𝐴𝐴 increases as the privacy
+                budget increases. For the CPS dataset, although the ATP mechanism performs worse than EXP when 𝛿 =
+                0.25, it performs better when 𝛿 becomes larger, especiallywhen 𝜋 is small.</p>
+            <p>6.2.3 Effects of Parameters. Due to the space limitation, we only report the results on the NYC and CLE
+                datasets. Similar results and conclusions can be observed and drawn on the CHI and CPS datasets. First,
+                we study the performance of the ATP mechanism with varying fixed 𝐴 values. We experiment with different
+                𝐴 values on different datasets: 𝐴 ∈ {5, 10, 15, 20} for NYC and 𝐴 ∈ {2, 4, 6, 8} for CLE. As shown in
+                Figures 6a and 6d, as 𝜋 increases, a larger Figure 6: Mean normalized errors (NEs) of different radius
+                𝐴, uni-directional information and direction granularitiesunder varying privacy budget 𝜋.</p>
+            <p>Figure 7: Mean normalized errors (NEs) under different sizes of P, trajectory length and reach bound (𝜋
+                = 4). 𝐴 value can cover more points in the trajectories whose original regions are large, leading to
+                better performance. We observe that the value of 𝐴 that results in the best performance is not always
+                the largest or smallest on different datasets, irrespective of whether 𝜋 is small or large. Therefore,
+                we advise to use our adaptive method to determine trajectory regions, which can restrict trajectory
+                regions more precisely and thus obtain the best performance. Next, we investigate whether the
+                bi-directional information im proves the performance of our mechanism. From Figures 6b and 6e, it can be
+                seen that the ATP mechanism using bi-directional in formation outperforms the same mechanism using
+                uni-directional information, which confirms that additional direction information enables more accurate
+                restriction of trajectory regions. We also study the effects of different direction granularities |D| ∈
+                {2, 4, 6, 12} on the performance. As shown in Figures 6c and 6f, when 𝜋 is small, the ATP mechanism
+                with coarse-grained directions performs better than that with fine-grained directions. The choice of the
+                cardinality of discrete directions mainly depends on the given privacy budget. Note that direction
+                selection aims to restrict Table 1: Comparison of success probability. Each value is calculated as per
+                Equation 8. The boldfaced values are thelargest values under different 𝜋 values.</p>
+            <p>the perturbation domain, i.e., |D| = 𝐴 means to narrow down the domain to 1 𝐴 , which reduces the
+                location perturbation noise and thus improves the data utility. However, direction perturbation itself
+                also introduces some noise, where finer direction granularity comes with heavier perturbation under LDP.
+                Therefore, for a small 𝜋, we tend to select a small |D| value to avoid large direction perturbation
+                noise. On the contrary, as 𝜋 increases, direction perturbation becomes less eminent, and, therefore, we
+                can select a larger |D| value to enhancethe utility more significantly.</p>
+            <p>We then evaluate how the size of P impacts the utility of the ATP mechanism. We conduct experiments on
+                the datasets with thousands of locations, i.e., NYC and CLE datasets with 1,000 and 2,000 locations,
+                respectively, following the previous study [14]. We take the most popular 10%, 25%, 50%, and 100%
+                locations from them to evaluate the performance of our mechanism with privacy budget 𝜋 = 4. We can
+                observe in Figure 7a that the impact of a large |P| is not too significant. This is because the
+                anchor-based trajectory region constraint mitigates the negative influence of a large |P|. Furthermore,
+                we conduct experiments on the synthetic CPS dataset to assess the performance of our mechanisms under
+                differ ent tuning parameters. As with the previous study [14], we generate 4,000 trajectories with
+                different fixed lengths ranging from 3 to 8 and different reach bounds between each two points in a
+                trajectory with different travel speeds from 1 to 16 km/hr, and with no reach constraint (i.e., ∞). As
+                shown in Figures 7b and 7c, overall, ATP outperforms TP, and their performance is quite stable with
+                different trajectory lengths or different reach bounds. Besides, we have an interesting observation that
+                the NE of ATP even slightly decreases with the increasing trajectory length, which is probably because
+                more locations contribute to the effect of direction restriction. Finally, we validate our proposed
+                direction granularity strategy. As aforementioned, we calculate the average probability of success to
+                choose the correct discrete direction for different ranges and for each granularity |D| under different
+                𝜋 values。</p>
+        </div>
+    </div>
+    <div class="column table-cell">
+        <div class="markdown-body">
+            <p>更好的性能部分归因于当𝜋较大时，用于扰动区域大小𝐴的SW机制更准确。提出的自适应校准方法还有优势，可以消除由于SW机制的扰动而产生的区域大小的极端值。因此，即使𝜋很小，ATP也可以更好地限制轨迹区域并实现更好的性能。关于PRQ，ATP机制在所有三个真实世界数据集上都优于基准机制，如图5所示。我们将𝛿设置为1、2或4，并观察在不同数据集上，当𝜋从1变化到10时，𝐴𝐴𝐴的变化（由于整个区域很小，我们将𝛿设置为0.25，图5：保留范围查询（PRQ）与隐私预算𝜋在不同范围𝛿下的比较）。
+            </p>
+            <p>随着隐私预算的增加，𝐴𝐴𝐴的值也会增加。对于CPS数据集，尽管ATP机制在𝛿 = 0.25时的性能不如EXP，但当𝛿变大时，尤其是当𝜋很小时，ATP机制的性能更好。</p>
+            <p>6.2.3
+                参数的影响。由于空间限制，我们只报告了在NYC和CLE数据集上的结果。类似的结果和结论也可以观察和得出在CHI和CPS数据集上。首先，我们研究了ATP机制在不同固定𝐴值下的性能。我们在不同数据集上尝试了不同的𝐴值：对于NYC，𝐴
+                ∈ {5, 10, 15, 20}，对于CLE，𝐴 ∈ {2, 4, 6,
+                8}。如图6a和6d所示，随着𝜋的增加，更大的𝐴值可以覆盖更多原始区域较大的轨迹点，从而获得更好的性能。我们观察到，不论𝜋是小还是大，在不同数据集上，能够达到最佳性能的𝐴值并不总是最大或最小的𝐴值。因此，我们建议使用我们的自适应方法确定轨迹区域，可以更精确地限制轨迹区域，从而获得最佳性能。接下来，我们研究双向信息是否可以提高我们机制的性能。从图6b和6e可以看出，使用双向信息的ATP机制优于使用单向信息的相同机制，这证实了附加的方向信息可以更准确地限制轨迹区域。我们还研究了不同方向粒度|D|
+                ∈ {2, 4, 6, 12}对性能的影响。如图6c和6f所示，当𝜋较小时，粗粒度方向的ATP机制优于细粒度方向的机制。离散方向的基数选择主要取决于给定的隐私预算。需注意，方向选择旨在限制扰动域，即|D|
+                = 𝐴意味着将域缩小到1
+                𝐴，从而减少位置扰动噪音，从而提高数据效用。然而，方向扰动本身也会引入一些噪音，细粒度方向粒度伴随着LDP下更重的扰动。因此，对于较小的𝜋，我们倾向于选择较小的|D|值，以避免较大的方向扰动噪音。相反，随着𝜋的增加，方向扰动变得不明显，因此我们可以选择更大的|D|值以增加效用。
+            </p>
+            <p>然后，我们评估𝐏的大小对ATP机制效用的影响。我们在具有数千个位置的数据集上进行实验，即在NYC和CLE数据集上分别有1,000个和2,000个位置，按照先前的研究[14]，从中选取最受欢迎的10％，25％，50％和100％的位置，以评估具有隐私预算𝜋
+                =
+                4的机制的性能。从图7a中可以观察到，大|P|的影响并不太显著。这是因为基于锚点的轨迹区域约束减轻了大|P|的负面影响。此外，我们在合成CPS数据集上进行实验，评估我们机制在不同调谐参数下的性能。与先前的研究[14]相同，我们生成了4,000条轨迹，长度从3到8不等，每两个点之间的可达范围从1到16
+                km/hr不等，并且没有可达约束（即∞）。如图7b和7c所示，总体而言，ATP优于TP，并且其性能在不同轨迹长度或不同可达范围下相当稳定。此外，我们有一个有趣的观察结果，即ATP的NE甚至随着轨迹长度的增加略微减小，这可能是因为更多的位置对方向限制的影响起到了作用。最后，我们验证了我们提出的方向粒度策略。如前所述，我们计算选择正确离散方向的平均成功概率，针对不同范围和不同𝐷的粒度|𝐷|，每个𝜋值下的情况都记录了下来。
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="row table-row">
+    <div class="column table-cell">
+        <div class="markdown-body">
+            <p>We set different radian intervals as Θ = {𝜋/2, 𝜋/4, 𝜋/6, 𝜋/12}, corresponding to different candidate
+                granularities |D| ∈ {2, 4, 6, 12}. In Table 1, 𝜋 de notes the total privacy budget, instead of the
+                budget that is used to compute the probability for direction perturbation (i.e., three quar ters of 3𝜋′
+                4 , as described in Section 6.1.2). We can observe that the granularity chosen based on the average
+                direction-preserving success probability almost always corresponds to one of the best granularities
+                under different 𝜋 values in Figures 6c and 6f. Table 2: Comparison of average count differences (ACDs)
+                fordifferent methods (𝜋=4).</p>
+            <p>6.2.4 Evaluation on Practical Applications. We further consider hotspot preservation as a practical
+                application to demonstrate the advantages of our mechanisms over the existing works. Since we do not
+                assume time information in our setting, we evaluate the aver age count difference (ACD), a popular
+                metric for hotspot preserva tion [14]. Given a set of the most popular locations, ACD calculates the
+                average absolute difference of their counts before and after perturbation. The experiments are conducted
+                on four datasets with privacy budget 𝜋 = 4. In particular, for the NYC dataset, we evaluate the ACD of
+                the top 50% of popular locations, while for the CHI, CLE, and CPS datasets with less locations than NYC,
+                we evaluate the ACD of their top 75% of popular locations. As shown in Table 2, we can observe that both
+                TP and ATP mechanisms achieve signifi cantly lower ACD than NGRAM and CGM on all datasets, which again
+                confirms the superiority of our proposed methods. Without additional external knowledge, the unbounded
+                noise will largely impact the performance of NGRAM and CGM. TP and ATP achieve similar performance. TP
+                can obtain slightly lower ACD than ATP. We believe this is because ATP restricts the perturbation region
+                of a trajectory, which may lead to a slightly more skewed hotspot count distribution. Nevertheless, ATP
+                is still the best choice for a data collector to perform a wide range of analysis tasks.</p>
+            <p>7 CONCLUSION </p>
+            <p>In this paper, we propose a novel private trajectory data collection mechanism called ATP that satisfies
+                pure 𝜋-LDP. We model tra jectory perturbation as a two-stage process, which first estimates discrete
+                directions and then performs point perturbations. The pro posed mechanism is further enhanced by
+                adaptively restricting the trajectory region. To the best of our knowledge, our solution is the first to
+                combine direction information with the perturbation of a trajectory under LDP. We also provide
+                theoretical utility analysis of the region size and a guideline to choose a suitable direction
+                granularity based on the given privacy budget. From the experimen tal results, we can observe an
+                interesting correlation between the underlying distribution of the location points (e.g., their
+                densities in different regions) and the direction granularity selection process. We believe exploring
+                such a correlation is a valuable direction forfuture work.</p>
+            <p>ACKNOWLEDGMENTS </p>
+            <p>This work was supported by the National Key R&amp;D Program of China (Grant No. 2020YFB1710200), the
+                National Natural Science Foundation of China (Grant No. 62072136, 62102334, 62072390, and 92270123), and
+                the Research Grants Council, Hong Kong SAR, China (Grant No. 15218919, 15203120, 15226221, 15225921,
+                15209922, andC2004-21GF).</p>
+        </div>
+    </div>
+    <div class="column table-cell">
+        <div class="markdown-body">
+            <p>我们设置不同的弧度间隔作为Θ = {𝜋/2, 𝜋/4, 𝜋/6, 𝜋/12}，对应不同的候选粒度|D| ∈ {2, 4, 6,
+                12}。在表1中，𝜋代表总的隐私预算，而不是用于计算方向扰动概率的预算（即3𝜋′/4的三分之一，如6.1.2节所述）。我们可以观察到，基于平均方向保持成功概率选择的粒度几乎总是与图6c和图6f中不同𝜋值下的最佳粒度之一相对应。表2：不同方法（𝜋=4）的平均计数差异（ACDs）比较。
+            </p>
+            <p>6.2.4
+                实际应用评估。我们进一步考虑热点保护作为实际应用，以展示我们的机制相比现有方法的优势。由于在我们的设置中没有时间信息，我们评估平均计数差异（ACD），这是热点保护中常用的指标[14]。给定一组最受欢迎的位置，ACD计算它们在扰动之前和之后计数的平均绝对差异。实验在四个数据集上进行，隐私预算𝜋=4。特别地，对于纽约数据集，我们评估最受欢迎位置的前50%的ACD，而对于比纽约位置更少的CHI、CLE和CPS数据集，我们评估它们前75%最受欢迎位置的ACD。如表2所示，我们可以观察到，TP和ATP机制在所有数据集上的ACD显著低于NGRAM和CGM，再次证实了我们提出的方法的优越性。在没有额外外部知识的情况下，无界噪声会大大影响NGRAM和CGM的性能。TP和ATP达到类似的性能。TP比ATP略微降低ACD。我们认为这是因为ATP限制了轨迹的扰动区域，可能导致稍微倾斜的热点计数分布。然而，对于数据收集者来执行广泛的分析任务，ATP仍然是最佳选择。
+            </p>
+            <h1>7 结论</h1>
+            <p>本文提出了一种称为ATP的新型Private Trajectory Data Collection机制，满足pure
+                𝜋-LDP。我们将轨迹扰动建模为一个两阶段的过程，首先估计离散方向，然后进行点扰动。所提出的机制通过自适应地限制轨迹区域进一步增强。据我们所知，我们的解决方案是第一个将方向信息与轨迹扰动在LDP下结合的方法。我们还对区域大小进行了理论效用分析，并根据给定的隐私预算提供了选择合适方向粒度的指南。从实验结果中，我们可以观察到位置点的底层分布（例如在不同区域的密度）与方向粒度选择过程之间的有趣相关性。我们相信探索这样的相关性是未来工作的一个有价值的方向。
+            </p>
+            <h1>致谢</h1>
+            <p>本工作得到了中国国家重点研发计划资助（项目编号：2020YFB1710200），中国国家自然科学基金资助（项目编号：62072136, 62102334,
+                62072390和92270123），以及香港特别行政区研究资助局资助（项目编号：15218919, 15203120, 15226221, 15225921, 15209922和C2004-21GF）。
+            </p>
+        </div>
+    </div>
+</div>

@@ -4,8 +4,8 @@
   - [Promise](#promise)
     - [任务队列和事件循环](#任务队列和事件循环)
   - [前端安全问题](#前端安全问题)
-    - [XSS](#xss)
-    - [CSRF（Cross-Site Request Forgery）](#csrfcross-site-request-forgery)
+    - [XSS（Cross-Site Scripting）跨站脚本攻击](#xsscross-site-scripting跨站脚本攻击)
+    - [CSRF（Cross-Site Request Forgery）跨站请求伪造](#csrfcross-site-request-forgery跨站请求伪造)
     - [点击劫持攻击（Clickjacking）](#点击劫持攻击clickjacking)
     - [CSP（Content Security Policy）](#cspcontent-security-policy)
     - [CORS (Cross-Origin Resource Sharing)](#cors-cross-origin-resource-sharing)
@@ -16,6 +16,10 @@
   - [webpack](#webpack)
   - [闭包](#闭包)
   - [事件冒泡](#事件冒泡)
+  - [继承](#继承)
+  - [position](#position)
+  - [浮动float](#浮动float)
+  - [异步](#异步)
 
 ## Promise
 
@@ -40,8 +44,9 @@ function delayTime(time) {
     return new Promise((resolve, reject) => {
         if (isNaN(time)) {
             reject(new Error("delayTime needs a number."))
+        }else{
+          setTimeout(resolve, time)
         }
-        setTimeout(resolve, time)
     }
     )
 }
@@ -77,10 +82,13 @@ Promise.all(promises)
 
 - 4.如下关于Promise的描述正确的是
 
-    Promise.race()中的Promise序列只要有一个执行完成就算成功
-    Promise.all()中的Promise序列需要全部执行成功才任务是成功的
-    Promise.resolve可以用于模拟宏任务
-    Promise.any()中的 Promise序列需要第一个执行完成的序列，执行结果为成功才算成功
+    F Promise.race()中的Promise序列只要有一个执行完成就算成功
+  
+    T Promise.all()中的Promise序列需要全部执行成功才任务是成功的
+
+    F Promise.resolve可以用于模拟宏任务
+
+    F Promise.any()中的 Promise序列需要第一个执行完成的序列，执行结果为成功才算成功
 
 ## 前端安全问题
 
@@ -98,7 +106,7 @@ CSRF（跨站请求伪造，Cross-Site Request Forgery）是一种利用用户�
 
 因此，不属于前端安全问题的选项是xSS。
 
-### XSS
+### XSS（Cross-Site Scripting）跨站脚本攻击
 
 - XSS的全称是跨站脚本攻击（Cross-Site Scripting）。
 
@@ -120,9 +128,9 @@ XSS攻击是一种常见的网络安全漏洞，攻击者通过**注入恶意脚
 - 防止XSS攻击的方法包括输入验证和输出编码。
 - 输入验证可以**过滤用户输入，防止恶意脚本注入**；
 - 输出编码可以**将用户输入的内容进行转义**，确保它们被当作**纯文本输出**，而不是可执行的脚本
-  - 如：使用HTML实体编码来替代特殊字符。下面
+  - 如：使用HTML实体编码来替代特殊字符。
 
-### CSRF（Cross-Site Request Forgery）
+### CSRF（Cross-Site Request Forgery）跨站请求伪造
 
 - CSRF攻击是一种利用用户**已登录的身份权限进行伪造请求**的攻击方式。攻击者通过诱使受害者在另一个网站上触发恶意请求，利用受害者在目标网站上的身份权限执行未经授权的操作。
 
@@ -138,7 +146,7 @@ XSS攻击是一种常见的网络安全漏洞，攻击者通过**注入恶意脚
 
 当受害者在恶意网站上访问时，浏览器会自动加载这个图片标签，并向目标银行网站发送了一个转账请求，将10000单位的货币转账给攻击者。
 
-由于受害者已经在银行网站上登录，并且浏览器会自动发送与当前域相关的Cookie信息，目标银行网站会认为这是合法的请求并进行转账操作，而受害者并没有意识到这个请求的存在。
+由于受害者已经在银行网站上登录，并且**浏览器会自动发送与当前域相关的Cookie信息**，目标银行网站会认为这是合法的请求并进行转账操作，而受害者并没有意识到这个请求的存在。
 
 - 为了防止CSRF攻击，可以采取以下措施：
 
@@ -266,8 +274,8 @@ document.getElementById('myList').addEventListener('click', function(event) {
 - 用户单击鼠标后所发生的事件按顺序如下（以访问清华大学的网站为例）：
 
 1. 浏览器分析链接指向页面的 URL<http://www.tsinghua.edu.cn/chn/index.htm>
-2. 浏览器向 DNS 请求解析 <www.tsinghuaaedu.CR> 的 IP 地址。－
-3. 域名系统统 DNS 解析出清毕大学服务器的 IP 地址。
+2. 浏览器向 DNS 请求解析 <www.tsinghuaa.edu.cn> 的 IP 地址
+3. 域名系统统 DNS 解析出清华大学服务器的 IP 地址。
 4. 浏览器与该服务器建立 TCP 连接(默认端口号为 80)。
 5. 浏览器发出 HTTP 请求：GET/chn/index.htm。
 6. 服务器通过 HTTP 响应把文件 index.htm 发送给浏览器。
@@ -277,8 +285,9 @@ document.getElementById('myList').addEventListener('click', function(event) {
 
 - 下面关于webpack loader的说法正确的是
 
-file-loader:把文件输出到一个文件夹中，在代码中通过相对URL去引用输出的文件style-loader:加载 CSS，支持模块化、压缩、文件导入等特性
-css-loader:把 CSS代码注入到JavaScript中，通过DOM操作去加载CSS
+file-loader:把文件输出到一个文件夹中，在代码中通过相对URL去引用输出的文件
+style-loader:加载 ```，支持模块化、压缩、文件导入等特性
+css-loader:把 ```代码注入到JavaScript中，通过DOM操作去加载```
 url-loader:与file-loader类似，区别是用户可以设置一个阈值，大于阈值会交给 file-loader处理，小于阈值时返回文件base64形式编码
 
 - ChatGPT
@@ -293,31 +302,18 @@ url-loader是一个webpack loader，用于处理文件资源，可以将文件�
 
 file-loader: 把文件输出到一个文件夹中，在代码中通过相对URL去引用输出的文件。这是正确的描述。
 
-style-loader: 加载CSS，支持模块化、压缩、文件导入等特性。这是不准确的描述。style-loader主要用于将CSS代码以内联的方式插入到HTML页面中，而不是用于加载CSS文件。
+style-loader: 加载```，支持模块化、压缩、文件导入等特性。这是不准确的描述。style-loader主要用于将```**代码以内联的方式**插入到HTML页面中，而不是用于加载```文件。
 
-css-loader: 把CSS代码注入到JavaScript中，通过DOM操作去加载CSS。这是不准确的描述。css-loader用于解析CSS文件，将其转换为JavaScript模块，并通过JavaScript代码的方式加载CSS。
+css-loader: 把```代码注入到JavaScript中，通过DOM操作去加载```。这是不准确的描述。css-loader用于解析```文件，将其转换为JavaScript模块，并通过JavaScript代码的方式加载```。
 
 综上所述，描述"url-loader:与file-loader类似，区别是用户可以设置一个阈值，大于阈值会交给file-loader处理，小于阈值时返回文件base64形式编码"是正确的。其他描述中有些是不准确的。
 
-- 下面关于webpack中hash的说法正确的是
+- 下面关于webpack中hash的说法正确的是(都正确)
 
-hash每次打包都会发生变化,即使项目没有任何变更
-webpack有三种hash，分别是hash、chunkhash、contenthashcontenthash是文件内容hash，只会根据文件内容发生变化而变化
-chunkhash是模块hash，只要模块依赖模块发生变化则hash会发生变化
-
-- ChatGPT
-
-关于webpack中的hash，以下说法是正确的：
-
-hash每次打包都会发生变化，即使项目没有任何变更。在webpack中，hash是根据整个项目的内容计算出来的，只要项目中有任何文件发生变化，无论是源代码文件还是配置文件，都会导致hash值的变化。
-
-webpack有三种hash，分别是hash、chunkhash、contenthash。这是正确的描述。webpack提供了不同的hash选项，可以根据不同的需求生成不同粒度的hash值。
-
-contenthash是文件内容的hash，只有文件的内容发生变化时，对应的contenthash才会发生变化。这是正确的描述。contenthash是根据文件内容计算出来的，只有文件内容发生变化，对应的contenthash才会变化。这在缓存优化方面非常有用，可以确保只有发生实际变化的文件会被重新请求。
-
-chunkhash是模块的hash，只要模块的依赖发生变化，对应的chunkhash就会发生变化。这是不准确的描述。chunkhash是根据模块的内容计算出来的，只有模块的内容发生变化，对应的chunkhash才会变化。模块的依赖变化不会直接影响chunkhash，而是会影响到对应的contenthash。
-
-综上所述，描述"hash每次打包都会发生变化，即使项目没有任何变更"、"webpack有三种hash，分别是hash、chunkhash、contenthash"和"contenthash是文件内容hash，只会根据文件内容发生变化而变化"是正确的。描述"chunkhash是模块hash，只要模块依赖模块发生变化则hash会发生变化"是不准确的。
+1. hash每次打包都会发生变化,即使项目没有任何变更
+2. webpack有三种hash，分别是hash、chunkhash、contenthash
+3. contenthash是文件内容hash，只会根据文件内容发生变化而变化
+4. chunkhash是模块hash，只要模块依赖模块发生变化则hash会发生变化
 
 - 21.下面对于webpack构建速度优化说法正确的是
 
@@ -325,6 +321,7 @@ chunkhash是模块的hash，只要模块的依赖发生变化，对应的chunkha
 可以配苦extensions，例如: extensions: [".js', '.json']
 可以缩小打包作用域，例如: exclude、include
 可以利用缓存提升二次构建速度，例如: cache-loader
+
 ChatGPT
 关于webpack构建速度优化，以下说法是正确的：
 
@@ -384,3 +381,81 @@ mouseup
 - submit（提交表单）事件不会冒泡。
 
 - 至于click（点击）和scroll（滚动）事件，它们通常是会冒泡的，但这取决于具体的实现方式和上下文。因此，在某些特定的情况下，它们可能不会冒泡，但一般情况下它们会冒泡。
+
+## 继承
+
+```js
+function Person() {
+    Person.prototype.name = 'Tom"';
+    Person.prototype.sayHi = function(){
+        console.log('hi');
+    }
+}
+
+const p1 = new Person();
+const p2 = new Person();
+
+p1.prototype.sex = "male";
+
+console.log(p1.sex);
+console.log(p1.sex);
+```
+
+## position
+
+- 文档流中的第一个元素，默认情况下它会在**最上方左侧定位**
+
+CSS中的position属性用于控制元素的定位方式。它指定了元素在文档中的定位规则，并影响元素在布局中的位置。
+
+position属性有以下几个取值：
+
+static（默认值）：元素处于正常文档流中，不进行特殊定位。这是大多数元素的默认定位方式。
+
+relative：元素相对于其正常位置进行偏移，但仍保持在文档流中。可以通过设置top、right、bottom、left属性来控制元素的偏移。
+
+```css
+.example {
+  position: relative;
+  top: 20px;
+  left: 10px;
+}
+```
+
+absolute：元素脱离文档流，相对于其最近的**非static定位**的父元素或根元素进行定位。使用top、right、bottom、left属性可以精确控制元素的位置。
+
+```css
+.example {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+}
+```
+
+fixed：元素脱离文档流，相对于浏览器窗口进行定位。即使滚动页面，元素的位置也保持不变。
+
+```css
+.example {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+```
+
+sticky：元素在滚动到特定位置时固定在容器内。它根据元素在正常文档流中的位置和滚动位置来确定是否固定。
+
+```css
+.example {
+  position: sticky;
+  top: 0;
+}
+```
+
+position属性的选择取决于你想要实现的布局效果和定位需求。通过结合position属性和其他属性（如top、right、bottom、left），你可以对元素进行精确的定位和布局操作。
+
+## 浮动float
+
+![20230624233405](https://raw.githubusercontent.com/Logible/Image/main/note_image/20230624233405.png)
+
+## 异步
+
+- 通过异步操作，程序可以在执行某个任务的同时进行其他操作，而不必等待当前任务的完成。
