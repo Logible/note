@@ -27,4 +27,9 @@
 
 ## question
 
+- Does Expectation exist represent that Variance also exist? what is the relationship between Expectation exist and Variance exist?
+  - (gpt)The existence of one does not automatically imply the existence of the other, but if the variance exists, then the expectation also exists.
+  - (log)If the absolute value of the definition of E(X) or V(X) **converge**,it exits.
+
 - why convex![20230725172514](https://raw.githubusercontent.com/Logible/Image/main/note_image/20230725172514.png)
+  - The property of convex

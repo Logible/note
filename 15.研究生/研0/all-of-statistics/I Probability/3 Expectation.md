@@ -43,7 +43,7 @@
 - sample mean && sample variance
   - ![20230718172752](https://raw.githubusercontent.com/Logible/Image/main/note_image/20230718172752.png)
     - The reason for using n-1 instead of n is to provide an unbiased estimate of the **population variance**.
-- 3.17 💚use for?Theorem![20230718173148](https://raw.githubusercontent.com/Logible/Image/main/note_image/20230718173148.png)
+- 3.17 Theorem![20230718173148](https://raw.githubusercontent.com/Logible/Image/main/note_image/20230718173148.png)
 - covariance & correlation
   - ![20230719010104](https://raw.githubusercontent.com/Logible/Image/main/note_image/20230719010104.png)
 - 3.19 Theorem

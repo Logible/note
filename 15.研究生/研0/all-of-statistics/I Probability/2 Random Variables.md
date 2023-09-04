@@ -14,7 +14,7 @@
   - [2.6 Marginal Distributions](#26-marginal-distributions)
   - [2.7 Independent Random Variables(one definiton)](#27-independent-random-variablesone-definiton)
   - [2.8 Conditional Distributions](#28-conditional-distributions)
-  - [2.9 Multivariate Distribution](#29-multivariate-distribution)
+  - [2.9 Multivariate Distributions and iid Samples](#29-multivariate-distributions-and-iid-samples)
   - [2.10 Two Important Multivariate Distributions](#210-two-important-multivariate-distributions)
   - [2.11 Transformations of Random Variables](#211-transformations-of-random-variables)
   - [2.12 Transformations of Several Random Variables](#212-transformations-of-several-random-variables)
@@ -106,9 +106,12 @@
   - mass function![20230713221212](https://raw.githubusercontent.com/Logible/Image/main/note_image/20230713221212.png)
   - pdf![20230713221827](https://raw.githubusercontent.com/Logible/Image/main/note_image/20230713221827.png)
 
-## 2.9 Multivariate Distribution
+## 2.9 Multivariate Distributions and iid Samples
 
 - Definition![20230714174657](https://raw.githubusercontent.com/Logible/Image/main/note_image/20230714174657.png)
+
+- "If $X_1,...,X_n$ are independent and each has the same marginal distribution with cdf F",why there are indepentdent and have marginal distribution, does marginal distribution don't need joint distribution
+  - The marginal distribution of a random variable **just represents** its probability distribution independently of any other variables.
 
 ## 2.10 Two Important Multivariate Distributions
 

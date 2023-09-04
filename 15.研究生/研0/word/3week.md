@@ -43,7 +43,7 @@
 ---
 
 1. if g is convex, then g lies above any line that touches g at some point, called a **tangent line**
-2. This part of probability is called large sample theory, or limit theory, or **asymptotic** theory.
+2. This part of probability is called large sample theory, or limit theory, or **asymptotic_1** theory.
 3. what can we say about the **limiting** behavior of a sequence of random variables X1, X2, X3,...?
 4. In **calculus** we say that
 
@@ -69,7 +69,9 @@
 
 ## 0728
 
-d: cd "D:/LogのNote/A笔记/30陈远烙/GPNU研究生/研0/书籍资料/paper_tool/gpt_academic"
+d:
+
+cd "D:/LogのNote/A笔记/30陈远烙/GPNU研究生/研0/书籍资料/paper_tool/gpt_academic"
 
 conda activate gptac_venv
 
@@ -86,5 +88,5 @@ python main.py
 7. In the proposed **mechanism**
 8. **adaptively** restricts the region of each perturbed trajectory, **thereby** significantly boosting performance
 9. **Extensive** experiments on both real-world and **synthetic** dataset
-10. ensures the privacy of individual data points even in the presence of powerful **adversaries**.
+10. ensures the privacy of individual data points even in the **presence** of powerful **adversaries**.
 11. **incorporates** a central aggregator with access to the raw data.

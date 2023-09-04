@@ -15,6 +15,8 @@
 - A: Subsets of Ω are called Events
 - partition: A partition of Ω is a sequence of disjoint sets A1, A2,... such that
  $∪_{i=1}^{\infty}A_i = Ω$
+- ⭐⭐⭐⭐: Question
+- 🏀: can't understand
 
 ## 1.3 Probability
 
