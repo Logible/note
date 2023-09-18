@@ -22,7 +22,7 @@ Monica: There's nothing to `tell`! It's just some guy I work with!
 
 没什么好说的！他只不过是一个跟我一起工作的人罢了！
 
-Joey: C'mon, you're going out with a guy! There's gotta /ˈɡɒtə/ be something wrong with him!
+Joey: C'mon, you're going out with-a guy! There's gotta /ˈɡɒtə/ be something wrong with him!
 
 拜托，你都要跟这个人出去约会了！这个人肯定有问题！
 
@@ -104,7 +104,7 @@ Ross: (mortified) Hi.
 
 大家好。
 
-Joey: This guy says hello, I wanna kill myself.
+Joey: This guy says/sez/ hello, I wanna kill myself.
 
 这家伙说“你好”的时候，我想自杀
 
@@ -168,7 +168,7 @@ Ross: No I don't, to hell with her, `she left me`!
 
 是的，我并不希望。去她妈的，他离开了我！
 
-Joey: And you never knew she was-a lesbian...
+Joey: And you never knew/ uː/ she was-a lesbian...
 
 你又不知道她是个女同性恋。。。
 
@@ -178,7 +178,7 @@ Ross: No!! Okay?! Why does everyone keep fixating on that? She didn't know, how 
 
 fixate on=focus on
 
-Chandler: Sometimes I wish I was-a lesbian... (They all stare at him.) Did I say that out loud?
+Chandler: Sometimes/z/ I wish I was-a lesbian... (They all stare at him.) Did I say that out loud?
 
 有时候我希望自己是个女同性恋。。。我大声说出来了吗？
 
@@ -188,7 +188,7 @@ Joey: Alright Ross, look. You're feeling a lot-of pain right now. You're angry. 
 
 (Ross gestures his consent.)
 
-Joey: Strip `joints`! C'mon, you're single! Have some hormones!
+Joey: Strip `joints`! C'mon, you're single! Have some hormones/hɔːrmoʊnz/!
 
 脱衣舞俱乐部！拜托，你单身了！有需求的！
 
@@ -208,7 +208,7 @@ Chandler: And I just `want` a `million` dollars! (He extends his hand hopefully.
 
 Monica: Rachel?!
 
-Rachel: Oh God Monica hi! Thank God! I just went (to) your building and you weren't there and then this guy with a `big hammer` said that you might be here , you are, you are!
+Rachel: Oh God Monica hi! Thank God! I just went (to) your building and you weren't there and then this guy with-a `big hammer` said that you might be here , you are, you are!
 
 oh天啊，Monica，感谢上帝！我刚刚去你的公寓了，而你不在，那个拿着大锤子的家伙说你可能在这儿，你真在这里，你真的在这里！
 
@@ -281,7 +281,7 @@ Monica: Now I'm guessing that he bought her the big pipe organ, and she's really
 
 我猜他给她买了个管风琴，但她不是很喜欢
 
-Rachel: (on phone) Daddy, I just... I can't marry him! I'm sorry. I just don't love him. Well, it matters to me!
+Rachel: (on phone) Daddy, I just... I can't marry him! I'm sorry. I just don't love him. Well, it matters/ˈmætərz/ to me!
 
 爸爸，我只是。。。我不能嫁给他。对不起，我根本都不爱他。这件事情对我很重要啊！
 
@@ -289,7 +289,7 @@ Chandler: (re TV) Ooh, she should not be wearing those pants.
 
 噢，她不该穿那条裤子
 
-Joey: I say push her down the stairs.
+Joey: I say push-her down the stairs.
 
 快把她推下楼
 
@@ -327,7 +327,7 @@ Rachel: Well, maybe that's my decision. Well, maybe I don't need-your money. Wai
 
 [Time Lapse, Rachel is breating into a paper bag.]
 
-Monica: Okay,Just breathe, breathe.. that's-it. Just try to think-of nice calm things...
+Monica: Okay,Just breathe.. that's-it. Just try to think-of nice calm things...
 
 吸气，吐气。。。这就对了。试着想想一些能让你冷静下来的好东西
 
@@ -344,7 +344,7 @@ Monica: Okay,Just breathe, breathe.. that's-it. Just try to think-of nice calm t
 
 ---
 
-Phoebe: (sings) Raindrops-on roses and whiskers- on kittens/ˈkɪtn/, bluebells-and sleighbells-and something with mittens... La la la la...something with string.
+Phoebe: (sings) Raindrops-on roses-and whiskers- on kittens/ˈkɪtn/, bluebells-and sleighbells-and something with mittens... La la la la...something with string.
 
 玫瑰上的雨滴，猫的胡须，蓝风信子和雪橇，还有手套。。。啦啦啦啦还有一些面条
 
@@ -356,11 +356,11 @@ Phoebe: (grins and walks to the kitchen and says to Chandler and Joey.) I helped
 
 我帮上忙了
 
-Monica: Okay, look, this-is probably for the best, y'know? Independence. Taking control-of your life.
+Monica: Okay, look, this-is probably for the best, y'know? Independence. Taking control of your life.
 
 听我说，这或许是最好的。独立。自己掌控生活
 
-Joey: And hey, you need anything, you can always come to Joey. Me and Chandler live right- across the hall. And he's away a lot.
+Joey: And hey, you need anything, you can always come to Joey. Me and Chandler live right- across the hall. And he's-away a lot.
 
 还有，如果你需要什么，你可以来找Joey。我和Chandler就住在对面。他平时一直都在外面
 
@@ -450,8 +450,7 @@ Monica: Okay, sit down. (Shows Paul in) Two seconds.
 
 换衣服。你坐着，等我一会儿
 
-Phoebe: Ooh, I just pulled-out four eyelashes
-/ˈaɪlæʃɪz/. That can't be good.
+Phoebe: Ooh, I just pulled-out four eyelashes/ˈaɪlæʃɪz/. That can't be good.
 
 噢，我刚刚扯掉了四根眼睫毛，这不是什么好兆头
 
@@ -461,7 +460,7 @@ Ross: So Rachel, what're you, uh... what're you up to tonight?
 
 What are you up to=what will u do
 
-Rachel: Well, I was kinda supposed to be headed for Aruba/əˈrubə/ on my honeymoon, so nothing!
+Rachel: Well, I was kinda supposed/səˈpoʊzd/ to be headed for Aruba/əˈrubə/ on my honeymoon, so nothing!
 
 本来是应该在去Aruba度蜜月的路上，所以我晚上没啥可干的
 
@@ -473,7 +472,7 @@ Chandler: (deadpan) Yes, and we're very excited-about-it.
 
 没错，我们对此都十分兴奋
 
-Rachel: Well actually thanks, but I think I'm just gonna hang out/ here tonight. It's been a long day.
+Rachel: Well actually thanks, but I think I'm just gonna/ hang out/ here tonight. It's been a long day.
 
 真的很感谢，但我今晚还是待在这里吧，今天事情太多了
 

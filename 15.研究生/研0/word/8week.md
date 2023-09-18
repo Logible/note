@@ -548,7 +548,7 @@ Monica: (pushes him and starts to cry) Oh shut up!
 
 闭嘴
 
-- Rachel: (on phone) Hi, Mindy. Hi, it-it's Rachel. Yeah, I'm fine. I-I saw Barry today. Oh, yeah, yeah he-he told me. No, no, it's okay. I hope you two are very happy, I really do. Oh, oh, and Mind, y'know, if-if everything works out, and you guys end-up getting married-and having kids- and everything- I just hope they have his old hairline and your old nose/noʊz/. (Slams the phone down.) (To everyone) Okay, I know it was a cheap shot/ʃɒt/, but I feel so much better now.
+- Rachel: (on phone) Hi, Mindy. Hi, it-it's Rachel. Yeah, I'm fine. I-I saw Barry today. Oh, yeah, yeah he-he told me. No, no, it's okay. I hope you two are very happy, I really do. Oh, oh, and Mind, y'know, if-if everything works out, and you guys end-up getting married-and having kids/z/- and everything- I just hope they have his old hairline and your old nose/noʊz/. (Slams the phone down.) (To everyone) Okay, I know it was a cheap shot/ʃɒt/, but I feel so much better now.
 
 你好，Mindy。我是Rachael，没事的。我今天去见了Barry。对对对，她告诉我的，我希望你们两个彼此能够开心，如果一切进行的顺利的话，我希望你们能结婚生子。我希望这个孩子拥有Barry的发际线和你的丑鼻子。我知道这招很贱，但我现在感觉真好
 

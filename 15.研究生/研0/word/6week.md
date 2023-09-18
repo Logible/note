@@ -32,7 +32,7 @@ python main.py
 
 Ross: (squatting and reading the instructions)
 
-- I'm supposed to attach/əˈtætʃ/ /a brackety thing to the side things, using a bunch-of these little worm/wɜːrm/  guys.
+- I'm supposed to attach/əˈtætʃ/ /a brackety thing to the side things, using a bunch-of these little worm/wɜːrm/ guys.
 - I /`have no` bracket-y thing, I see no worm guys /gaɪz/ whatsoever and-I cannot/ˈkæna:t/ feel my legs/leɡz/
 
 我应该用螺丝钉把支架固定在侧面。
@@ -95,11 +95,11 @@ Monica: Oh my God!
 
 我的个天
 
-Paul: I know, I know, I'm such an idiot/ˈɪdiət/. I guess I should've caught-on when she started going to the dentist/ four and five times-a week. I mean, how clean can teeth get?
+Paul: I know, I know, I'm such an idiot/ˈɪdiət/. I guess I should've caught on when she started going to the dentist/ four and five times-a week. I mean, how clean can teeth get?
 
 我知道，我知道，我是个傻瓜。她一周去那个牙医那里四到五次我就应该知道了。谁的牙齿需要这么干净啊？
 
-Monica: My brother's going through that right now, he's such a mess. How did you get through it?
+Monica: My brother's going through that right now, he's such a mess. How did-you get through it?
 
 我的哥哥现在正在经历这些，他现在一片混乱。你是怎么克服的？
 
@@ -246,13 +246,13 @@ Monica: (pause)...Yeah. Yeah, I do.
 
 我愿意的[Scene: Monica's Apartment, Rachel is watching Joanne Loves Chaci.]
 
-Rachel: Oh...see... but Joanne loved Chachi! That's the difference!
+Rachel: Oh...see... but Joanie loved Chachi! That's the difference!
 
 噢，你看，Joanne爱Chachi，这就是区别啊！
 
 [Scene: Ross's Apartment, they're all sitting around and talking.]
 
-Ross: (scornful) Grab-a spoon. Do you know how long it's been since I've grabbed-a spoon? Do the words 'Billy, don't be a hero' mean anything to you?
+Ross: (scornful) Grab-a spoon. Do you know how long it's been since I've grabbed-a spoon? Do the words/wɜːrdz/ 'Billy, don't be a hero' mean anything to you?
 
 拿起勺子。你知道我多久没有拿起勺子了吗？你知道“Bily，别撑着”这句话对你没有意义吗？
 
@@ -344,7 +344,7 @@ All: Okayyy! (They do so.)
 
 好滴
 
-Chandler: All right, kids/kɪdz/, I gotta get to work. but If I don't input those numbers/ˈnʌmbərz/,... it doesn't make much of-a difference...
+Chandler: All right, kids/kɪdz/, I gotta get to work. but If I don't input those numbers/ˈnʌmbərz/,... it doesn't make much-of-a difference...
 
 行了，各位宝宝们，我要去工作了。如果我不输入数字的话。。事实上也没什么后果
 
@@ -566,7 +566,7 @@ Rachel: I know that. That's why I was getting married.
 
 我知道，所以我要结婚
 
-Phoebe: Give her a break, it's hard being on your own for the first time.
+Phoebe: Give her a break, it's hard being on your own/oʊn/ for the first time.
 
 让她休息会儿，第一次独立是有点困难
 
@@ -591,7 +591,7 @@ Rachel: Thank you.
 - Phoebe: You're welcome. I remember when I first came to this city. I was fourteen.
 
 - My mom/mɑːm/ had just killed-herself and my step-dad was back-in prison/ˈprɪzən/, and I got here, and I didn't know anybody.
-- And I ended up living with this albinol/ælˈbaɪnoʊ/ guy who was, like, cleaning windshields/z/ outside port authority
+- And I ended up living with this albinol/ælˈbaɪnoʊ/ guy who was, like, cleaning windshields/ˈwɪndˌʃildz/ outside port authority
 - and then he killed-himself, and then I found aromatherapy/əˌroʊməˈθerəpi/. So believe me, I know exactly how you feel.
 
 不客气。我记得我第一次来这座城市的时候，我当时14岁。我的妈妈才自杀，继父在蹲监狱，我一个人也不认识。我最后跟一个在港务局擦窗户的白化病人住在一起，最后他也自杀了，然后我找到了按摩师的工作。所以相信我，我知道你心里什么感受
@@ -708,7 +708,7 @@ Ross: Goodnight.
 
 Monica: See ya.... Waitwait, what's with-you?
 
-Ross: I just grabbed a spoon. (Ross exits and Monica has no idea what that means.)
+Ross: I just grabbed-a spoon. (Ross exits and Monica has no idea what that means.)
 
 我刚拿起勺子Closing Credits
 
@@ -760,3 +760,8 @@ Chandler: kids, new dream... I'm-in Las Vegas/lɑs ˈveɪgəs/. I'm Liza Minelli
 
 - sauce![sauce](https://www.seriouseats.com/thmb/lFQwEdCSP6Y-sVoGqQry-fd0iVw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/the-best-slow-cooked-italian-american-tomato-sauce-red-sauce-recipe-step-09-05ad7578f9d34a5092086ae959bea8a7.jpg)
 - chili![chili](https://cdn.shopify.com/s/files/1/2182/2603/files/redchilipepper.jpg?v=1669750479)
+
+1. 第1组：17夏海洋，26欧俊，32贺涛，43李顺广
+2. 第2组：15李俊海，21刘佳豪，30周驰宇，38李坤胜
+3. 第3组：13归郑慧，22赵雪琦，34李凌，42黎哲语
+4. 第4组：19陈远烙，35蔡延丰，47邹俊杰，28佟明勇
