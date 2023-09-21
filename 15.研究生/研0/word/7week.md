@@ -58,7 +58,7 @@ Pink Floyd：平克·弗洛伊德（英语：Pink Floyd）是英国摇滚乐队�
 
 Ross: Yeah, and-and it's not that we don't like/ the comedian, it's that-that... that's not why we bought the ticket/ˈtɪkɪt/.
 
-- Chandler: The problem is, though, after the concert/ˈkɑːnsərt/'s-over, no matter how great the show was, you girls are always/ looking for the comedian/kəˈmiːdiən/ again
+- Chandler: The problem is, though, after the concert/ˈkɑːnsərt/'s-over, no matter how great the show was, you girls/gɜrlz/ are always/ looking for the comedian/kəˈmiːdiən/ again
 - y'know? I mean, we're in the car, we're fighting traffic/ˈtræfɪk/... basically/ˈbeɪsɪkli/ just trying to stay awake.
 
 问题是当演唱会结束的时候，不管这场演出有多么精彩，你们这些女孩子总是想再看脱口秀。我们在车上奋力杀出车阵，只是想尽力不让自己睡着
@@ -107,7 +107,7 @@ Marsha，他们是穴居人。他们面临的是“冰川快靠近了”这种�
 
 cave people：穴居人
 
-Marsha: Speaking of issues, isn't that your ex/eks/-wife?
+Marsha: Speaking of issues/ˈɪʃuːz/, isn't that your ex/eks/-wife?
 
 谈到麻烦，那个不是你的前妻吗
 
@@ -163,7 +163,7 @@ Ross: Pregnant?!
 
 - Oh. Looks like she didn't leave-in such-a hurry after all
   
-Chandler: Oh, I think this is the episode/ˈepɪsoʊd/-of Three's Company where there's some kind-of misunderstanding.
+Chandler: Oh, I think this is the episode/ˈepəsəʊd/-of Three's Company where there's some kind-of misunderstanding.
 
 这是三人行他们有误会的那集
 
@@ -194,7 +194,7 @@ ball up：揉成团
 
 (Monica starts to fluff a pillow.)
 
-Phoebe: She's already fluffed that pillow... Monica, you know, you've already fluffed that- (Monica glares at her.) -but, it's fine!
+Phoebe: She's already fluffed/flʌf/ that pillow... Monica, you know, you've already fluffed that- (Monica glares at her.) -but, it's fine!
 
 你刚才已经拍过枕头了，你真的拍过了，好吧。
 
@@ -312,7 +312,7 @@ Monica: I gave-you one job! (Starts to examin the lasagne/ləˈzænjə/ through 
 
 我只让你做了这一件事
 
-Rachel: Oh, but look `how` straight/streɪt/ those noodles/ˈnudəlz/ are!
+Rachel: Oh, but look `how` straight/streɪt/ those noodles/ˈnudlz/ are!
 
 你看这些面条多么笔直啊
 
@@ -446,7 +446,7 @@ Mrs. Geller: Oh, we're having spaghetti! That's.... easy.
 
 我们要吃意大利面，这也太。。。简单了吧
 
-- Monica: I know this-is going to sound unbelievably/ˌʌnbɪˈlivəb(ə)lɪ/ selfish/ˈselfɪʃ/ on my part
+- Monica: I know this-is going to sound unbelievably/ˌʌnbəˈlivəb(ə)lɪ/ selfish/ˈselfɪʃ/ on my part
 - but, were you planning on bringing/ˈbrɪŋɪŋ/ up the whole baby/lesbian/ˈlezbiən/ thing?
 - Because I think-it might take some-of the heat-off me.
 
@@ -528,10 +528,3 @@ raise the baby：抚养孩子
 Mrs. Geller: (To Monica) And you knew about this?!
 
 Commercial Break
-
----
-
-1. 第1组：17夏海洋，26欧俊，32贺涛，43李顺广
-2. 第2组：15李俊海，21刘佳豪，30周驰宇，38李坤胜
-3. 第3组：13归郑慧，22赵雪琦，34李凌，42黎哲语
-4. 第4组：19陈远烙，35蔡延丰，47邹俊杰，28佟明勇

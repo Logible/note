@@ -41,8 +41,7 @@ Ross: Must pee. (Goes to pee.)
 
 pee：v.撒尿n.撒尿;尿;小便
 
-Phoebe: Y'know, it's-even worse when you're twins
-/twɪnz/.
+Phoebe: Y'know, it's-even worse when you're twins/twɪnz/.
 
 如果是双胞胎的话，情况会更糟
 
@@ -466,7 +465,7 @@ Susan: Oh, no, nonononono, you see what he's doing? He knows no-one's gonna say 
 
 不可能，你听听他说的。他知道没有人会叫全称，这样的话他们就会叫Geller，然后就达到他的目的了
 
-Ross: My way?! You-you think this is my way? Believe me, of-all the ways I ever imagined this moment in my life being, this is not my way- y'know what? Uh, um, this is too hard. I'm not, I can't do-
+Ross: My way?! You-you think this is my way? Believe me, of-all the ways/weɪz/ I ever imagined this moment in my life being, this is not my way- y'know what? Uh, um, this is too hard. I'm not, I can't do-
 
 你觉得这是我的目的？相信我，我一生中想象中的任何一个瞬间，都不会有这个画面。你知道吗，这太艰难了，我做不到
 
@@ -512,7 +511,7 @@ Chandler: I don't know, but.. I think-it's-about to attack the Enterprise/ˈent�
 
 我不知道，我觉得应该是攻击企业号
 
-Phoebe: You know, if you tilt/tɪlt/ your head to the left-and relax your eyes/z/, it kinda looks like-an old potato.
+Phoebe: You know, if you tilt/tɪlt/ your head to the left-and relax/rɪˈlæks/ your eyes/z/, it kinda looks like-an old potato.
 
 如果你把你的头往左转一下，两眼放轻松，这个看起来有点像土豆
 
@@ -548,7 +547,7 @@ Monica: (pushes him and starts to cry) Oh shut up!
 
 闭嘴
 
-- Rachel: (on phone) Hi, Mindy. Hi, it-it's Rachel. Yeah, I'm fine. I-I saw Barry today. Oh, yeah, yeah he-he told me. No, no, it's okay. I hope you two are very happy, I really do. Oh, oh, and Mind, y'know, if-if everything works out, and you guys end-up getting married-and having kids/z/- and everything- I just hope they have his old hairline and your old nose/noʊz/. (Slams the phone down.) (To everyone) Okay, I know it was a cheap shot/ʃɒt/, but I feel so much better now.
+- Rachel: (on phone) Hi, Mindy. Hi, it-it's Rachel. Yeah, I'm fine. I-I saw Barry today. Oh, yeah, yeah he-he told me. No, no, it's okay. I hope you two are very happy, I really do. Oh, oh, and Mind, y'know, if-if everything works out, and you guys end-up getting married-and having kids/z/- and everything- I just hope they have his old hairline and your old nose/noʊz/. (Slams the phone down.) (To everyone) Okay, I know it was-a cheap shot/ʃɒt/, but I feel so much better now.
 
 你好，Mindy。我是Rachael，没事的。我今天去见了Barry。对对对，她告诉我的，我希望你们两个彼此能够开心，如果一切进行的顺利的话，我希望你们能结婚生子。我希望这个孩子拥有Barry的发际线和你的丑鼻子。我知道这招很贱，但我现在感觉真好
 
