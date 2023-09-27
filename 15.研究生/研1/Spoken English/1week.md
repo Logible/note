@@ -3,6 +3,7 @@
 - [1week](#1week)
   - [0925](#0925)
   - [0926](#0926)
+  - [0927](#0927)
 
 ## 0925
 
@@ -180,9 +181,11 @@ Chandler: Nah, not so much. Alright, now we smoke. (Takes a puff.) Oh.. my.. God
 
 没，没有，好吧，现在我们抽一口。天啊。
 
+## 0927
+
 [Scene, Central Perk, everyone except Phoebe and Rachel is there.]
 
-Monica: No, no, no. They say it's the same as the distance from the tip of a guy's thumb to the tip of his index finger.
+Monica: No, no, no. They say it's the same /as the distance /from the tip-of-a guy's thumb to the tip-of his index finger/ˈfɪŋɡə/.
 
 不不不。他们说和从大拇指到食指的距离是一样的。
 
@@ -196,11 +199,12 @@ Joey: That's ridiculous!
 
 真是搞笑
 
-Ross: Can I use.. either thumb?
+Ross: Can I use.. either/ˈiːðər/ thumb?
 
 我可以用另一个大拇指吗？
 
-Rachel: (carrying a tray of drinks) Alright, don't tell me, don't tell me! (Starts handing them out.) Decaf cappucino for Joey.. Coffee black.. Late.. And an iced tea. I'm getting pretty good at this!
+Rachel: (carrying a tray of drinks) Alright, don't tell me, don't tell me! (Starts handing them out.) Decaf cappuccino/ˌkæpuˈtʃiːnoʊ/ for Joey.. Coffee black.. Latte.. And-an iced/aɪst/
+ tea. I'm getting pretty good-at this!
 
 好吧，不要告诉我，不要告诉我。无咖啡因的卡布奇诺是给乔伊的，黑咖啡，拿（铁），然后冰茶。哇，我很擅长啊。
 
@@ -226,7 +230,7 @@ Monica: What did they do to you?
 
 他们怎么对你了？
 
-Phoebe: It's nothing, it's just- Okay. I'm going through my mail, and I open up their monthly, you know, STATEMENT-
+Phoebe: It's nothing, it's just- Okay. I'm going through/θruː/ my mail, and-I open up their monthly, you know, STATEMENT-
 
 没什么。只是，好吧。我去翻我的邮箱，每个月翻一次，你知道吧，账单
 
@@ -236,11 +240,11 @@ Ross: Easy.
 
 很简单啊
 
-Phoebe: - and there's five hundred extra dollars in my account.
+Phoebe: - and there's five hundred extra/ˈekstrə/ dollars in my account.
 
 我的账户上多出了500多刀。
 
-Chandler: Oh, Satan's minions at work again...
+Chandler: Oh, Satan's minions-at work-again...
 
 魔鬼又来干坏事了
 
@@ -252,23 +256,23 @@ Phoebe: Yes, 'cause now I have to go down there, and deal with them.
 
 是啊，现在我必须去那儿处理这件事情。
 
-Joey: What are you talking about? Keep it!
+Joey: What are you talking about? Keep-it!
 
 你在说什么啊，留着！
 
-Phoebe: It's not mine, I didn't earn it, if I kept it, it would be like stealing.
+Phoebe: It's not mine, I didn't earn-it, if I kept-it, it would be like stealing/ˈstiːlɪŋ/.
 
 这不是我的，这不是我挣的，如果我留着，这就是偷。
 
-Rachel: Yeah, but if you spent it, it would be like shopping!
+Rachel: Yeah, but if you spent-it, it would be like shopping!
 
 是啊，但是如果你把它花了，这就是购物！
 
-Phoebe: Okay. Okay, let's say I bought a really great pair of shoes. Do you know what I'd hear, with every step I took? 'Not-mine. Not-mine. Not-mine.' And even if I was happy, okay, and, and skipping- 'Not-not-mine, not-not-mine, not-not-mine, not-not-mine'...
+Phoebe: Okay. Okay, let's say I bought-a really great pair of shoes/ʃuːz/. Do you know what I'd/aɪd/ hear, with every step I took? 'Not-mine. Not-mine. Not-mine.' And even if I was happy, okay, and, and skipping-,I hear 'Not-not-mine, not-not-mine, not-not-mine, not-not-mine'...
 
 好吧，好吧，如果说我买了一双很好看的鞋子。你知道我每走一步都会听到什么吗？“不是我的，不是我的，不是我的”即使我是快乐的，好吧，蹦跳着，“不是我的，不是我的，不是我的。。。”
 
-Monica: We're with you. We got it.
+Monica: We're with you. We got-it.
 
 我们也这么觉得，我懂的。
 

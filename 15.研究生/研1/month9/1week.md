@@ -57,3 +57,19 @@
 
 - subtract![s](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Subtraction01.svg/1200px-Subtraction01.svg.png)
 - tricky![tricky](https://thumbs.dreamstime.com/z/%E6%A3%98%E6%89%8B%E9%97%AE%E9%A2%98-29439783.jpg)
+
+## 0927
+
+1. doing something as **harsh** as eliminating it **outright**.
+2. function that's less **prone** to overfitting
+3. And so this new cost function **trades off** two goals that you might have.
+4. and then it **fell out of favor** for a while.
+5. **tremendous** traction in some applications
+6. trying to build software to **mimic** the brain
+7. it has a number of inputs where it receives electrical impulses from other **neurons**.
+8. I'd like to give one big **caveat**,
+9. which is **frankly** very little
+10. that neural networks have really taken off?
+
+- neurous![20230927211450](https://raw.githubusercontent.com/Logible/Image/main/note_image/20230927211450.png)
+- nucleus![20230927211550](https://raw.githubusercontent.com/Logible/Image/main/note_image/20230927211550.png)
