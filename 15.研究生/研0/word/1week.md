@@ -109,3 +109,5 @@
 ## 0715
 
 1. If we **substitute** X1 and X2 from any point on this line into the equation X1 + X2 = y, we will find that the equation holds true.
+
+![s](2023-10-02-16-08-07.png)
