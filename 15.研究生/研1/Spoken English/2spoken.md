@@ -8,29 +8,29 @@ Monica: Hi.. how was the game?
 
 Ross: Well..
 
-All: WE WON!! Thank you! Yes!
+All: WE WON!! Thank-you! Yes!
 
-Monica: Fantastic! I have one question: How is that possible?
+Monica: Fantastic! I have one question/ˈkwestʃən/: How was that possible?
 
 太好了。我有个问题：这怎么可能？
 
 Joey: Alan.
 
-Ross: He was unbelievable. He was like that-that-that Bugs Bunny cartoon where Bugs is playing all the positions, right, but instead of Bugs it was first base-Alan, second base-Alan, third base-...
+Ross: He was `un`believable. He was like that-that-that Bugs/bʌɡz/ Bunny cartoon where Bugs is playing all the positions/pəˈzɪʃnz/, right, but instead-of Bugs, it was first base-Alan, second base-Alan, third base-...
 
 他太神奇了。他就像兔八哥一样，是一个万能的角色，但是并不是作为兔子的角色，而是一垒Alan二类Alan三垒Alan。
 
-Rachel: I mean, it-it was like, it was like he made us into a team.
+Rachel: I mean, it-it was like, it was like he made-us into a team.
 
 他让我们组成了一个团队
 
-Chandler: Yep, we sure showed those Hassidic jewellers a thing or two about softball..
+Chandler: Yep, we sure showed those / Hassidic/ha:si dik/ jewellers/ˈdʒuələrz/ /a thing or two about softball/ˈsɒːftbɒːl/..
 
 我们确信像那些犹太珠宝商展示了什么是垒球
 
 softbal:n.垒球运动;垒球
 
-Monica: Can I ask you guys a question? D'you ever think that Alan is maybe.. sometimes..
+Monica: Can I ask-you guys-a question? D'you ever think that Alan is maybe.. sometimes..
 
 Ross: What?
 
@@ -38,7 +38,7 @@ Monica: ..I dunno, a little too Alan?
 
 Alan过头了？
 
-Rachel: Well, no. That's impossible. You can never be too Alan.
+Rachel: Well, no. That's not possible. He can never be too Alan.
 
 他不可能会过头的
 
@@ -48,15 +48,17 @@ Ross: Yeah, it's his, uh, innate Alan-ness that-that-that we adore.
 
 innate：天生的；内在的
 
-Chandler: I personally could have a gallon of Alan.
+Chandler: I personally/ˈpɜːsənəli/ could have-a gallon of Alan.
+
+## 1005
 
 [Scene: A street, Phoebe walks up to a homeless person (Lizzie) she knows.]
 
-Phoebe: Hey, Lizzie.
+Phoebe: Hey, Lizzy.
 
-Lizzie: Hey, Weird Girl.
+Lizzie: Hey, Weird/wɪrd/ Girl.
 
-Phoebe: I brought you alphabet soup.
+Phoebe: I brought/brɒːt/ you alphabet/ˈælfəbet/ soup.
 
 我给你带来了字母汤
 
