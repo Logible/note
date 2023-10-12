@@ -1,5 +1,13 @@
 # 2
 
+- [2](#2)
+  - [1008](#1008)
+  - [1009](#1009)
+  - [1011](#1011)
+  - [1012](#1012)
+
+## 1008
+
 Commercial Break
 
 [Scene: Central Perk, Monica is alone as Ross, Rachel, Chandler, and Joey enter dejectedly in softball gear.]
@@ -50,7 +58,7 @@ innate：天生的；内在的
 
 Chandler: I personally/ˈpɜːsənəli/ could have-a gallon of Alan.
 
-## 1005
+## 1009
 
 [Scene: A street, Phoebe walks up to a homeless person (Lizzie) she knows.]
 
@@ -64,23 +72,23 @@ Phoebe: I brought/brɒːt/ you alphabet/ˈælfəbet/ soup.
 
 alphabet soup：是一种面条汤，里面的面条都做成字母状。是一种罐装食品。是父母用来鼓励小孩子学习字母的。
 
-Lizzie: Did you pick out the vowels?
+Lizzie: Did you pick-out the vowels/ˈvaʊəl/?
 
 你把元音挑出来了吗
 
 vowels：元音
 
-Phoebe: Yes. But I left in the Ys. 'Cause, y'know, "sometimes y". Uh, I also have something else for you. (She searches in her purse.)
+Phoebe: Yes. But I left-in the Ys. 'Cause, y'know, "sometimes y". Uh, I also have something else for you. (She searches in her purse.)
 
 我挑出来了，但是我留下了“Y”，因为有时候你要问“为什么”。我还给你带了其他东西
 
-Lizzie: Saltines?
+Lizzie: Saltines/sɔlˈtin/?
 
 苏打饼干吗
 
 Saltine:n. 苏打饼干;盐饼干
 
-Phoebe: No, but would you like a thousand dollars and a football phone?
+Phoebe: No, but would-you like-a thousand dollars-and-a football phone?
 
 不是。你想要1000美元和一部橄榄球电话吗？
 
@@ -92,23 +100,24 @@ Phoebe: I know.
 
 Lizzie: Weird Girl, what are you doing?
 
-Phoebe: No, I want you to have it. I don't want it.
+Phoebe: No, I want you to have-it. I don't want it.
 
 Lizzie: No, no, I ha-I have to give you something.
 
-Phoebe: Oh, that's fine, no.
+Phoebe: Oh, It's fine, no.
 
-Lizzie: Would you like my tin-foil hat?
+Lizzie: Would you want my tin-foil
+/tɪn fɔɪl/ hat?
 
 你要我的锡纸帽吗
 
 tin-foil hat:锡纸帽
 
-Phoebe: No. 'Cause you need that. No, it's okay, thanks.
+Phoebe: No. 'Cause/kɔːz/ you need that. No, it's okay, thanks.
 
-Lizzie: Please, let me do something.
+Lizzie: Please/pliːz/, let me do something.
 
-Phoebe: Okay, alright, you buy me a soda, and then we're even. Okay?
+Phoebe: Okay, alright, I'll tell you what, you buy me a soda, and then we're even. Okay?
 
 你给我买瓶苏打水吧，然后我们就扯平了
 
@@ -122,7 +131,7 @@ Phoebe: Okay.
 
 [Scene: A Street, Phoebe and Lizzie are at a hot dog vendor.]
 
-Lizzie: Keep the change. (To Phoebe) Sure you don't wanna pretzel?
+Lizzie: Keep the change. (To Phoebe) Sure you don't want-a pretzel/ˈpretsəl/?
 
 不用找钱了，你真的不要椒盐卷饼吗
 
@@ -130,7 +139,7 @@ keep the change:不用找零钱了！
 
 pretzel:n.椒盐卷饼(常作小吃)
 
-Phoebe: No, I'm fine.
+Phoebe: No, I'm fine. thanks
 
 Lizzie: (leaves) See ya.
 
@@ -146,13 +155,13 @@ Ross: A thumb?!
 
 All: Eww!
 
-Phoebe: I know! I know, I opened it up and there it was, just floating in there, like this tiny little hitch-hiker!
+Phoebe: I know! I know, I opened-it-up and there it was, just floating in there, like this tiny little hitch-hiker/ˈhɪtʃhaɪk/!
 
 我知道，我打开就看到有跟大拇指，就跟要搭便车的人一样（国外搭便车是伸出一根大拇指）
 
 hitch-hiker：搭便车的人
 
-Chandler: Well, maybe it's a contest, y'know? Like, collect all five?
+Chandler: Well, maybe it's-a contest/ˈkɒntest/, y'know? Like, collect-all five?
 
 或许这就跟比赛一样，就像集齐五张你就赢了一样
 
@@ -162,7 +171,7 @@ All: Nooo!
 
 (Chandler lights a cigarette.)
 
-All: Oh, hey, don't do that! Cut it out!
+All: Oh, hey, don't do that! Cut-it-out!
 
 把烟熄灭了
 
@@ -172,7 +181,7 @@ Rachel: It's worse than the thumb!
 
 这比那根大拇指还要恶心
 
-Chandler: Hey, this is so unfair!
+Chandler: Hey, this-is so unfair!
 
 这太不公平了
 
@@ -180,7 +189,7 @@ Monica: Oh, why is it unfair?
 
 怎么就不公平了
 
-Chandler: So I have a flaw! Big deal! Like Joey's constant knuckle-cracking isn't annoying? And Ross, with his over-pronouncing every single word? And Monica, with that snort when she laughs? I mean, what the hell is that thing? ...I accept all those flaws, why can't you accept me for this?
+Chandler: So I have a flaw! Big deal! Like Joey's constant/ˈkɑːnstənt/ knuckle/ˈnʌkəl/-cracking isn't annoying? And Ross, with his over-pronouncing/prəˈnaʊnsing/ every single word? And Monica, with that snort/ when she laughs/lɑːfs/? I mean, what the hell is that thing? ...I accept-all those flaws, why can't you accept me for this?
 
 我有个缺点。Joey一直都在掰手指关节难道不讨人厌吗？Ross每个单词都读的特别清楚，Monica每次笑的时候还要发出猪叫。这些缺点我都接受了，为什么你们不能接受我的缺点呢
 
@@ -192,15 +201,17 @@ snort:v.(表示气愤或被逗乐)喷鼻息，哼;用鼻子吸(毒品)n.(尤指�
 
 (An awkward silence ensues.)
 
-Joey: ...Does the knuckle-cracking bother everybody?
+## 1011
+
+Joey: ...Does the knuckle/ˈnʌkəl/-cracking bother/ˈbɑːðər/ everybody?
 
 掰手指真的很让人厌烦吗
 
-Rachel: Well, I-I could live without it.
+Rachel: Well, I-I could live/lɪv/ without-it.
 
 如果没有的话我会很高兴
 
-Joey: Well, is it, like, a little annoying, or is it like when Phoebe chews her hair?
+Joey: Well, is it, like, a little annoying, or is it like when Phoebe chews/tʃuːz/ her hair?
 
 只是有点令人讨厌还是跟菲比咀嚼头发一样
 
@@ -208,7 +219,7 @@ chew：v.咀嚼;嚼碎;(因为紧张等)咬住，不停地啃;(为尝味道)不�
 
 (Phoebe spits out her hair.)
 
-Ross: Oh, now, don't listen to him, Pheebs, I think it's endearing.
+Ross: Oh, now, don't listen to him, Pheebs, I think it's endearing/ɪnˈdɪərɪŋ/.
 
 endearing：adj.令人爱慕的;惹人喜爱的;讨人喜欢的v.使受喜爱;使受青睐
 
@@ -218,7 +229,7 @@ Joey: Oh, (Imitating Ross) "you do, do you"?
 
 (Monica laughs and snorts.)
 
-Ross: You know, there's nothing wrong with speaking correctly.
+Ross: You know, there's nothing wrong with speaking correctly/kəˈrɛktlɪ/.
 
 吐字清晰又不是什么坏事
 
@@ -226,11 +237,11 @@ Rachel: "Indeed there isn't"... I should really get back to work.
 
 我要去工作了
 
-Phoebe: Yeah, 'cause otherwise someone might get what they actually ordered.
+Phoebe: Yeah, 'otherwise someone might get what they actually ordered/ˈɔːrdərd/.
 
 对啊，否则其他人就能拿到他们自己点的东西了
 
-Rachel: Ohh-ho-hooohhh. The hair comes out, and the gloves come on.
+Rachel: Ohh-ho-hooohhh. The hair comes-out, and the gloves/glʌvz/ come-on.
 
 把头发吐出来了，现在就开始攻击我了
 
@@ -238,49 +249,52 @@ Rachel: Ohh-ho-hooohhh. The hair comes out, and the gloves come on.
 
 [Scene: Iridium, Monica and Paula are working.]
 
-Monica: Did you ever go out with a guy your friends all really like?
+Monica: Did you ever go out with-a guy your friends all really like?
 
 你跟你所有朋友都很喜欢的男友约会过吗
 
 Paula: No.
 
-Monica: Okay.. Well, I'm going out with a guy my friends all really like.
+Monica: Okay.. Well, I'm going out with-a guy my friends all really like.
 
 我现在就是这种情况
 
-Paula: Waitwait.. we talking about the coyotes here? All right, a cow got through!
+Paula: Waitwait.. we talking about the coyotes
+/kaɪˈoʊtis/ here? All right, a cow/kaʊ/ got through!
 
 慢着，我们是在说那群狼吗？天啊，居然有牛顺利逃脱了
 
-Monica: Can you believe it? ...Y'know what? I just don't feel the thing. I mean, they feel the thing, I don't feel the thing.
+Monica: you believe-it? ...Y'know what? I just don't feel the thing. I mean, they feel the thing, I don't feel the thing.
 
 只是我没什么感觉，但是他们都很喜欢Alan
 
-Paula: Honey.. you should always feel the thing. Listen, if that's how you feel about the guy, Monica, dump him!
+Paula: Honey.. you should always feel /the thing. Listen, that's how you feel-about the guy, Monica, dump-him!
 
 亲爱的，你要一直有感觉才行啊。如果你对那个人不来电的话，就甩了他
 
 Monica: I know.. it's gonna be really hard.
 
-Paula: Well, he's a big boy, he'll get over it.
+Paula: No, he's-a big boy, he'll get over it.
 
 他是个大男人，能克服的
 
-Monica: No, he'll be fine. It's the other five I'm worried about.
+Monica: No, he'll be fine. It's the other five I'm worried-about.
 
 我是担心另外五个人
 
+## 1012
+
 [Scene: Cental Perk, Joey and Ross are persecuting Chandler about his smoking.]
 
-Joey: Do you have any respect for your body?
+Joey: Do you have any `respect` for your body?
 
 你尊重自己的身体吗
 
-Ross: Don't you realise what you're-you're doing to yourself?
+Ross: Don't-you realise what-you're you're doing to yourself?
 
 你知道自己现在在做什么吗
 
-Chandler: Hey, y'know, I have had it with you guys and your cancer and your emphysema and your heart disease. The bottom line is, smoking is cool, and you know it.
+Chandler: Hey, y'know, I've had-it with you guys and your cancer and your emphysema/ˌemfəˈsiːmə/ and your heart disease /dɪˈziːz/. The bottom line is, smoking is cool, and you know it.
 
 我受够你们说的那些癌症、肺气肿、心脏病。至少抽烟很酷，这点你们是知道的
 
@@ -294,7 +308,7 @@ Rachel: (holding the phone out to Chandler) Chandler? It's Alan, he wants to spe
 
 他想让你接电话
 
-Chandler: Really? He does? (taking the phone) Hey, buddy, what's up! Oh, she told you about that, huh. Well, yeah, I have one now and then. Well, yeah, now. Well, it's not that big- ..well, that's true,.. Gee, y'know, no-one- no-one's ever put it like that before. Well, okay, thanks! (He hands the phone back and stubs out his cigarette.)
+Chandler: Really? He does? (taking the phone) Hey, buddy, what's up! Oh, she told-you about that, huh. Well, yeah, I have one now and then. Well, yeah, now. Well, it's not that big- ..well, that's true,.. Gee, y'know, no-one- no-one's ever put-it like that before. Well, okay, thanks! (He hands the phone back and stubs out his cigarette.)
 
 真的吗？嘿，兄弟，怎么了。她跟你说的。我不时会这样，不是什么大。。。没错，从。。从来都没人这么跟我说过。谢谢啊
 

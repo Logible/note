@@ -34,3 +34,8 @@
 8. and so the shape of this curve is vaguely **reminiscent** of the shape of bell
 9. you might get a **histogram** that looks like this
 10. the features you give it are **more or less** Gaussian
+
+## 1008
+
+1. how you can learn or **come up with those** features x1 and x2 from the data
+2. Now, just for the purposes of **illustration/ˌɪləˈstreɪʃən/**
