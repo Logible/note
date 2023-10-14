@@ -23,3 +23,10 @@
 3. as a one-dimensional **temporal** sequence
 4. where here, B corresponds to an **interceptor/ˌɪn(t)ərˈsɛptər/**
 5. round/raʊnd/ brackets/ˈbrækɪts/ with **parentheses/pəˈrenθɪsɪs/** to index and to differentiate examples
+
+## 1012
+
+1. **stacks up** or compares to the ground true label y^ on each of the training examples.
+2. we've described before **propagation** steps
+3. you take the lowercase Z's and stack them **horizontally/ˌhɑːrəˈzɑːntl◂/**
+4. So in case this operation seems a little bit **mysterious/mɪˈstɪəriəs/**

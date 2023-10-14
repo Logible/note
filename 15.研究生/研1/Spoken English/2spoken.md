@@ -5,6 +5,7 @@
   - [1009](#1009)
   - [1011](#1011)
   - [1012](#1012)
+  - [1013](#1013)
 
 ## 1008
 
@@ -326,9 +327,11 @@ Rachel: Yeah.
 
 (They give each other a dubious look.)
 
+## 1013
+
 [Scene: Monica and Rachel's, everyond except Monica and Joey is watching Lambchop.]
 
-Chandler: Ooh, Lambchop（一个电视节目）. How old is that sock? If I had a sock on my hand for thirty years it'd be talking too.
+Chandler: Ooh, Lambchop（一个电视节目）. How old is that sock/sɑːk/? If I had-a sock on my hand for thirty years it'd be talking too.
 
 小羊排。那双袜子也太旧了吧。如果我穿着双袜子三十年，它也会说话的
 
@@ -336,29 +339,30 @@ Ross: Okay. I think it's time to change somebody's nicotine patch. (Does so.)
 
 nicotine patch:尼古丁贴片。尼古丁贴片(Nicotinepatch)是一种香烟替代品。 尼古丁贴片主要有三种剂量，分别含有7、14、21毫克的尼古丁，使用者可根据吸烟量选择不同剂量的贴片。使用时将贴片贴在皮肤上即可，每天只需更换一次。使用起来较为方便。尼古丁贴片能够以较均衡的速度提供尼古丁，从而使血液中的尼古丁含量保持恒定
 
-Monica: (entering) Hey. Where's Joey?
+Monica: (entering) Hey. Where is Joey/ˈdʒoʊi/
+?
 
-Chandler: Joey ate my last stick of gum, so I killed him. Do you think that was wrong?
+Chandler: Joey ate/eɪt/ my last stick-of gum, so I killed him. Do you think that was wrong/rɒːŋ/ ?
 
 Joey吃了我最后一片口香糖，所以我杀了他。你认为我做错了吗
 
-Rachel: I think he's across the hall.
+Rachel: I think he's-across the hall.
 
 他在走廊对面
 
 Monica: Thanks. (Goes to fetch him.)
 
-Ross: (finishing changing Chandler's nicotine patch) There y'go.
+Ross: (finishing changing Chandler's nicotine patch) There you go.
 
-Chandler: (deadpan) Ooh, I'm alive with pleasure now.
+Chandler: (deadpan) Ooh, I'm-alive with pleasure now.
 
 我活的很快乐
 
-Ross: Hey Pheebs, you gonna have the rest of that Pop-Tart?.. Pheebs?
+Ross: Hey Pheebs, you gonna have the rest-of that Pop-Tart/tɑːrt/?.. Pheebs?
 
 你要吃剩下的焦糖馅饼吗
 
-Phoebe: Does anyone want the rest of this Pop-Tart?
+Phoebe: Does anyone want the rest-of this Pop-Tart?
 
 有谁要吃这个馅饼
 
@@ -370,7 +374,7 @@ Phoebe: Sorry. ..Y'know, those stupid soda people gave me seven thousand dollars
 
 All: You're kidding. Oh my God.
 
-Phoebe: And on my way over here, I stepped in gum. ...What is up with the universe?!
+Phoebe: And on my way over here, I stepped-in gum. ...What is up with `the` universe?!
 
 在我回来的路上，我踩到了口香糖。这个世界怎么了
 
@@ -410,7 +414,7 @@ Phoebe: There it is!
 
 你看，没错吧
 
-Monica: Okay. It's-it's about Alan. There's something that you should know. I mean, there's really no easy way to say this.. uh.. I've decided to break up with Alan.
+Monica: Okay. It's-it's-about Alan. There's something you should know. I mean, there's really / no easy way to say this.. uh.. I've decided to break-up with Alan.
 
 是关于Alan的。你们也需要知道。说这个真的挺难得。我决定跟Alan分手
 
@@ -420,7 +424,7 @@ Ross: Is there somebody else?
 
 是有第三者吗
 
-Monica: No, nononono.. it's just.. things change. People change.
+Monica: No, nononono.. it's just.. things/z/ change. People change.
 
 不是。只是世事难料，人都会改变
 
@@ -432,23 +436,23 @@ Joey: So that's it? It's over? Just like that?
 
 这就结束了？就这样吗？
 
-Phoebe: You know.. you let your guard down, you start to really care about someone, and I just- I- (starts chewing her hair)
+Phoebe: You know.. you let your guard/ɡɑːrd/ down, you start to really care about someone, and I just- I- (starts chewing her hair)
 
 你好不容易放下防御，开始真正地关心一个人，我只是。。。
 
 let your guard down:放松警惕
 
-Monica: Look, I- I could go on pretending-
+Monica: Look, I- I could go on pretending/prɪˈtending/
 
 我可以继续假装
 
 Joey: Okay!
 
-Monica: -but that wouldn't be fair to me, it wouldn't be fair to Alan- It wouldn't be fair to you!
+Monica: No, but that wouldn't be fair to me, it wouldn't be fair to Alan- It wouldn't be fair to you!
 
 但是这对我不公平，对Alan也不公平，对你们也不公平
 
-Ross: Who-who wants fair? Y'know, I just want things back. Y'know, the way they were.
+Ross: Who-who wants fair? I mean, I just want things/z/ back. Y'know, the way they were.
 
 谁想要公平啊。我只是想维持现状而已，就跟之前一样
 
@@ -457,6 +461,8 @@ Monica: I'm sorry..
 Chandler: (sarcastic) Oh, she's sorry! I feel better!
 
 她觉得不好意思，我感觉好多了
+
+---
 
 Rachel: (tearful) I just can't believe this! I mean, with the holidays coming up- I wanted him to meet my family-
 
