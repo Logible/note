@@ -6,6 +6,7 @@
   - [1011](#1011)
   - [1012](#1012)
   - [1013](#1013)
+  - [1016](#1016)
 
 ## 1008
 
@@ -335,7 +336,7 @@ Chandler: Ooh, Lambchop（一个电视节目）. How old is that sock/sɑːk/? I
 
 小羊排。那双袜子也太旧了吧。如果我穿着双袜子三十年，它也会说话的
 
-Ross: Okay. I think it's time to change somebody's nicotine patch. (Does so.)
+Ross: Okay. I think it's time to change somebody's nicotine/ˈnɪkətiːn/ patch. (Does so.)
 
 nicotine patch:尼古丁贴片。尼古丁贴片(Nicotinepatch)是一种香烟替代品。 尼古丁贴片主要有三种剂量，分别含有7、14、21毫克的尼古丁，使用者可根据吸烟量选择不同剂量的贴片。使用时将贴片贴在皮肤上即可，每天只需更换一次。使用起来较为方便。尼古丁贴片能够以较均衡的速度提供尼古丁，从而使血液中的尼古丁含量保持恒定
 
@@ -368,7 +369,7 @@ Phoebe: Does anyone want the rest-of this Pop-Tart?
 
 Ross: Hey, I might!
 
-Phoebe: Sorry. ..Y'know, those stupid soda people gave me seven thousand dollars for the thumb.
+Phoebe: Sorry. ..Y'know, those stupid soda people gave me seven `thousand` dollars for the thumb.
 
 这些蠢货给了我7000美元
 
@@ -462,13 +463,13 @@ Chandler: (sarcastic) Oh, she's sorry! I feel better!
 
 她觉得不好意思，我感觉好多了
 
----
+## 1016
 
-Rachel: (tearful) I just can't believe this! I mean, with the holidays coming up- I wanted him to meet my family-
+Rachel: (tearful) I just can't believe this! I mean, with the holidays/ˈhɑːlədeɪz/ coming up- I wanted/ˈwɑːntɪd/ him to meet my family-
 
 我不敢相信。我还打算假期要来了，让他去见我的家人
 
-Monica: I'll meet somone else. There'll be other Alans.
+Monica: I'll meet somoene else. There'll be other Alans.
 
 我可以跟其他人约会，还会有其他的人的
 
@@ -476,7 +477,7 @@ All: Oh, yeah! Right!
 
 Monica: Are you guys gonna be okay?
 
-Ross: Hey hey, we'll be fine. We're just gonna need a little time.
+Ross: Hey hey, we'll be fine. We're just gonna need-a little time.
 
 我们只是需要点时间
 
@@ -488,7 +489,7 @@ Alan: Wow.
 
 Monica: I'm, I'm really sorry.
 
-Alan: Yeah, I'm sorry too. But, I gotta tell you, I am a little relieved.
+Alan: Yeah, I'm sorry too. But, I gotta tell you, I am-a little relieved/rɪˈliːvd/.
 
 我要告诉你，我觉得解脱了
 
@@ -496,7 +497,7 @@ relieved.：adj.感到宽慰的;放心的;显得开心的
 
 Monica: Relieved?
 
-Alan: Yeah, well, I had a great time with you.. I just can't stand your friends.
+Alan: Yeah, well, I had-a great time with you.. I just can't stand your friends.
 
 我跟你相处的还挺不错的，我只是无法忍受你的朋友
 
@@ -504,11 +505,11 @@ Closing Credits
 
 [Scene: Monica and Rachel's, everyone is mopping around and eating ice cream.]
 
-Rachel: Remember when we went to Central Park and rented boats?.. That was fun.
+Rachel: Remember when we went to Central Park-and rented boats?.. That was fun.
 
 还记得我们去中央公园划船吗？真开心
 
-Ross: Yeah. He could row like a viking.
+Ross: Yeah. He could row like-a viking.
 
 他可以像维京人一样划船
 
@@ -518,7 +519,7 @@ Monica: (entering) Hi.
 
 All: Mmm.
 
-Ross: So how'd it go?
+Ross: So how'd-it go?
 
 怎么样
 
@@ -532,11 +533,11 @@ Monica: He said he's really gonna miss you guys. (dubious look)
 
 他说真的会想你们的
 
-Ross: You had a rough day, huh.. c'mere. (She sits down and Ross strokes her forehead.)
+Ross: You had-a rough day, huh.. c'mere. (She sits down and Ross strokes her forehead.)
 
 你一定很难受
 
-Chandler: ...That's it. I'm getting cigarettes.
+Chandler: ...That's it. I'm getting cigarettes/ˌsɪgəˈrɛts/.
 
 不管了，我要抽烟
 
@@ -546,7 +547,7 @@ Chandler: (leaving) I don't care, I don't care! Game's over! I'm weak! I've gott
 
 我不管，我不管，游戏结束了，我很衰，我要抽烟
 
-Phoebe: (shouting as he leaves) If you never smoke again I'll give you seven thousand dollars!
+Phoebe: (shouting as he leaves) If you never smoke-again I'll give you seven thousand dollars!
 
 如果你再也不抽烟了，我就给你7000块
 
