@@ -41,6 +41,7 @@
 
 ## 11-03
 
-1. doing well on the training set is usually a **prerequisite** to doing well on your hold out
+1. doing well on the training set is usually a **prerequisite** to doing well on your **hold out**
 2. Local warping
 3. in case you think I'm being **derogatory** of hand engineering
+4. and just have a neural network you know **annotate** key positions in the person's pose as well
