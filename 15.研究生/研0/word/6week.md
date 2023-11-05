@@ -368,7 +368,7 @@ Joey: I doubt-it. Mostly regional work.
 
 我觉得你没有看到过，我大部分都是地方性节目
 
-Monica: Oh wait, unless/ənˈles/-you happe**ne**d to catch the /Reruns' production of Pinocchio/pɪˈnoʊkioʊ/
+Monica: Oh wait, unless/ənˈles/-you happened to catch the /Reruns' production of Pinocchio/pɪˈnoʊkioʊ/
 
 等等，除非你碰巧看到重拍的木偶奇遇记
 

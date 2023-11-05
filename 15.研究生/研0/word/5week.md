@@ -60,7 +60,7 @@ Monica: Okay↑, everybody relax. This is not even a date. It's just two people 
 
 各位放轻松。这甚至都不是一次约会。只不过是两个人一起出去吃个晚饭，并且不做爱。
 
-Chandler: Sounds like a date to me.
+Chandler: Sounds/z/ like a date to me.
 
 听起来好像是我的约会。
 
@@ -232,7 +232,7 @@ Monica: So you wanna tell us now, or are we waiting for four wet bridesmaids?/ˈ
 
 bridesmaid:n.女傧相;伴娘
 
-- Rachel: Oh God... well, it started-about a half hour before the wedding.
+- Rachel: Oh God... well, it **started**-about a half hour before the wedding.
 
 - I was in this room where we were keeping all the presents, and I was looking at this gravy boat.
 

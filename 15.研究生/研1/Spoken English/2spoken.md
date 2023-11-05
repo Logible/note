@@ -74,7 +74,7 @@ Phoebe: I brought/brɒːt/ you alphabet/ˈælfəbet/ soup.
 
 alphabet soup：是一种面条汤，里面的面条都做成字母状。是一种罐装食品。是父母用来鼓励小孩子学习字母的。
 
-Lizzie: Did you pick-out the vowels/ˈvaʊəl/?
+Lizzie: Did you pick-out the vowels/ˈvaʊəlz/?
 
 你把元音挑出来了吗
 
@@ -108,8 +108,7 @@ Lizzie: No, no, I ha-I have to give you something.
 
 Phoebe: Oh, It's fine, no.
 
-Lizzie: Would you want my tin-foil
-/tɪn fɔɪl/ hat?
+Lizzie: Would you want my tin-foil /tɪn fɔɪl/ hat?
 
 你要我的锡纸帽吗
 
@@ -157,7 +156,7 @@ Ross: A thumb?!
 
 All: Eww!
 
-Phoebe: I know! I know, I opened-it-up and there it was, just floating in there, like this tiny little hitch-hiker/ˈhɪtʃhaɪk/!
+Phoebe: I know! I know, I opened-it-up and there it was, just floating in there, like this/ tiny little hitch-hiker/ˈhɪtʃhaɪk/!
 
 我知道，我打开就看到有跟大拇指，就跟要搭便车的人一样（国外搭便车是伸出一根大拇指）
 
@@ -251,7 +250,7 @@ Rachel: Ohh-ho-hooohhh. The hair comes-out, and the gloves/glʌvz/ come-on.
 
 [Scene: Iridium, Monica and Paula are working.]
 
-Monica: Did you ever go out with-a guy your friends all really like?
+Monica: Did-you ever go out with-a guy your friends all really like?
 
 你跟你所有朋友都很喜欢的男友约会过吗
 
@@ -443,7 +442,7 @@ Phoebe: You know.. you let your guard/ɡɑːrd/ down, you start to really care a
 
 let your guard down:放松警惕
 
-Monica: Look, I- I could go on pretending/prɪˈtending/
+Monica: Look, I- I can go on pretending/prɪˈtending/
 
 我可以继续假装
 
@@ -505,7 +504,7 @@ Closing Credits
 
 [Scene: Monica and Rachel's, everyone is mopping around and eating ice cream.]
 
-Rachel: Remember when we went to Central Park-and rented boats?.. That was fun.
+Rachel: Remember when we **went to** Central Park-and rented boats?.. That was fun.
 
 还记得我们去中央公园划船吗？真开心
 

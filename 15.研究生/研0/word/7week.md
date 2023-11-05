@@ -194,7 +194,7 @@ ball up：揉成团
 
 (Monica starts to fluff a pillow.)
 
-Phoebe: She's already fluffed/flʌf/ that pillow... Monica, you know, you've already fluffed that- (Monica glares at her.) -but, it's fine!
+Phoebe: She already fluffed/flʌf/ that pillow... Monica, you know, you've already fluffed that- (Monica glares at her.) -but, it's fine!
 
 你刚才已经拍过枕头了，你真的拍过了，好吧。
 
@@ -212,7 +212,7 @@ Chandler: Yes, and we all know how cruel/ˈkruːəl/ a parent can be about the f
 
 flatness：n.平面；平坦；单调；断然的态度
 
-Phoebe: Monica- Hi! Um, Monica, you're scaring/ˈskerɪŋ/ me. I mean, you're like, you're like all chaotic/keɪˈɑːtɪk/ and twirly/twɜːrl/.Y'know. And not-not-in a good way.
+Phoebe: Monica- Hi! Um, Monica, you're scaring/ˈskerɪŋ/ me. I mean, you're like, you're like all chaotic/keɪˈɑːtɪk/-and twirly/twɜːrl/.Y'know. And not-not-in a good way.
 
 Monica，你吓到我了，你现在的样子慌慌张张的，看起来真的不好
 
@@ -316,7 +316,7 @@ Rachel: Oh, but look `how` straight/streɪt/ those noodles/ˈnudlz/ are!
 
 你看这些面条多么笔直啊
 
-Chandler: Now, Monica, you know that's not how you look for an engagement ring in-a lasagne/ləˈzænjə/...
+Chandler: Now, Monica, you know that's not how you look for an engagement ring in a lasagne/ləˈzænjə/...
 
 在千层面找订婚戒指不是这么找的
 
