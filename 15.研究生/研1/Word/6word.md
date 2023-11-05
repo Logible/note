@@ -2,8 +2,6 @@
 
 - [6](#6)
   - [10-30](#10-30)
-- [6](#6-1)
-  - [10-30](#10-30-1)
   - [10-31](#10-31)
   - [11-01](#11-01)
   - [11-02](#11-02)
@@ -15,17 +13,12 @@
 2. So for **arcane** linear algebra technical reasons
 3. So this is why L2 norm regularization is also called weight **decay**
 4. But the intuition is that by **cranking** up lambda to be really big
-
-# 6
-
-## 10-30
-
-1. because this looks like really **warped** fours
-2. **nudge** it to the left to get theta minus epsilon
-3. applying machine learning is a highly **empirical** process
-4. So that's why you get these **oscillations**
-5. And the noisiness can be **ameliorated** or can be reduced by just using a smaller learning rate.
-6. So, there's just a bit more **latency**
+5. because this looks like really **warped** fours
+6. **nudge** it to the left to get theta minus epsilon
+7. applying machine learning is a highly **empirical** process
+8. So that's why you get these **oscillations**
+9. And the noisiness can be **ameliorated** or can be reduced by just using a smaller learning rate.
+10. So, there's just a bit more **latency**
 
 ## 10-31
 
