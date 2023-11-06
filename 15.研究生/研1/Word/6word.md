@@ -9,12 +9,16 @@
 
 ## 10-30
 
-1. because this looks like really **warped** fours
-2. **nudge** it to the left
-3. applying machine learning is a highly **empirical/ɪmˈpɪrɪkəl/** process
-4. So that's why you get these **oscillations/ˌɑsəˈleɪʃənz/**
-5. And the noisiness can be **ameliorated/əˈmiːliəreɪt/** or can be reduced by just using a smaller learning rate.
-6. So, there's just a bit more **latency**
+1. 1. in practice, L1 regularization to make your model **sparse**
+2. So for **arcane** linear algebra technical reasons
+3. So this is why L2 norm regularization is also called weight **decay**
+4. But the intuition is that by **cranking** up lambda to be really big
+5. because this looks like really **warped** fours
+6. **nudge** it to the left to get theta minus epsilon
+7. applying machine learning is a highly **empirical** process
+8. So that's why you get these **oscillations**
+9. And the noisiness can be **ameliorated** or can be reduced by just using a smaller learning rate.
+10. So, there's just a bit more **latency**
 
 ## 10-31
 
