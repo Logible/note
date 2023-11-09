@@ -29,7 +29,7 @@
 15. pottery		
 16. ceramics		
 17. aesthetic		
-18. humility		
+18. humility | humidity	
 19. bead		
 20. craftsmanship 		
 21. handcrafted 		
