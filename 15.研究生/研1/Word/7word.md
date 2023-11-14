@@ -1,8 +1,14 @@
 # 7word
 
+- [7word](#7word)
+  - [11-05](#11-05)
+  - [11-07](#11-07)
+  - [11-09](#11-09)
+  - [11-10](#11-10)
+
 ## 11-05
 
-1. by having a neural network output all of those points down **annotating**
+1. annotating
 
 ## 11-07
 
@@ -10,12 +16,14 @@
 2. so feel free to take that **with a grain of salt**
 3. but that **coarser granularity** may hurt performance
 
+- granularity<image style="height:300px; background-color:#CDDEC2" src="images/image-3.png"/>
+
 ## 11-09
 
-1. trait		
-2. ascribe		
-3. sibling		
-4. affiliation		
+1. trait
+2. ascribe
+3. sibling
+4. affiliation
 5. multilingual /ˌmʌltɪˈlɪŋɡwəl◂/		
 6. stubborn
 7. rivalry
@@ -47,8 +55,14 @@
 33. detrimental
 34. demography
 
+- plank![Alt text](images/image-2.png)
+- pharmaceutical![Alt text](images/image-4.png)
+
 ## 11-10
 
 1. by this maybe slightly **cryptic** phrase
 2. occurs or doesn't occur with this orangish **tint**
 3. are the different slices through the **torso**
+
+- cryptic<image style="height:300px; background-color:#CDDEC2" src="images/image-5.png"/>
+- torso![Alt text](images/image-6.png)
