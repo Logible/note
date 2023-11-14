@@ -11,3 +11,8 @@
 1. then up to **numerical round up**
 2. are two specific **instantiations**
 3. that when you see "I want a glass of orange **blank**
+
+## 11-14
+
+1. So there are various **heuristics** for
+2. the entire cap size in the **denominator**
