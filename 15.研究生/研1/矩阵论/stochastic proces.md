@@ -5,7 +5,7 @@
   - [预备知识](#预备知识)
   - [Concept](#concept)
     - [example](#example)
-    - [homework](#homework-1)
+    - [homework2](#homework2)
   - [possion](#possion)
   - [Morkov](#morkov)
 
@@ -40,7 +40,7 @@
   - ![Alt text](images/image-148.png)
   - ![Alt text](images/image-147.png)
 
-### homework
+### homework2
 
 - ⭐2.2
   - ![Alt text](images/image-218.png)

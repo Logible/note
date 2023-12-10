@@ -6,7 +6,6 @@
     - [边缘分布和条件分布](#边缘分布和条件分布)
   - [第2章 随机过程的基本概念和基本类型](#第2章-随机过程的基本概念和基本类型)
     - [随机过程的数字特征的计算](#随机过程的数字特征的计算)
-    - [作业](#作业)
   - [第3章 泊松](#第3章-泊松)
     - [Poission过程](#poission过程)
     - [3.2 Poisson过程相联系的若干分布](#32-poisson过程相联系的若干分布)
@@ -133,13 +132,6 @@
       - ![Alt text](images/image-94.png)
     - 乘积的期望都就等于期望的乘积，独立时成立
       - ![Alt text](images/image-95.png)
-
-### 作业
-
-- 一维概率密度⭐
-  - ![Alt text](images/image-96.png)
-- ![Alt text](images/image-98.png)
-- ![Alt text](images/image-99.png)
 
 ## 第3章 泊松
 
