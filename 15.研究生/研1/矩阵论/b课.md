@@ -131,6 +131,7 @@
     - 和的方差等于方差的和，独立时成立
       - ![Alt text](images/image-94.png)
     - 乘积的期望都就等于期望的乘积，独立时成立
+    - 
       - ![Alt text](images/image-95.png)
 
 ## 第3章 泊松
