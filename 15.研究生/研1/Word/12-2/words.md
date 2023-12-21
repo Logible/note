@@ -50,12 +50,12 @@
 ## 12-19
 
 1. We provide an **in-depth** analysis of each method
-2. **elucidating/ɪˈluːsədeɪt/** the relationships between different approaches and identifying
-3. **transformative** break throughs
+2. **elucidating/ɪˈluːsədeɪting/** the relationships between different approaches
+3. **transformative/trænz'fɔmətɪv/** break throughs
 4. that can learn **hierarchical/haɪˈrɑːkɪkəl** representations of data
 5. One **captivating/ˈkæptɪveɪtɪŋ/** application empowered by deep neural
 6. that convincingly **articulate** speech
-7. Talking head generation has gained significant attention in recent years as a **mesmerizing/ˈmezməraɪz/** domain
+7. Talking head generation has gained significant attention in recent years as a **mesmerizing/ˈmezməraɪz/** **domain/dəˈmeɪn/**
 8. the quality and **perceptual** realism of generated talking heads
 9. by enabling focused processing of **salient/ˈseɪliənt/** regions
 10. in a more **holistic/həʊˈlɪstɪk/** manner.
@@ -64,6 +64,19 @@
 13. This subjective evaluation helps **gauge/ɡeɪdʒ/** the level of realism
 14. in practical **scenarios/sənærioʊz/**.
 15. None the less...
-16. which can be **cumbersome**
+16. which can be **cumbersome/ˈkʌmbəsəm/**
 17. may **hinder** the evolution of new research
 18. there are many **variations**
+
+## 12-20
+
+1. Data-driven methods utilizing neural networks **emerged/iˈmɜːrdʒd/ as** the dominant/ˈdɒmɪnənt/ paradigm
+2. **there has been a wealth/welθ/ on** new research
+3. Visual-driven methods **encompass/ɪnˈkʌmpəs/** a wide range of techniques that leverage both **still** images and sequential frames as primary inputs.
+4. capturing **nuanced/ˈnjuːɑːns/** movements.
+5. These advanced models employ 3D **geometry/dʒiˈɒmətri/**
+6. **photometric/ˌfəutəu'metrik/** consistency measure
+7. which could lead to structural **artifacts/ˈɑːtəfækt/**
+8. the approach improves the **fidelity/fɪˈdeləti/** of the reenacted faces
+9. model that captures **disentangled/ˌdɪsənˈtæŋɡəld/** directions for pose
+10. The method allows **re-enactment/ˌriː ɪˈnækt/** of real-world faces
