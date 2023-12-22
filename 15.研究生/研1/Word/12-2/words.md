@@ -80,3 +80,24 @@
 8. the approach improves the **fidelity/fɪˈdeləti/** of the reenacted faces
 9. model that captures **disentangled/ˌdɪsənˈtæŋɡəld/** directions for pose
 10. The method allows **re-enactment/ˌriː ɪˈnækt/** of real-world faces
+
+## 1221
+
+1. 3D-aware synthesis of face **dynamics**
+2. allows HeadGAN to **function as** a real-time reenactment system,
+3. including face **frontalisation**
+   1. **frontal/ˈfrʌntl/**
+4. and **flickering/ˈflɪkə/** artifacts.
+5. an **occlusion**-aware generator network
+6. a **calibration** network
+7. random images of **celebrities**
+    1. celebrity
+    2. celebrate
+8. some can be expressed in words (**qualitative[ˈkwɒlə tətɪv ]**) and others in numbers (**quantitative[ˈkwɒntɪ tətɪv]**).
+9. which are crucial for producing realistic and **compelling /kəmˈpelɪŋ/** results
+10. **Optimal/ˈɒptəməl/** selection of datasets plays a **pivotal/ˈpɪvətəl/** role
+11. encompass a wide **spectrum/ˈspektrəm/** of facial expressions, **demographic variations**
+12. the realism and **authenticity/ˌɔːθenˈtɪsəti/** of the generated content.
+13. considering **luminance/'lumɪnəns/**, contrast, and structural information.
+14. where µreal and µgen are the mean feature vectors of the real and generated **frames/frem/**
+15. **which is expected** as the model is the oldest among the ones listed.
