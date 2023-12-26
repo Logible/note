@@ -101,3 +101,23 @@
 13. considering **luminance/'lumɪnəns/**, contrast, and structural information.
 14. where µreal and µgen are the mean feature vectors of the real and generated **frames/frem/**
 15. **which is expected** as the model is the oldest among the ones listed.
+
+## 1224
+
+1. At the very least
+2. perhaps age, **occupation**
+3. and continue to grow, **solidify**, and even change as we **mature /məˈtʃʊə/**
+4. they can be created **out of** gold
+5. artists who value the wabi-sabi **aesthetic/iːsˈθetɪk/** create works that are deliberately imperfect
+6. among the makers of Persian **rugs**.
+7. included a "humility square" when they sewed a **quilt/kwɪlt/**
+8. with added salt is **consumed**.
+9. the **infrastructure/ˈɪnfrəˌstrʌktʃə/** of many places did not undergo a development process at the required rate
+10. **Sewers** were not built quickly enough
+11. argued that small **organisms/ˈɔːɡənɪzəm/**
+12. which was also where **sewage/ˈsjuːɪdʒ/** was deposited.
+13. When we think of languages **taking over** others in commerce
+14. **Dedicated** Welsh TV channels are also broadcast
+15. There have been many **scandals** involving companies paying
+16. but the wider society **deems** their behavior so unethical
+17. there are many proposed **initiatives**
