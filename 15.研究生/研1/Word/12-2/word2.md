@@ -17,6 +17,6 @@
 
 ## 1227
 
-1.  GANs have been revealed to bemostly confined to data with **comparably limited variability**
-2. they do not exhibit mode-**collapse/kəˈlæps/** and training instabilities as GANs
+1. GANs have been revealed to be mostly confined to data with **comparably/ˈkɒmpərəbli/ limited variability/ˌveəriəˈbɪləti/**
+2. they do not **exhibit/ɪɡˈzɪbɪt/** mode-**collapse/kəˈlæps/** and training **instabilities/ˌɪnstəˈbɪləti/** as GANs
 3. and leaves a huge **carbon** **footprint**

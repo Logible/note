@@ -106,7 +106,7 @@
 
 1. At the very least
 2. perhaps age, **occupation**
-3. and continue to grow, **solidify**, and even change as we **mature /məˈtʃʊə/**
+3. and continue to grow, **solidify/səˈlɪdɪfaɪ/**, and even change as we **mature/məˈtʃʊə/**
 4. they can be created **out of** gold
 5. artists who value the wabi-sabi **aesthetic/iːsˈθetɪk/** create works that are deliberately imperfect
 6. among the makers of Persian **rugs**.
@@ -114,9 +114,9 @@
 8. with added salt is **consumed**.
 9. the **infrastructure/ˈɪnfrəˌstrʌktʃə/** of many places did not undergo a development process at the required rate
 10. **Sewers** were not built quickly enough
-11. argued that small **organisms/ˈɔːɡənɪzəm/**
-12. which was also where **sewage/ˈsjuːɪdʒ/** was deposited.
-13. When we think of languages **taking over** others in commerce
+11. argued that small **organisms_1/ˈɔːɡənɪzəm/**
+12. which was also where **sewage_1/ˈsjuːɪdʒ/** was deposited.
+13. When we think of languages **taking over_1** others in commerce
 14. **Dedicated** Welsh TV channels are also broadcast
 15. There have been many **scandals** involving companies paying
 16. but the wider society **deems** their behavior so unethical
