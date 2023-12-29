@@ -20,3 +20,12 @@
 1. GANs have been revealed to be mostly confined to data with **comparably/ˈkɒmpərəbli/ limited variability/ˌveəriəˈbɪləti/**
 2. they do not **exhibit/ɪɡˈzɪbɪt/** mode-**collapse/kəˈlæps/** and training **instabilities/ˌɪnstəˈbɪləti/** as GANs
 3. and leaves a huge **carbon** **footprint**
+
+## 1228
+
+1. leading to **superfluous** computations
+2. which exhibits better **scaling properties** with respect to the spatial dimensionality
+3. We **dub** the resulting model class Latent Diffusion Models (LDMs).
+4. high-resolution synthesis of **megapixel** images.
+5. We propose to **circumvent/ˌsɜːkəmˈvent/** this drawback
+6. an explicit separation of the **compressive** from the **generative** learning phase
