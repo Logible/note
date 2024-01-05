@@ -14,3 +14,11 @@
 4. over a **discretized/'diskri:taiz/** latent space.
 5. **they still require a difficult weighting** between reconstruction and generative capabilities
 6. diffusion models **are in principle** capable of modeling conditional distributions
+
+## 1-4
+
+1. these models are trained to generate data that **resemble** the real data as closely as possible in terms of statistical properties.
+2. **augmenting/ɔg'mɛnting/** their underlying UNet backbone
+3. projects y to an **intermediate/ˌɪntərˈmiːdiət/** representation
+4. each word does contribute to the formation of the query vector **to some degree**.
+5. for a visual **depiction/dɪ'pɪkʃən/**.
