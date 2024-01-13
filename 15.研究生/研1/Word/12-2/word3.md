@@ -27,17 +27,13 @@
 
 1. computationally **tractable/ˈtræktəbəl/** diffusion
 2. LDMs provide **means** to flexible and computationally tractable **diffusion based** image synthesis
-3. which we **empirically/ɪmˈpɪrɪkəl/** show in the following.
+3. which we **empirically/ɪmˈpɪrɪkəli/** show in the following.
 4. unless stated differently
 5. cause **stagnating/stæɡˈneɪt/** fidelity after comparably few training steps
 6. which manifests in **a significant FID gap of 38** between pixel-based diffusion (LDM-1) and LDM-8 after 2M training steps.
 7. where our model **improves upon** powerful AR [17,64] and GAN-based [105] methods,
 8. Our **qualitative/'kwɒlɪtətɪv/** and **quantitative/ˈkwɒntɪtətɪv/** results
-9. **Deviations /ˌdiːviˈeɪʃən/** from Fig. 6
+   1. **quality/ˈkwɒːləti/**
+   2. **quantity /ˈkwɑːntəti/**
+9.  **Deviations /ˌdiːviˈeɪʃən/** from Fig. 6
 10. we noticed a **discrepancy/dɪˈskrepənsi/** in the quality of samples produced at resolutions 256 and 512
-
-## 1-7
-
-1. To **mitigate/ˈmɪtɪɡeɪt/** the shortcomings of individual generative approaches
-
-python3.10 -m venv G:\pythonEnv\3.10.6
