@@ -2,6 +2,7 @@
 
 - [DaGan](#dagan)
   - [3.2](#32)
+  - [3.3](#33)
   - [3.4](#34)
 
 ## 3.2
@@ -20,10 +21,16 @@
   - ![Alt text](images/image-1.png)
     - Bilinear interpolation is necessary because the new pixel positions $q_k​$ will **often not align perfectly** with the grid of pixel positions in the target image. There can be fractional pixel locations, and the interpolation function determines the pixel value for these fractional positions by considering the values of the neighboring pixels. **This process results in a continuous**
 
+## 3.3
+
+- assigns different confidence values
+  - This means that the mask $M\_m$ likely contains values that represent **how confident the model is about each part of the motion field**. High confidence values would correspond to areas where the model believes the motion estimation is accurate, while low confidence values might indicate areas of uncertainty
+  - The process described here **is a common approach** in computer vision tasks where motion needs to be estimated across frames for tasks such as video editing
+
 ## 3.4
 
 - The term "dense"
-  - in this context typically refers to the comprehensiveness and richness of the data or information being processed or generated
+  - in this context typically refers to the **comprehensiveness and richness of the data** or information being processed or generated
 - kernels
   - In the context of Convolutional Neural Networks (CNNs), "kernels" refer to small, learnable filters
 - perform linear projection

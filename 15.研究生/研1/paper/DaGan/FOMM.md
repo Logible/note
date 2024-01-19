@@ -13,6 +13,9 @@
   -  an encoder-decoder network, the encoder **compresses the input data (in this case, motion information) into a lower-dimensional space**, The bottleneck is the part of the network where this compression happens
 - can be moved using the keypoints trajectories
   - This is done by tracking how **keypoints move over time in the driving video** and then applying those same movements to the corresponding keypoints in the source image to create an animated sequence. 
+- affine transformation
+  - is a linear mapping method that preserves points, straight lines, and planes.
+  -  In the context of image processing, affine transformations include **translation** (moving every point in an object a constant distance in a specified direction), **rotation** (turning the object around a fixed point), scaling (enlarging or shrinking objects), and **shearing** (slanting the shape of an object).
 
 ## 3.1
 
