@@ -26,5 +26,8 @@
 2. This allows for a more **nuanced** and sophisticated
 3. and its **magnitude/ˈmæɡnɪtuːd/** is the slope of the graph in that direction.
 4. Each **entry/ˈentri/** in this matrix
-5. **To this end**, the keypoint detector network outputs keypoint locations as well as the parameters of each affine
-transformation
+5. **To this end**, the keypoint detector network outputs keypoint locations
+
+## 1-21
+
+1. **induced** by keypoints.
