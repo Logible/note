@@ -26,17 +26,69 @@
 
 ## 科研方向
 
-## 月报
+## 未来
 
-- 0710~0731（因觉英文原文查看较为通顺，书和论文皆以英文原文阅读，前期进度可能较慢
+- 考公考编
+  - 考回潮州
+    - 一世人潮州
+      - 算了吧。。
+  - 考在二线城市
+    - 一世人那个城市6分
+  - 优点
+    - 稳定(一眼看到头)
+  - 缺点
+    - 钱少
+- 国内code 7分
+  - 优点
+    - 钱多
+  - 缺点
+    - 工作强度大，伤身体
+    - 不好找工作
+- 外企 8分
+  - 优点
+    - 遵守劳动化，工作强度适当
+  - 缺点
+    - 难找到
+- 出国 8.5分 在有工作技能＋经验的基础上，有流利口语
+  - 优点
+    - 工作强度小
+    - 钱多
+    - 体验外面的世界
+  - 缺点
+    - 娱乐设施少
+    - 吃的少（自己做
+    - 孤独
 
-1. 自学all-of-statistics. Ⅰ Probability部分（前五章
-   1. 笔记<https://github.com/Logible/note/tree/main/15.%E7%A0%94%E7%A9%B6%E7%94%9F/%E7%A0%940/all-of-statistics>
-2. 调通gpt_academic
-3. 看了论文的Introduction, 大概了解方法，具体实现未看
+## PPT
 
-- 0801~0831计划
+- 视频预处理
 
-1. 自学all-of-statistics. II Statistical Inference部分
-2. 完成差分隐私公众号内容的入门
-3. 继续看基础论文
+处理公司的预训练数据
+
+原数据为200G主播带货视频，要求将其处理为满足要求的片段
+
+1. 画面主体为人像
+2. 256*256像素
+3. 片段为3~10s
+4. 无背景噪声
+5. 人像无遮挡
+
+使用face-alignment库完成人脸关键点的识别，并根据关键点位置判断人脸位置，裁剪出满足1~3要求的视频片段
+
+- FOMM DAGAN
+  - 论文阅读
+    - FOMM内容
+      - overview: the model of this paper is trained to reconstruct the training videos by **combining a single frame and a learned latent representation of the motion** in the video.
+      - latent representation of the motion: a combination of **keypoint displacements** and **local affine transformations**
+    - DaGAN内容
+      - overview: Base on the FOMM model, introduce a **self-supervised face-depth** learning method to automatically recover dense **3D facial geometry**
+        - leverage them to estimate sparse facial keypoints
+        - be utilized to learn 3D-aware cross-modal (i.e. appearance and depth) attention to guide the generation of motion fields for warping source image representations.
+  - github源码checkpoint运行
+  - 视频评估手段代码运行
+  - vox开源Youtube数据集下载
+  - github源码training运行
+
+- 理解数字人评估指标物理含义
+  - what comprise a good talking head generation
+  - 5篇近期CVPR
