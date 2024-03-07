@@ -68,12 +68,13 @@
 原数据为200G主播带货视频，要求将其处理为满足要求的片段
 
 1. 画面主体为人像
-2. 256*256像素
+2. 视频为256*256像素
 3. 片段为3~10s
-4. 无背景噪声
+4. 背景音只能轻微噪声
+  - 降噪处理
+  - 说话人二者分离
 5. 人像无遮挡
 
-使用face-alignment库完成人脸关键点的识别，并根据关键点位置判断人脸位置，裁剪出满足1~3要求的视频片段
 
 - FOMM DAGAN
   - 论文阅读
@@ -92,3 +93,5 @@
 - 理解数字人评估指标物理含义
   - what comprise a good talking head generation
   - 5篇近期CVPR
+
+/data/anaconda3/envs/modelscope/bin/python
