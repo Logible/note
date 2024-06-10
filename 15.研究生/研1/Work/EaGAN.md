@@ -20,3 +20,24 @@
 3. 更换Attention方法
    1. 多模态融合策列
    2. 用原特征后加权(试试这个，可间接看(1))
+
+- Ori_14_150
+  - Average PSNR: 23.003055263430497
+  - Average SSIM: 0.7321230246295752
+  - Average L1 Distance: 0.047230543398419575
+- Ori_14_200
+  - Average PSNR: 23.158844947374323
+  - Average SSIM: 0.7386154111256801
+  - Average L1 Distance: 0.04634193654267893
+- Online_Ori: 
+  - Average difference: 1.2763131292956778
+  - Average difference: 0.1292876144975204
+  - Average PSNR: 23.812695854308952
+  - Average SSIM: 0.7627718130000286
+  - Average L1 Distance: 0.0430993507184896
+- EaGAN_14_150(pose高0.04,L1低0.003,id低0.001)
+  - Average difference: 1.4872668380793843
+  - Average difference: 0.15312322913098517
+  - Average PSNR: 23.165852162760444
+  - Average SSIM: 0.7396817772311491
+  - Average L1 Distance: 0.04543782485447766
